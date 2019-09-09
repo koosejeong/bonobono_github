@@ -1,0 +1,27 @@
+@charset "utf-8";
+/* selector02.css */
+/*
+ul a { color:#777; }
+li a { color:#0f7; }
+
+우선순위: type <class <id <parents <!important(사용X)
+우선순위가 복합 적으로 섞일 시 언급 여부에 따라 순위는 변동 될 수 있다.
+*/
+
+span { background-color:#ddd; }
+a:hover >span { background-color:#f00; }
+a:active >span {background-color:#77a; }
+a:focus >span { outline:5px solid #00f; }
+a:visited >span { color:#fff; }
+/* focus처리 되는 기능은 a, button, input, select, textarea와 같은 input 안에 들어가는 요소들 뿐이다. */
+
+p { margin:100px auto; width:500px; height:100px; text-align:center; line-height:100px; border:3px solid #777; }
+
+p:before { content:"어떻게 될까요?"; color:#f00; font-weight:bold;}
+p:after { content:"어디에 있을까요?"; color:#00f; font-weight:bold;}
+
+/*
+pseudo code: 의사전달 코드
+
+
+*/

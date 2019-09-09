@@ -1,0 +1,48 @@
+
+*@charset "utf-8";
+/*selector_01.css*/
+
+h1 { background-color:#777; color:#ff0; }
+h2 { background-color:#0af; color:#fff; }
+li { list-style:none; }
+p.con{ border:1px solid #333; }
+/* border-style: solid || dotted || dashed */
+div.wrap { background-color:#fa0; color:#0af; }
+
+#list { border-width:3px; border-style:dashed; border-color:#faf; }
+#list> .red> a { color:#f33; }
+/* 기본 적으로 a태그는 자체적으로 색상을 가지고 있다.*/
+/* 속성값이 inherit이라면, 부모의 속성을 따르겠단 의미 */
+#list>li>a.yellow { color:#ff0; }
+#list>li.blue>a { color:#07f; }
+#list>li.green>a { color:#3f0; }
+
+div.box>ol>li>a { color:#f70; }
+/* .box li>a { color:#f70; } */
+div.box li>ul>li#bg1 { background-color:#ff0; }
+/* .bg1 { background-color:#ff0; } */
+div.box li>ul>li#bg2 { background-color:#00c; }
+/* .bg2 { background-color:#00c; } */
+div.box li>ul>li#bg3 { background-color:#a00; }
+/* .bg3 { background-color:#a00; } */
+
+/*
+  전체 선택자: *로 표기하여 선택하면, 모든 요소를 선택한다는 의미를 갖는다.
+  ex) * { list-style:none; } 
+      * { margin:0; padding:0; }
+  단, 전체 선택자로 표기하는 건 사용하지 않는 부분까지 지정하는 것으로, 시스템에 성능 저하가 일어날 수 있다. 하여, 2019년 현재 기준에서는 권장하지 않는다.
+  
+  type 선택자: htmel 문서의 요소를 직접 선택하는 것
+  ex) body{}
+      html{}
+      p{}
+      h1{}
+      div{}
+      ....
+
+  id/class 선택자: id를 선택하고 싶을 때는  #, class를 선택하고 싶을 때는 .으로 표기하여 사용한다.
+
+  find 선택자(자손): 자손은 띄어쓰기(공백)으로 표기하여 사용한다.
+  children 선택자(자식): >로 표기하여 부모, 자식을 구분하여 사용한다. 
+  ex) ul>li {} : ul의 자식은 li에 스타일을 주겠다는 것.
+*/
