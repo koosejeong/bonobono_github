@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta charset="UTF-8">
+	<!--[if lte IE 9]>
+		<script src="./IE/html5shiv/dist/html5shiv.min.js"></script>
+	<![endif]-->
+	<link rel="shortcut icon" type="image/png" href="./img/favicon.png">
+	<link rel="apple-touch-icon" href="./img/favicon.png">
+	<title>웹기초 이해하기</title>
+
+	<!-- CSS=============================== -->
+	<style>
+		li { list-style:none; }
+	</style>
+</head>
+<body>
+	<!-- Layout=============== -->
+	<h1>웹기초 이해하기</h1>
+	<h2>form 기능 이해하기 3 Html5형식에 추가 된 기능 이해하기</h2>
+	
+	<form action="#" method="post">
+
+		<fieldset>
+			<legend>자주 사용하는 형식</legend>
+			<ul>
+				<li>
+					<label for="searchBar">검색</label>
+					<input type="search" id="searchBar" name="searchBar" value="" placeholder="검색어를 입력하세요" required="required"/>
+				</li>
+				<li>
+					<label for="telNum">숫자</label>
+					<input type="tel" id="telNum" name="telNum" value="" required="required"/>
+					<!--스마트폰에서 최적화된 기능.
+						모바일에서 tel 타입 입력칸 터치 시, 애플/안드로이드 관계 없이 키패드가 끌려 올라 온다.
+					 -->
+				</li>
+				<li>
+					<label for="urlText">웹주소</label>
+					<input type="url" id="urlText" name="urlText" value="" required="required"/>
+				</li>
+				<li>
+					<label for="mailText">이메일입력</label>
+					<input type="email" id="mailText" name="mailText" value="" required="required"/>
+				</li>
+				
+			</ul>
+
+			<!--requierd: 유효성 검사 
+				강제성을 띄는 input 타입(아이디, 이름, 패스워드 등)에 required 요소를 추가 입력한다. 해당 요소를 추가 시 작성한 각 타입에 맞는 형식의 값을 입력하라는 경고창이 뜬다.
+
+				
+				 -->
+		</fieldset>
+
+
+		<!-- ======================= -->
+
+		<fieldset>
+			<legend>아직은 브라우저 제약이 많은 형식</legend>
+				<label for="date">날짜를 선택하는 기능</label>
+				<input type="date" name="date" id="date" value="" />
+				<!-- time, week, day, month, year, date... 등등 많은 요소가 있지만 브라우저 별로 다르게 표현 되어 사용하지 않는다.
+				2019년 9월 5일 현재 기준 날짜, 시간과 관련 된 type 속성은 사용할 수 없다고 보면 된다.(제약이 너무 많기 때문)
+				 -->
+		</fieldset>
+
+
+
+
+		<!-- ======================= -->
+		<fieldset>
+			<legend>사용할 수는 있지만, 그 기능이 현재 애매한 상태</legend>
+
+				<ul>
+					<li>
+						<label for="num">갯수 입력</label>
+						<input type="number" id="num" name="num" value="" min="1" max="20" step="" />
+					</li>
+					<li>
+						<label for="ran">갯수 입력</label>
+						<input type="range" id="ran" name="ran" value="" min="1" max="20" step="" />
+					</li>
+					<li>
+						<label for="colorSel">색상</label>
+						<input type="color" id="colorSel" name="colorSel" value="" />
+					</li>
+					
+					<li>
+						<label for="message">전달 할말</label>
+						<input type="text" id="message" name="message" value="" list="messageSample"/>
+
+						<datalist id="messageSample">
+							<option value="경비실에 맡겨 주세요"></option>	
+							<option value="집에 보내 주세요"></option>	
+							<option value="우산 사기 싫은데~!"></option>	
+					
+						</datalist>
+					<!--
+						<datalist>의 id를 input 요소에 list 프로퍼티로 줄 시, 클라이언트가 직접 인력한 말이 전달 된다. 
+					  -->
+					</li>
+				</ul>
+			<!-- lange/number 태그는 수량을 카운트 할 때 주로 		쓰는 것으로, 해당 태그가 가지고 있는 min, 		max, step 프로퍼티는 각각 최소 수량, 최대 		수량, 단계 수량을 나타낼 때 쓴다.
+			 -->
+
+		</fieldset>
+
+
+		<br />
+		<br />
+		<button type="submit">확인 및 전송</button>
+
+	</form>
+	<!-- Script=============== -->
+	<script>
+		
+	</script>
+</body>
+</html>

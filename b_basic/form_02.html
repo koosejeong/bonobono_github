@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<!-- form_02.html -->
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!--[if lte IE 9]>
+      <script src="./IE/html5shiv/dist/html5shiv.min.js"></script>
+  <![endif]-->
+  <link rel="shortcut icon" type="image/png" href="./img/favicon.png">
+  <link rel="apple-touch-icon" href="./img/favicon.png">
+  <meta charset="UTF-8">
+  <title>웹기초 이해하기</title>
+
+  <!-- CSS================================= -->
+  <style>
+    li { list-style:none; }
+  </style>
+</head>
+<body>
+  <!-- Layout -->
+  <h1>웹기초 이해하기</h1>
+  <h2><abbr title="Hyper Text Markup Language">HTML5</abbr> 이전에 사용한 form기능 이해하기2</h2>
+  
+  <form action="#" method="post">
+
+      <fieldset>
+        <legend>입력형 type</legend>
+        <label for="userId">아이디를 입력하세요</label>
+        <input type="text" id="userId" name="userId" value="" /><br />
+
+        <label for="userPw">비밀번호를 입력하세요</label>
+        <input type="password" id="userPw" name="userPw" value="" /><br />
+      </fieldset>
+
+      <!-- =========================== -->
+      <fieldset>
+        <legend>선택형 type</legend>
+        <p>당신의 성별은 무엇입니까</p>
+        <ol>
+          <li>
+            <label for="woomen_01">여성</label>
+            <input type="radio" id="woomen_01" name="sel_01" value="" />
+          </li>
+           <li>
+            <label for="men_01">남성</label>
+            <input type="radio" id="men_01" name="sel_01" value="" />
+          </li>
+           <li>
+            <label for="transgender_01">트랜스젠더</label>
+            <input type="radio" id="transgender_01" name="sel_01" value="" />
+          </li>
+           <li>
+            <label for="nocoment_01">말하고 싶지 않다</label>
+            <input type="radio" id="nocoment_01" name="sel_01" value="" />
+          </li>
+        </ol>
+        
+        <p>오늘 먹고 싶은 음식을 선택하시오</p>
+          <ul>
+            <li>
+              <label for="selFood_01">피자</label>
+              <input type="checkbox" id="selFood_01" name="food_01" value="pizza" />
+            </li>
+            <li>
+              <label for="selFood_02">떡볶이</label>
+              <input type="checkbox" checked="checked" id="selFood_02" name="food_01" value="topbokki" />
+            </li>
+            <li>
+              <label for="selFood_03">샌드위치</label>
+              <input type="checkbox" id="selFood_03" name="food_01" value="sandwich" />
+            </li>
+            <li>
+              <label for="selFood_04">파스타</label>
+              <input type="checkbox" id="selFood_04" name="food_01" value="pastar" />
+            </li>
+          </ul>
+          <!-- radio나 checkbox 뒤에 checked="checked"를 입력할 시 해당 문장에 체크가 되어 있다. -->
+      </fieldset>      
+
+      <!-- =========================== -->
+      <fieldset>
+        <legend>버튼형 type</legend>
+        <!-- 버튼형 타입은 레이블을 사용하지 않아도 상관 없다(**but: 다른 타입은 반드시 사용해야 한다(접근성 원칙) -->
+        <ul>
+          <li>
+            <input type="reset" name="cancle" value="취소" />
+            <!-- 접근성 원칙에 따라 동의 버튼 보다 취소 버튼을 먼저 만들게 바뀌었다. (사용자 배려-탭키 이동 시 곧바로 동의 되는 경우를 방지하기 위해.) -->
+          </li>
+          <li>
+            <input type="submit" name="ok" value="동의" />
+          </li>
+          <li>
+            <input type="image" src="./img/favicon.png" alt="전송 버튼에 대한 설명을 쓰면 된다." name="ok2" value="전송" />
+            <!-- 실제로 이미지를 전송하는 역할을 하는 것이 버튼 타입-image이다. -->
+          </li>
+          <li>
+            <input type="file" name="" value="" />
+            <!-- value 프로퍼티에 내가 첨부할 파일이 담기기 때문에 비워둬야 한다. -->
+          </li>
+          <li>
+            <input type="button" name="btn" value="약도 보기" />
+          </li>
+        </ul>
+
+      </fieldset>
+
+      <!-- =========================== -->
+      <fieldset>
+        <legend>특수형 type</legend>
+        <input type="hidden" name="beforeName" value="이전에 사용한 이름" />
+        <!-- hidden-관리자를 위한 형식으로, 클라이언트에겐 드러나지 않는 기능이다. 쇼핑몰 등의 웹사이트에서 클라이언트가 개인 정보를 수정해야 할 시, 클라이언트의 변경된 정보를 클라이언트의 아이디에 맞게 서버에 저장 시키기 위해 이정표 역할을 하는 ID는 수정을 할 수가 없게끔 해야 한다. 이때 ID를 보이기는 하되 수정할 수 없게 할 때 쓰는 게 hidden이다. -->
+      </fieldset>
+
+
+      <!-- =========================== -->
+      <fieldset>
+        <legend>멀티형 type</legend>
+        <label for="multiText"></label>
+        <textarea cols="10" rows="30" name="multiText" value="" id="multiText" maxlength="6000" readonly="readonly">댓글     
+        </textarea>
+         <!-- 멀티형 타입 중 텍스트형. 한 줄이 아닌 여러줄을 입력할 수 있는 폼을 만든다.
+           <textarea>의 cols 프로퍼티에 들어간 값은 해당 수의 가로줄만큼 입력 되는 공간을 만들겠음을 뜻하고, rows 프로퍼티에 들어간 값은 해당 수만큼 가로로 입력 되는 공간을 만들겠다는 뜻
+          
+          maxlength: 최대 글자 수
+
+          readonly: 입력을 할 수 없게 만드는 옵션
+          -->
+          <br />
+          <br />
+          <br />
+          <label for="selProduct"></label>
+          <select name="selProduct" id="selProduct">
+            <option>제품을 선택하세요</option>
+            <optgroup label="모바일 기기">
+            <option value="아이폰">아이폰</option>
+            <option value="아이패드">아이패드</option>
+            </optgroup>
+            <optgroup label="PC 및 노트북">
+            <option value="맥북">맥북</option>
+            <option value="아이맥">아이맥</option>
+            </optgroup>
+          </select>
+          <!-- 멀티형 타입 중 선택형
+               셀렉트 박스를 만들어 다수의 항목 중에 하나를 선택할 수 있는 폼을 만든다. 
+
+               value 프로퍼티는 select의 자식 요소인 option 요소에 준다.
+
+               optgroup 영역을 나누고 싶을 때 쓴다.
+               optgroup에 label 프로퍼티를 주면 그 값으로 영역이 구분지어진다.
+           -->
+           <br />
+           <br />
+           <br />
+           <button type="reset">취소 버튼 역할을 하는 요소</button>
+           <button type="submit">확인 버튼 역할을 하는 요소</button>
+           <button type="button">기본 버튼 역할을 하는 요소</button>
+           <!-- <button>뫄뫄</button> 사용 시 기본 타입은 submit이다. 용도에 맞는 타입을 작성해주는 게 좋다.
+           <button> 태그는 <form> 태그 밖을 벗어나 작성 되는 경우도 있다.(클릭 시 화면이 넘어가는 용도 등.) 
+           -->
+
+      </fieldset>
+      
+       <!-- Form:개인정보를 DB와 연결을 해주는 중요한 태그
+            (서버사이드 쪽과 연동성이 높다)
+
+            *label과 input의 순서를 뒤집어서 작성해도 된다.
+            *label은 button 타입과 hidden 타입을 제외한 모든 타입에 같이 입력해줘야 한다.(접근성 기준)
+
+             *name 프로퍼티에 동일한 이름을 줄 시 하나의 값만 선택 되고, 각기 다른 이름을 줄 시 다수의 선택이 가능하다.
+
+             *value 프로퍼티에 클라이언트가 선택하거나 입력한 값이 서버로 전달 된다.
+             (타입별로 밸류의 값을 비워두거나 입력하는 경우가 있다.)
+
+            ******id는 해당 요소를 지칭하는 이름이고, name은 액션을 통해 서버와 연동 되는 매개체라고 생각하면 쉽다******
+           
+
+            *reset의 name은 개발자가 임의로 줄 수 있지만 실 기능은 서버로 클라이언트의 뜻(취소)를 전달하는 데 있다.
+            *submit은 클라이언트가 동의한 모든 정보값을 서버로 전달한다. 
+            
+            *버튼형 타입엔 id를 따로 입력하지 않아도 되는데, 버튼 그 자체에 의미 전달이 되기 때문이다.
+
+            *hidden 
+        -->
+
+  </form>
+
+  <!-- Script -->
+  <script>
+    
+  </script>
+</body>
+</html>

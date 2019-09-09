@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- [if lte IE 9]> 
+        <script src="./IE/html5shiv/dist/html5shiv.min.js"></script>
+    <![endif] -->
+    <link rel="shortcut icon" type="image/png" href="./img/favicon.png">
+    <ling rel="apple-touch-icon" href="./img/favicon.png">
+    <!-- CSS -->
+    <style>
+      
+    </style>
+    <title>웹기초 이해하기</title>
+
+  </head>
+  <body>
+      <h1>웹기초 이해하기</h1>
+      <h2>의미를 부여하여 제작하는 시멘틱 구조 이해하기</h2>
+      <hr />
+    <!-- ================================== -->
+      <div>
+        <h3>기본형 시멘틱 구조</h3>        
+      <!-- 
+
+        div: 영역을 가질 수 있는 형태의 태그로, 별 다른 의미 없이 단순히 영역을 분할하는 용도로 쓰인다.
+        그렇기 때문에 하나의 페이지에서 각각의 의미를 부여하여 제작하기 어렵다.
+        header: 사이트의 주요 내용을 담는 곳으로 로고, 전체 네비게이션을 담는다.
+        nav: 각각의 페이지로 이동하는 경로를 모아 놓는 영역.
+        main: 문서의 주요 내용을 정의할 때 사용하며 article, header, nav, footer의 하위(후손 요소)로 사용하지 않는다.
+        aside: 있으면 좋지만 반드시 있어야 하는 기능은 아닌 것들을 모아 놓는 영역.
+        section: 다양한 문서들 중, 관계가 있는 문서를 분리하는 영역. (작은 웹페이지) 별도의 다른 주제로 구성 된다. 
+        article: 내용이 독립 적으로 분류 되어 있고, 설명이 들어 있는 영역(뉴스, 칼럼, 블로그, 공지사항 등)
+        footer: 페이지의 정보를 요약, 정리하여 담은 영역. (회사 정보-주소, 이용약관, copyright 등.)
+      
+        -단, 시멘틱 구조는 IE에서는 인지 하지 못 하는 요소로, css에서 display:block으로 강제 블럭 요소로 만들어 줘야 한다.
+        -해당 시멘틱 구조는 반드시 이름을 달아주어야 한다(id값 필수)
+        -시멘틱 구조는 그 구조 자체로는 의미를 부여할 수 있지만, 해당하는 제목이 반영 되는 것은 아니기 때문에 의미에 맞는 제목을 아래와 같이 작성해야 한다.    
+
+       -->
+     
+     <div calss="sj_wrap"> 
+      <header id="Sj_header">
+        <h1>사이트 이름/기능</h1>
+        <nav id="Sjnav">
+          <!-- globalNavigationBar, 줄여서 gnb라고 한다. -->
+          <h2>전체 네비게이션</h2>
+        </nav>
+      </header>
+     </div>
+     <div>      
+      <main id="sj_main">
+        <h2>본문 내용</h2>
+        <section id="sj_view">
+          <h3>광고 영역</h3>
+
+          <article id="sj_art">
+            <h3>공지 사항</h3>
+          </article>
+       </section>
+       <aside id="sj_side">
+         <h3>보조 영역</h3>
+       </aside>
+
+      </main>
+       
+      <footer id="sj_footer">
+        <h2>회사 정보</h2>
+      </footer>
+    </div>  
+
+    <!-- 
+        이름을 작성하는 요령
+         ㄴ이름은 영문 소문자를 기준으로 하며, 첫글자는 무조건 영문 소문자로 시작해야 한다.
+         ㄴ_와 $를 제외한 특수문자는 사용할 수 없다.
+         ㄴ위 규직은 모든 프로그래밍 언어에 통용 된다.
+
+        camelCase: 뒤에 오는 단어의 첫글자를 대문자로 입력하는 방법
+        snake_bar(under_bar): 단어와 단어 사이에 _를 이용하여 구분하는 방법. 
+        hipen-bar: 단어와 단어 사이에 -을 붙여 구분하는 방법.
+        ㄴ클래스 이름을 지을 때 사용하는 방식이지만, 외부에서 불러온 파일명이 이를 따르고 있을 시 충돌하여 스타일 제어가 어려워 잘 사용하지 않는다.
+
+        PascaCase: 첫글자를 대문자로 시작하여 각 단어의 첫글자를 대문자로 입력하여 구분하는 방법.
+        _hidden: 첫글자에 _를 입력하여 구분하는 방법.
+        ㄴ자바스크립트에서 사용하는 방식
+
+     -->
+
+    <!-- ================================== -->
+
+
+
+  <!-- Script  -->
+  <script></script>
+  </body>
+</html>

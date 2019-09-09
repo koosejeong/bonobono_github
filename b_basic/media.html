@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="ko-KR">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    	<!-- [if lte IE 9]> 
+        <script src="./IE/html5shiv/dist/html5shiv.min.js"></script>
+    	<![endif] -->
+   		<link rel="shortcut icon" type="image/png" href="./img/favicon.png">
+    	<ling rel="apple-touch-icon" href="./img/favicon.png">
+		<title>웹기초 이해하기-미디어</title>
+
+		<!-- CSS -->
+		<style>
+			
+		</style>
+	</head>
+	<body>
+		<!-- Layout -->
+		<h1>웹기초 이해하기</h1>
+		<h2>비디오 및 오디오 파일 불러오기</h2>
+		
+		<audio controls preload>
+			<source src="./media/audio/Epica - Quietus (Official Video).mp3" type="audio/mp3" />
+			<source src="./media/audio/Epica-Quietus-_Official-Video_.ogg" type="audio/ogg" />
+			
+		</audio>
+		<br />
+		<p>해당 기능은 IE 브라우저에선 지원하지 않습니다.</p>
+		<!-- IE는 ogg 확장자를 지원하지 않는다 -->
+
+		<hr />
+
+		<video controls preload muted poster="./img/favicon.png">
+			<source src="./media/video/bubbletea.webm" type="video/webm" />
+			<source src="./media/video/bubbletea.mp4" type="video/mp4" />
+		</video>
+
+		<!-- 
+			 미디어 파일을 불러오는 건 src 프로퍼티지만,
+			 재생 장치를 만드는 건 controls="controls"
+			 자동 재생 장치: autoplay="autoplay"
+			 미리 불러 오기: preload="preload"
+			 음소거: muted="muted"
+
+			 ㄴ 위 프로퍼티들은 저마다의 값을 가지고 있지만, 값과 프로퍼티가 동일하기 때문에 굳이 적지 않아도 같은 기능을 한다.(HTML5.2 버전에서 나온 기능) 
+			 ㄴ 프로퍼티와 값이 다를 경우는 기재해야 한다.
+			 ㄴ autoplay는 접근성 법규 상 사용할 수 없다.
+			 ㄴ 3초 이상 재생이 되는 컨텐츠는 반드시 중지할 수 있는 기능을 추가해야 한다.
+			 ㄴ 소비자가 자동 재생을 원하지 않는 경우를 고려.
+			 ㄴ 접근성 현행법 상 빛이 1초에 3번 이상 깜빡이는 영상의 경우 올릴 수 없다.
+			 ㄴ 영상만 나오고 음소거가 되는 컨텐츠는 상관 없다.(muted 기능 사용)
+
+			 poster: 비디오 태그에서만 사용할 수 있는 기능으로, 재생 전 썸네일 이미지를 보여주는 기능이다.
+		-->
+
+		<!-- Script -->
+		<script>
+			
+		</script>
+	</body>
+
+</html>

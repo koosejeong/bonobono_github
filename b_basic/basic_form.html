@@ -1,0 +1,89 @@
+<!doctype hteml>
+<html lang="ko-KR">
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta charset="utf-8">
+		<!-- [if lte IE 9]
+			<script src="./IE/html5shiv/dist/html5shiv.min.js"></script>
+		<![endif]-->
+		<link rel="shortcut icon" type="imge/png" href="./img/favicon.png">
+		<link rel="apple-touch-icon" href="./img/favicon.png">
+		<title>웹기초 이해하기</title>
+    <!-- CSS=========================== -->
+		<style></style>
+	</head>
+	<body>
+		<h1>웹기초 이해하기</h1>
+		<h2>Form 기초1  </h2>
+
+    <h3>form이란?</h3>
+    <p>form이란, 양방향 통신이 가능한 형식으로, 필요한 기능을 입력, 또는 선택했을 경우<br /> 원하는 의사 전달을 가능하도록 요청하는 기능</p>
+    <br />
+    <br />
+    <p><strong>ex</strong>: 검색, id/pw, sns 메신저 보내기, 댓글달기, 회원가입, 주문, 설문조사, 동의 체크</p>
+    <p><strong>form사용 시 주의사항</strong>: 백엔드 개발자와 협의를 많이 하는 영역이기에, 보다 정확하게 처리하는 것이 중요하다.</p>
+
+    <hr />
+
+    <h3>form 기본 양식</h3>
+    <!-- form 사용 유무를 선언
+          method: 정보를 다루는 성격 - 공개(get), 보안(post)
+          get - 자료가 많다. 자료가 오픈 되어 있으며, 누구나 쉽게 접근이 가능하다.
+          post - 필요에 의한 제한 적 자료, 비공개 자료, 쉽게 접근할 수 없고, 무겁다.
+
+          action: 작성 및 처리한 자료를 넘겨주는 경로(url)
+      -->
+    <form method="get" action="#">
+        <fieldset>
+          <legend>장바구니 물품 항목</legend>
+           <!-- legend : from 기능의 부분 제목으로, fieldset 태그의 자식 요소이다.-->
+        </fieldset>
+
+        <h4>배송 주소</h4>
+        <fieldset>
+          <legend>주소지 선택</legend>
+        </fieldset>
+
+        <h4>결제 시스템</h4>
+        <fieldset>
+          <legend>결제 방식 시스템</legend>
+        </fieldset>
+
+        <h4>주문 선택</h4>
+        <fieldset>
+          <legend>주문 선택 유무</legend>
+        </fieldset>
+
+        <hr />
+
+        <h4>구역 형태</h4>
+        <fieldset>
+            <legend>해당되는 구역의 제목</legend>
+
+            <label for="id값">
+              <span class="hidden">사용자의</span> 성함
+              <span class="hidden">을 입력하세요.</span>
+            </label>  
+            <input type="" id="id값" name="" value="" />
+            <!-- 
+
+                input은 크기를 가질 수 있는 inline-block 요소이다.
+
+                type: input요소의 기능, 형태를 설정하는 요소. 목적에 맞는 type을 선정해야만 원활하게 작동한다.
+                (text, password, color, button, checkbox 등의 값이 있다.)
+
+                id: html문서에서 한 번만 사용이 가능한 이름(id 프로퍼티에 준 값을 한 번밖에 사용할 수 없다는 뜻.) form 내부에서 label과의 연결. 즉, id 프로퍼티에 준 값을 label의 for 프로퍼티에 똑같이 값으로 주면 둘이 바로 연결 되는 기능을 한다.(label for 기능을 사용하기 위해 id가 있다고 해도 과언이 아니다!-접근성 관점에서 매우 중요한 기능)
+
+                name: action을 통해서 전달 되는, 관리를 위한 이름
+                (DB에서 통용 되는 정보의 이름/백엔드 개발자와 협의 후 정해야 한다.)
+
+                value: 전달하려는 값을 저장하는 임시 공간 (클라이언트가 입력한 값(정보)를 담아서 DB에 전달하는 매체)
+    
+            -->
+        </fieldset>
+    </form>
+
+     <!-- JS=========================== -->
+		<script></script>
+	</body>
+</html>
