@@ -1,0 +1,42 @@
+@charset "utf-8";
+/* nhc_ex.css============== */
+
+.clearfix:after,
+.clearfix::after { content:" "; display:block; width:0; height:0; clear:both;}
+
+.hidden { display:block; width:0; height:0; overflow:hidden; }
+
+/* layout================= */
+/* header=========== */
+
+#headBox { position:relative; padding-top:40px; width:100%; height:auto; box-sizing:border-box; background-color:#fff;}
+  .banner_area { position:relative; width:100%; height:80px; background-color:#fab; }
+  h1 { float:left; width:280px; height:80px; background-color:#fa0; text-align:center; line-height:80px; }
+  #gnb { position:absolute; margin:auto; top:0; left:0; right:0; width:950px; height:80px; background-color:#fff;}
+  .site_map { float:right; width:240px; height:80px; background-color:#fff;}
+
+  .unb_area { position:absolute; top:0; width:100%; height:auto; background-color:#abf;}
+    #unb { float:right; padding:0 65px; width:350px; height:40px; box-sizing:border-box; background-color:#fff; }
+
+/* main============= */
+
+#conBox { width:100%; height:auto;}
+  .view_area { width:100%; height:855px; background-color:#ccc;}
+
+  .news_area { width:100%; height:895px; background-color:#333;}
+    .news_area>.content { margin:auto; width:1200px; height:650px; background-color:#fff; }
+
+  .media_area { width:100%; height:851px; background-color:#555;}
+    .media_area>.media { margin:auto; width:950px; height:530px; background-color:#fff;}
+    .media_area>h4 { margin:auto; font-size:20px; color:#000;}
+  
+  .counter_area { width:100%; height:710px; background-color:#777;}
+    .counter { margin:auto; width:1100px; height:390px; background-color:#fff;}
+
+  .font_style { padding-top:45px; margin-bottom:30px; box-sizing:border-box; font-size:60px; font-weight:bold; color:#fff; text-align:center; line-height:60px; }
+
+  
+
+/* footer=========== */
+
+#footBox { width:100%; height:170px; background-color:#fff;}
