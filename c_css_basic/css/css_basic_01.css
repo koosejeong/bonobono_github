@@ -1,0 +1,133 @@
+@charset "utf-8";
+/* css_basic_01.css */
+
+.size_check {
+  width:800px; height:auto; margin:auto; background-color:#ccc;
+}
+
+h3 { padding:1rem; background-color:#fff;; margin:0;}
+
+.size_check > p {
+  width:80%; height:80%; background-color:#0cc;
+}
+
+/* 
+  단위: 1cm는 10mm
+        cm나 mm를 px로 변환할 순 없다.
+        (임의로 계산하는 사이트가 있기는 하다.)
+
+  웹에서는 16px을 기준으로 삼고, 16px을 12pt로 보고있다. 
+  12pt는 1em, 1rem이다.
+  (최초의 기본 설정 16px=12pt=100%=1em=1rem)
+
+*/
+
+.size_check > ul { width:100%; margin:0; padding:0; height:300px; background-color:#fa0;}
+
+.size_check > ul > li { float:left;  width:50px; height:50px; border:5px solid #333; text-align:center; line-height:50px; list-style:none;}
+
+/* 
+  display속성은 형태를 변형 처리할 때 사용한다.
+
+  해당 프로퍼티는 block, inline, inline-block, none의 값을 가진다.
+  ㄴblock:크기를 가질 수 있고, 수직으로 쌓인다.
+  ㄴinline: 크기를 가질 수 없고, 수평으로 나열 된다.
+  ㄴinline-block:크기를 가질 수 있고, 수평으로 나열 된다. 사이에 공백이 생긴다.
+  ㄴnone: 존재 자체를 강제로 사라지게 만드는 기능-개발자 모드에서 확인 시, 할당 받았던 영역 자체가 사라진다. (코드 자체는 존재하지만, 보이지는 않는다.)
+
+  float: 수직으로 쌓이는 block 요소를 수평으로 나열하게 만든다.
+  해당 속성은 left와 right의 값을 갖는다.
+  inline속성에 float을 요소를 사용 시 강제로 block 요소로 반뀐다. 
+  ㄴleft:부모의 크기를 기준으로 왼쪽부터 정렬 된다.
+  ㄴright:부모의 크기를 기준으로 오른쪽부터 정렬 된다.
+
+*/
+
+.size_check > ul > li:first-child {
+  background-color:#f07; }
+
+.size_check > ul > li:nth-child(2) { display:none; background-color:#afa;
+}  
+.size_check > ul > li:nth-child(3) {
+  background-color:#f6f;
+}  
+.size_check > ul > li:nth-child(4) {
+  visibility:visible; background-color:#777;
+}  
+.size_check > ul > li:nth-child(5) {
+  visibility:hidden; background-color:#777;
+
+} 
+
+/* nth-child() 안에 들어간 값이 숫자n일 경우, (해당 숫자의)n번째라는 의미를 갖는다.
+    visibility: display속성과 유사한 기능을 가지고 있지만, 2가지의 속성을 가진다. 
+    ㄴvisible:display:block처럼 보여지게 하는 기능
+    ㄴhidden:display:none과 같이 사라지게 하는 기능. 하지만 display:none과 다른 점은 위치하던 자리는 그대로 남아 있다.
+
+*/
+
+.over { width:80%; min-width:500px; height:auto; background-color:#0df; padding:1rem; box-sizing:border-box;
+}
+
+.over > p {
+  margin:auto; width:450px; height:200px; margin-bottom:400px; border:2px solid #777;
+}
+
+.one { 
+  overflow:auto;
+}
+.two {
+  overflow:hidden;
+}
+
+.three { 
+  overflow:visible;
+}
+
+.four {
+  overflow:scroll;
+}
+
+.five { 
+  overflow:auto; overflow-x:hidden;
+}
+
+.six { 
+  overflow:hidden; 
+}
+.six > span {
+  padding-right:20px; display:block; overflow:hidden; overflow-y:auto; width:100%; height:100%; background-color:#fff;
+  
+  /* 컨텐츠가 바깥을 감싸는 블럭 영역에서 넘쳐나도 스크롤 기능만 가지고 스크롤은 보이지 않게 하는 기법-부모가 되는 요소에 overflow:hidden을 줘야 한다.
+  ㄴ패딩으로 부모 요소의 크기 보다 큰 박스를 만들고, 부모 요소에서 넘칠 시 숨기는 hidden 값을 줬기 때문에 스크롤 기능은 가지되 스크롤바는 보이지 않는다.
+  */
+}
+/* 
+  overflow는 지정된 크기(콘텐츠의 크기)를 기준으로 내부의 영역이 넘칠 시, 어떻게 보일 것인지 처리하는 기능이다.
+  hidden, visible, auto, scroll의 값을 가지고 있다.
+  ㄴhidden: 넘칠 시 숨긴다.
+  ㄴvisible: 기본형/넘칠 시 보이는 기능
+  ㄴauto: 넘칠 시 스크롤이 생긴다.
+  ㄴscroll: 넘치든 안 넘치든 스크롤이 생긴다.
+  
+  overflow 요소는 x축, y축 값을 따로 지정할 수 있다.
+  ex) overflow-x: hidden;
+      overflow-y: scroll;
+*/
+
+.over > .seaven {
+  height:30px; white-space:nowrap; text-overflow:ellipsis; overflow:hidden;
+}
+/* 
+  white-space: 의도한 공백(띄어쓰기)이 아닌 의도 하지 않은 공백(줄바꿈으로 인한)을 뜻하며, 이를 처리하는 방법으로는,
+  ㄴpre, nowrap, unset... 등이 있다.
+  ㄴpre:실제 코드에서 작성한 형태대로 공백이 적용 된다.(탭)
+  ㄴpre-line:실제 코드에서 작성한 줄바꿈 처리와 동일하게 적용 된다.
+  ㄴnowrap:여백을 모두 삭제.
+  ㄴunset:크기에 맞게 줄바꿈 처리.
+
+  text-overflow:overflow와 유사하지만 넘친 것이 글자일 경우 사용하는 요소로, 대체로 overflow와 함께 사용한다.
+  ㄴellipsis, unset의 값이 있다.
+  ㄴellipsis:넘칠 경우 말줄임표로 나타낸다.
+  ㄴunset:기본형으로 처리하란 뜻으로, 보이게 변화가 없다. (아무 것도 하지 않는다는 뜻.)
+*/
