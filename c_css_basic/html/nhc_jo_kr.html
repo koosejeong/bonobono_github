@@ -6,6 +6,7 @@
 <link rel="stylesheet" href="../css/reset_test.css">
 <link rel="stylesheet" href="../css/nhc_jo_kr.css">
 <link rel="stylesheet" href="../fonts/fontawesome/css/all.min.css">
+<link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:400,700&display=swap&subset=korean" rel="stylesheet">
 <!--[if let IE9]>
   <script src="../IE/html5shiv/dist/html5shiv.min.js"></script>
   <script src="../IE/PIE/PIE.js"></script>
@@ -17,6 +18,7 @@ favicon.png">
   
 <title>Document</title>
 </head>
+
 <body>
   <!-- layout====================================== -->
 
@@ -123,9 +125,46 @@ favicon.png">
         
           <div class="center_info">
             <h4 class="hidden">공지사항 및 확인사항 안내</h4>
+<!-- ********************************************************* -->
 
-            <div class="info_board_01">공지사항</div>
+            <div class="info_board_01">
+              <h5 class="action">공지사항</h5>
+                <div class="info_01_con con01 action"> 
+                  
+                    <ul>
+                      <li>
+                        <p>연-월<br /><span class="big">일</span></p>
+                        <dl>
+                          <dt>제목</dt>
+                          <dd>내용............</dd>
+                        </dl>
+                      </li>
+                      <li>
+                        <p>연-월<br /><span class="big">일</span></p>
+                        <dl>
+                          <dt>제목</dt>
+                          <dd>내용............</dd>
+                        </dl>
+                      </li>
+                      <li>
+                        <p>연-월<br /><span class="big">일</span></p>
+                        <dl>
+                          <dt>제목</dt>
+                          <dd>내용............</dd>
+                        </dl>
+                      </li>
+                    </ul>
+                  
 
+                </div>
+
+              <!-- ============= -->
+              <h5>보도자료</h5>
+                <div class="info_01_con con02">보도자료 내용</div>
+
+            </div>
+
+<!-- ********************************************************* -->
             <div class="info_board_02">
               <div class="title_zone">
                 <h5>퀵링크</h5>
@@ -143,10 +182,38 @@ favicon.png">
 
           </div>
 
-          <div class="program_guide"></div>
+          <div class="program_guide float_btn">
             <h4 class="hidden">프로그램 안내 서비스</h4>
+            <ul>
+              <li>
+                <a href="#">
+                  <div class="icon">
+                    <i class="fas fa-users" aria-hidden="true"></i>
+                  </div>
+                  <dl>
+                    <dt>단체 관람객 예약</dt>
+                    <dd>
+                      관람인원이 10인 이상인 경우
+                      단체관람 예약을 운영하고 있습니다.</dd>
+                  </dl>
+
+                
+                
+                </a>
+            </li>
+              <li>
+                <a href=""><span class="hidden"></span></a></li>
+              <li>
+                <a href=""><span class="hidden"></span></a></li>
+              <li>
+                <a href=""><span class="hidden"></span></a></li>
+            </ul>
+          </div>
+
         </div>
+
       </article><!-- new_area -->
+
 
       <article class="media_area con_area" id="media">
         <h3>전시관 <abbr title="virture reality">VR</abbr></h3>
@@ -210,7 +277,24 @@ favicon.png">
     </footer>
   </div>
 
+
   <!-- script=========== -->
-  <script></script>
+  <script src="http://unpkg.com/jquery"></script>
+  <script>
+    (function($) {
+      var ib_01 = $('.info_board_01') ;
+      var ibTitle = ib_01.children('h5');
+      var ib_con = $('info_01_con');
+
+      ibTitle.on('click', function(e) {
+        e.preventDefault();
+
+        $(this).addClass('action');
+        $(this).siblings(ibTitle).removeClass('action');
+        ib.con.removeClass('action');
+        ib.con.eq(i).addClass('action');
+      });
+    })(jQuery);
+  </script>
 </body>
 </html>
