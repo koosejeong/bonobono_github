@@ -29,7 +29,7 @@
       .unb { float:left; width:538px; height:100%; background-color:#0af; }
       .login_area { float:left; width:360px; height:100%; background-color:#ccc; }
 
-/* section-1 광고배너 */
+/* section-1 광고배너============================================ */
 
 #adverBox { width:100%; height:310px;  }
   .img_area_02 { width:100%; height:auto; background-color:#777; }
@@ -37,10 +37,61 @@
     .adver_btn>ul { position:absolute; top:220px; left:106px; padding:1px; box-sizing:border-box; width:500px; height:50px;}
     .adver_btn>ul>li { float:left;  margin-left:1px; width:98px; height:48px; background-color:#ccc; }
     .adver_btn>ul>li>a { font-size:1rem; font-size:16px; line-height:48px; text-align:center; font-weight:bold; color:#fff; }
+    /* text-aling:center 안 먹는 이유??? */
 
-/* article-1 화제의 신간 */
 
-#newbookBox { width:100%; height:818px; outline:1px solid #000; }
+/* article-1 화제의 신간========================================= */
+
+/* 화제의 신간 | 국내도서 | 외국도서 | e-book */
+#newbookBox { width:100%; height:auto; background-color: #ccc; }
+  .wrap_newbook { position:relative; margin:auto; width:960px; height:818px; background-color:#adf; }
+    .newbook_list { position:absolute; top:50px; width:624px; height:70px; background-color:#ccc; }
+    .newbook_list>h3>a { display:block; float:left; width:222px; height:70px; font-size:1.875rem; font-size:30px; text-align:center; line-height:70px; color:#000;  background-color:#a96;}
+    .newbook_list>ul { float:left; padding:1px; box-sizing:border-box; width:402px; height:70px; }
+    .newbook_list>ul>li { float:left; margin-left:1px; width:132px; height:100%; background-color:#a96;}
+    .newbook_list>ul>li>a { font-size:1.25rem; font-size:20px; text-align:center; line-height:70px; color:#000; }
+
+    /* 스왑 버튼 */
+    .swarp_btn { z-index:300; position:absolute; top:404px; left:-70px; right:0; margin:auto; width:1100px; height:40px; }
+      .left_swarp { float:left; width:40px; height:100%; background-color:#fff; }
+      .right_swarp { float:right; width:40px; height:100%; background-color:#fff; }
+  
+  /* 신간 소개 첫 번째 영역 */
+  .wrap_newbook>.newbook_area { position:absolute; top:134px; left:0;  width:100%; height:568px; background-color:#957; }
+    .newbook_area>.newbook_boxEdge01>ul { width:100%; height:246px; }
+    .newbook_area>.newbook_boxEdge01>ul>li { float:left; width:222px; height:100%; background-color:#fff; }
+    .newbook_boxEdge01>ul>li:nth-child(2) { float:left; margin-left:24px; width:222px; height:100%; background-color:#fff;}
+    .newbook_boxEdge01>ul>li:nth-child(3) { float:left; margin-left:24px; width:222px; height:100%; background-color:#fff;}
+    .newbook_boxEdge01>ul>li:nth-child(4) { float:left; margin-left:24px; width:222px; height:100%; background-color:#fff;}
+    .newbook_boxEdge01>ul>li:last-chlid { margin-left:0; }
+    
+    /* 신간 소개 두 번째 영역 */
+    .newbook_area>.newbook_boxEdge02>ul { margin-top:76px; width:100%; height:246px; }
+    .newbook_area>.newbook_boxEdge02>ul>li { float:left; width:222px; height:100%; background-color:#fff; }
+    .newbook_boxEdge02>ul>li:nth-child(2) { float:left; margin-left:24px; width:222px; height:100%; background-color:#fff;}
+    .newbook_boxEdge02>ul>li:nth-child(3) { float:left; margin-left:24px; width:222px; height:100%; background-color:#fff;}
+    .newbook_boxEdge02>ul>li:nth-child(4) { float:left; margin-left:24px; width:222px; height:100%; background-color:#fff;}
+    .newbook_boxEdge02>ul>li:last-chlid { margin-left:0; }
+
+    /* 베스트 키워드-1 영역 */
+  .wrap_newbook>.best_keyword { position:absolute; top:706px; left:30px; width:664px; height:46px; background-color:#ccc; }
+    .best_keyword>h3 { float:left; margin-right:54px; width:190px; height:100%; font-size:1.25rem; font-size:20px; text-align:center; line-height:46px; color:#000; background-color:#777; }
+    .best_keyword>ul { float:left; width:420px; height:100%; background-color:#333; }
+    .best_keyword>ul>li:first-child { float:left; margin-right:20px; width:90px; height:100%; background-color:#a96; }
+    .best_keyword>ul>li:nth-child(2) { float:left; margin-right:20px; width:90px; height:100%; background-color:#a96; }
+    .best_keyword>ul>li:nth-child(3) { float:left; margin-right:20px; width:90px; height:100%; background-color:#a96; }
+    .best_keyword>ul>li:nth-child(4) { float:left; width:90px; height:100%; background-color:#a96; }
+    .best_keyword>ul>li:last-child { margin-right:0; }
+    .best_keyword>ul>li>a { font-size:1.25rem; font-size:16px; text-align:center; line-height:50px; color:#000;}
+
+    /* 베스트 키워드-2 영역 */
+  .wrap_newbook>.best_keyword02 { position:absolute; top:760px; left:30px; width:548px; height:50px; background-color:#000; }  
+    .best_keyword02>li:first-child { float:left; margin-right:10px; width:214px; height:100%; background-color:#fff; }
+    .best_keyword02>li:nth-child(2) { float:left; margin-right:10px; width:136px; height:100%; background-color:#fff; }
+    .best_keyword02>li:nth-child(3) { float:left; width:178px; height:100%; background-color:#fff; }
+    .best_keyword02>li:last-child { margin-right:0; }
+    .best_keyword02>li>a { font-size:1.5625rem; font-size:25px; text-align:center; line-height:50px; color:#000;}
+
 
 /* aside-1 광고영역 */
 
