@@ -21,21 +21,38 @@
           <div class="search_area clearfix">
             <h1>교보문고</h1>
             <div class="search_bar">
-              <!-- form태그 삽입 -->
+              <input type="text" id="searchBar" placeholder="">
             </div>
-            <div class="search_icon"></div>
+            <div class="search_icon">
+              <button type="submit" id ="search_btn" method="get"></button>
+            </div>
             <div class="img_area_01">
               <div class="img_box">
-                <div class="left_btn"></div>
-                <div class="right_btn"></div>
+                <div class="left_btn"><a href="#"></a></div>
+                <div class="right_btn"><a href="#"></a></div>
               </div>
             </div>
           </div>
           <nav class="gnb">
             <div class="nav_gnb">
               <div class="samseon_bar"></div>
-              <div class="unb"></div>
-              <div class="login_area"></div>
+              <div class="unb clearfix">
+                <ul>
+                  <li><a href="#">국내도서</a></li>
+                  <li><a href="#">외국도서</a></li>
+                  <li><a href="#">e-book</a></li>
+                  <li><a href="#">웹소설</a></li>
+                  <li><a href="#">음반</a></li>
+                </ul>
+              </div>
+              <div class="login_area clearfix">
+                <ul>
+                  <li><a href="#">로그인</a></li>
+                  <li><a href="#">회원가입</a></li>
+                  <li><a href="#">마이페이지</a></li>
+                  <li><a href="#">주문배송</a></li>
+                </ul>
+              </div>
             </div>
           </nav>
 
@@ -63,7 +80,7 @@
         <article id="newbookBox">
           <div class="wrap_newbook">
             <div class="newbook_list clearfix">
-              <h3><a href="#">화제의 신간</a></h3>
+              <h3><p class="hidden">금 주의 화제 신간</p><a href="#">화제의 신간</a></h3>
               <ul>
                 <li><a href="#">국내도서</a></li>
                 <li><a href="#">외국도서</a></li>
@@ -96,7 +113,7 @@
             </div>
 
             <div class="best_keyword clearfix">
-              <h3>#베스트_키워드</h3>
+              <p>#베스트_키워드</p>
               <ul>
                 <li><a href="#">#e-book</a></li>
                 <li><a href="#">#북캐스트</a></li>
@@ -119,14 +136,118 @@
         <!-- aside01============================================== -->
 
         <aside id="adverArea">
+          <div class="adver_box">
+            <div class="adver_img_box"></div>
+            <div class="adverArea_swarp clearfix">
+              <div class="left_btn02"><a href="#"></a></div>
+              <div class="right_btn02"><a href="#"></a></div>
+            </div>
+            <div class="corpy_img">
+              <div class="img_box01"></div>
+              <div class="corp_box01"></div>
+              </div>
+            </div>
           
+
         </aside>
 
+        <!-- article02============================================= -->
 
-        <article id="bestSaler"></article>
-        <article id="weekNewbook"></article>
-        <aside id="story_K"></aside>
-        <footer id="footBox"></footer>
+        <article id="bestSaler">
+          <div class="bestSaler_area clearfix"> 
+            <h3><a href="#"><p class="hidden">이 달의 베스트 셀러</p>베스트셀러</a></h3>
+            <ul>
+              <li><a href="#">연령별</a></li>
+              <li><a href="#">성별</a></li>
+            </ul>
+            
+            <div class="bestSaler_book">
+              <div class="book_1line clearfix">
+                <ul>
+                  <li><a href="#"></a></li>
+                  <li><a href="#"></a></li>
+                  <li><a href="#"></a></li>
+                  <li><a href="#"></a></li>
+                  <li><a href="#"></a></li>
+                </ul>
+              </div>
+              <div class="book_2line clearfix">
+                  <ul>
+                      <li><a href="#"></a></li>
+                      <li><a href="#"></a></li>
+                      <li><a href="#"></a></li>
+                      <li><a href="#"></a></li>
+                      <li><a href="#"></a></li>
+                  </ul>
+              </div>
+
+              <div class="swrap_btn03 clearfix">
+                <div class="left_btn03"><a href="#"></a></div>
+                <div class="right_btn03"><a href="#"></a></div>
+              </div>
+
+            </div>
+          </div>
+
+        </article>
+
+
+        <!-- article03============================================= -->
+        <article id="weekNewbook">
+          
+          <div class="newbook_area clearfix">
+            <h3><p class="hidden">이번 주 신간 목록</p><a href="#">금주의 신간</a></h3>
+            <ul>
+              <li><a href="#"></a></li>
+              <li><a href="#"></a></li>
+              <li><a href="#"></a></li>
+              <li><a href="#"></a></li>
+            </ul>
+          </div>
+
+        </article>
+
+        <!-- aside02================================================ -->
+
+        <aside id="story_K">
+
+          <div class="story_area clearfix">
+            <h3><p class="hidden">북 캐스트, 북 뉴스를 모아 놓은 코너</p>스토리-K<a href="#"></a></h3>
+            <ul>
+              <li><a href="#"></a></li>
+              <li><a href="#"></a></li>
+              <li><a href="#"></a></li>
+              <li><a href="#"></a></li>
+            </ul>
+
+            <div class="story_area02">
+                <ul>
+                  <li><a href="#"></a></li>
+                  <li><a href="#"></a></li>
+                  <li><a href="#"></a></li>
+                </ul>
+    
+            </div>
+          </div>
+         
+        </aside>
+
+        <!-- foonter=========================================== -->
+
+        <footer id="footBox">
+          <div class="foot_area">
+            <div class="info_area_left">
+              <div class="logo_area"></div>
+              <div class="company_info"></div>
+            </div>
+
+            <div class="info_area_right">
+              <div class="etc_info_area"></div>
+              <div class="isms_logo_area"></div>
+            </div>
+        </footer>
+
+
     </div>
 
 </body>
