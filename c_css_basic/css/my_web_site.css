@@ -179,9 +179,9 @@
 #footBox { width:100%; height:auto; background-color:#aaa; }
   .foot_area { position:relative; margin:auto; width:960px; height:184px; }
     .info_area_left { position:absolute; left:0; top:0; width:480px; height:100%; background-color:#adf; }
-      .logo_area { position:absolute; left: 40px; top:16px; width:184px; height:56px; background-color:#46f; }
-      .company_info { position:absolute; left:40px; top:88px; width:400px; height:86px; background-color:#46f; }
+      .logo_area { position:absolute; left: 40px; top:16px; width:184px; height:56px; background-color:#fff; }
+      .company_info { position:absolute; left:40px; top:88px; width:400px; height:86px; background-color:#fff; }
 
     .info_area_right { position:absolute; right:0; top:0; width:480px; height:100%; background-color:#adf; }  
-      .etc_info_area { position:absolute; left:32px; top:16px; width:420px; height:78px; background-color:#46f; }
-      .isms_logo_area { position:absolute; left:32px; top:110px; width:184px; height:62px; background-color:#46f; }
+      .etc_info_area { position:absolute; left:32px; top:16px; width:420px; height:78px; background-color:#fff; }
+      .isms_logo_area { position:absolute; left:32px; top:110px; width:184px; height:62px; background-color:#fff; }
