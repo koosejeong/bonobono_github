@@ -58,7 +58,7 @@
 #newbookBox { width:100%; height:auto; background-color: #ccc; }
   .wrap_newbook { position:relative; margin:auto; width:960px; height:818px; background-color:#adf; }
     .newbook_list { position:absolute; top:50px; width:624px; height:70px; background-color:#ccc; }
-    .newbook_list>h3>a { display:block; float:left; width:222px; height:70px; font-size:1.875rem; font-size:30px; text-align:center; line-height:70px; color:#000;  background-color:#a96;}
+    .newbook_list>h2>a { display:block; float:left; width:222px; height:70px; font-size:1.875rem; font-size:30px; text-align:center; line-height:70px; color:#000;  background-color:#a96;}
     .newbook_list>ul { float:left; padding:1px; box-sizing:border-box; width:402px; height:70px; }
     .newbook_list>ul>li { float:left; margin-left:1px; width:132px; height:100%; background-color:#a96;}
     .newbook_list>ul>li>a { font-size:1.25rem; font-size:20px; text-align:center; line-height:70px; color:#000; }
