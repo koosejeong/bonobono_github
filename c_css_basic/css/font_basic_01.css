@@ -69,4 +69,4 @@ h2 { border-bottom:2px solid #333; }
   .font_11 { color:#fff; font-size:3rem; font-weight:bold; text-shadow:0.3rem 0.1rem 0.2rem #fa0, 0.5rem 0.3rem 0.2rem #f00; box-shadow:0.5rem 0.5rem 0.5rem #333 inset, 1rem 1rem 0 #0af; }
   /* ,를 이용하여 여러 색의 그림자를 만들 수 있다. 
     text-shadwo는 안쪽 그림자를 주는 값이 없으므로 음수값을 줘서 안쪽 그림자 같은 효과를 준다.
-    box-shadow의 마지막 밸류에 inset을 줄 시 안쪽으로 그림자가 생긴다. (box-shadow에만 있는 값.) */
+    box-shadow의 마지막 밸류에 inset을 줄 시 안쪽으로 그림자가 생긴다. (box-shadow에만 있는 값.) *
