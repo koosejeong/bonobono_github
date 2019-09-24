@@ -1,0 +1,105 @@
+@charset "utf-8";
+
+#conBox { padding:1rem; background-color:#dfdfdf; }
+h3 {margin-top:1rem; margin-bottom:0.5rem; }
+.box_wrap { margin:auto; width:100%; min-width:800px; border:1px solid #333; margin-bottom:1rem; }
+
+/* 1번 풀이============================== */
+
+#wrap_01 { width:600px; height:auto; padding:10px; background-color:#ccc; }
+  #headBox_01 { width:100%; height:100px; background-color:#fac;}
+  #contentBox_01 { width:100%; height:200px; background-color:#cca;}
+  #footBox_01 { width:100%; height:100px; background-color:#caf;}
+
+/* 2번 풀이============================== */
+
+#wrap_02 { width:auto; height:auto; padding:10px; background-color:#ccc; }
+  #wrap_02:after,
+  #wrap_02::after { content: " "; display:block; clear:both; width:0; height:0; }
+  #headBox_02 { float:left; width:20%; height:600px; background-color:#fac; }
+  #contentBox_02 { float:left; width:60%; height:600px; background-color:#7cf; }
+  #footBox_02 { float:left; width:20%; height:600px; background-color:#caf; }
+
+/* 3번 풀이============================== */
+
+#wrap_03 { width:600px; height:600px; margin:auto; padding:10px; background-color:#ccc; }
+  #headBox_03 { float:left; width: 80%; height:300px; background-color:#fac; }
+  #contentBox_03 { float:left; width: 80%; height:300px; background-color:#7cf; }
+  #footBox_03 { float:left; margin-top:-300px; width:20%;  height:600px; background-color:#caf; }
+
+  /* 4번 풀이 */
+
+  .wrap { position:relative; width:800px; height:600px; background-color:#f0a; }
+  .wrap>.modal { position:absolute; top:30%; left:50%; margin-left:-250px; width:500px; height:150px; background-color:#0af;}
+
+    /* 5번 풀이 */
+
+    .wrap_02 { position:relative; width:800px; height:600px; background-color:#f0a; }
+      .side_indicator { position:absolute; top:50%; transform:translateY(-50%); right:30px; width:50px; height:auto; background-color:#0af;}
+      .side_indicator>ul { width:100%; height:auto; padding:10px; box-sizing:border-box; }
+      .side_indicator>ul>li { width:30px; height:30px; margin-bottom:30px; }
+      .side_indicator>ul>li:last-child { margin-bottom:0; }
+      .side_indicator>ul>li>a { display:block; width:100%; height:100%; border-radius:30px; background-color:#fa0; }
+      .side_indicator>ul>li>a>span { display:block; width:0; height:0; overflow:hidden; }
+
+      /* 6번 풀이 */
+     .wrap_03 { position:relative; width:800px; height:600px; background-color:#fa6;}
+     .wrap_03>.side_indicator_02 { position:absolute; right:30px; top:50%; /*margin-top:-150px;*/ transform:translateY(-50%); width:50px; height:auto; min-height:100px; background-color:#04f;}
+     
+     .side_indicator_02>ul { width:auto; height:auto; padding:10px; }
+     .side_indicator_02>ul>li { width:100%; height:30px; margin-bottom:30px; }
+     /* width:30px; ->padding:10px;로 양 옆에 10px씩 줄어든 상태로 가로값이 auto이므로 */
+     .side_indicator_02>ul>li>:last-child {margin-bottom:0; }
+     .side_indicator_02>ul>li>a { display:block; position:relative; width:100%; height:100%; background-color:#863; border-radius:100%; }
+
+     .side_indicator_02>ul>li>a>span { display:block; position:absolute; top:0; right:50px; width:0; height:100%; overflow:hidden; background-color:#0cf; text-align:right; padding:5px; transition:all 300ms ease; opacity:0; white-space:nowrap;}
+
+     .side_indicator_02>ul>li>a:hover>span,
+     .side_indicator_02>ul>li>a:focus>span { width:300px; background-color:#fff; opacity:1; }
+
+/* 7번 풀이 */
+
+  .wrap_04 { position:relative; width:800px; height:600px; background-color:#a88; }
+  .title_box { position:absolute; top:30%; left:20px; z-index:200; width:450px; height:200px; background-color:rgba(255,5,255,0.5); color:#fff; padding:20px; box-sizing:border-box; text-transform:capitalize; }
+  .title_box>h1 {font-size:1.5rem; }
+  .title_box>p { font-size:1rem; }
+
+  .img_01 { position:absolute; right:220px; bottom:0; z-index:100; width:250px; height:400px; background-color:#5bb; }
+  .img_02 { position:absolute; right:20px; bottom:0; width:250px; height:500px; background-color:#9a7; }
+
+  /* 번외 */
+
+  .bdr { width:100%; height:auto; background-color:#9a3; }
+  .bdr:after { content:" "; display:block; clear:both; }
+  .bdr>li { float:left; width:150px; height:150px; background-color:#fff; margin:1rem; font-size:2rem; text-align:center; line-height:150px;  }
+
+  .bdr>li:nth-child(1) { border-radius:100px; }
+  .bdr>li:nth-child(2) { border-radius:10% 50%; }
+  .bdr>li:nth-child(3) { width:200px; border-radius:50%;}
+  .bdr>li:nth-child(4) { border-radius:10px 30px 50px 0;}
+  .bdr>li:nth-child(5) { border-top-left-radius:20px; }
+  .bdr>li:nth-child(6) { border-radius:10px 30px 50px; }
+  .bdr>li:nth-child(7) { border-top-left-radius:70px; border-bottom-left-radius:100px; }
+  .bdr>li:nth-child(8) { border-top-left-radius:50px 150px;  }
+
+  /* 삼각형 만들기 */
+  .bdr>li:nth-child(9) { box-sizing:border-box; background-color:transparent; border:75px solid transparent; border-bottom-color:#0af; }
+
+  /* 단위 상관 없이, 수치가 자신의 가로값의 절반을 넘어갈 시 원형으로 적용 된다. */
+  /* margin: 위 오른쪽 아래 왼쪽 (시계방향) */
+  /* border-radius: 완쪽 상단 오른쪽 상단 오른쪽 하단 완쪽 하단 순서로 값이 적용 된다. */
+  /* margon: 값이 2개일 시 상하 좌우에 적용 */
+  /* border-radius : 값이 2개일 시, 왼쪽 상단, 오른쪽 하단 / 오른쪽 상단, 완쪽 하단으로 값이 적용 */
+
+  /* 모서리는 두개의 선의 연결로 처리 되는 것이기에, 한쪽 모서리만 처리하고 싶을 경우, 상하를 먼저 작성하고 좌우를 뒤에 작성한다. *순서가 뒤바뀔 시 적용 돠지 않는다. 벤더프리픽스 필
+  border-top-left-radius:;
+  border-top-right-radius:;
+  border-bottom-right-radius:;
+  border-border-left-radius:;
+
+  border-radius의 최초 시작은 왼쪽 상단부터 시작 되며, 최대 4개의 값까지만 가질 수 있다.
+  */
+
+
+  .line_height { position:relative; width:400px; height:100px; background-color:#999; }
+  .line_height>p { position:absolute; top:50%; transform:translateY(-50%); width:100%; height:auto; background-color:#fff; text-align:center;  }
