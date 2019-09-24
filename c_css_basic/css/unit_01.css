@@ -40,6 +40,7 @@
 .box_04 span { width:12.5em; height:12.5em; }
 .box_04 i { width:6.25em; height:6.25em; }
 
+:root{ font-size:16px; }
 /* rem단위==================== */
 .unit_wrap_01 .box_05 { background-color:#f7a; width:18.75rem; height:18.75rem; font-size:1.25rem; }
 .box_05 p { width:9.375rem; height:9.375rem; font-size:0.625rem;}
