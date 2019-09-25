@@ -1,0 +1,15 @@
+@charset "utf-8";
+
+html, body { width:100%; height:100%; }
+#wrap { width:100%; height:100%; background-color:#ccc; color:#000; text-shadow:0.2rem 0.2rem 0.2rem #171717; }
+/* @nedia print(출력 기기) */
+/* @media handheld(pc를 전혀 고려하지 않은 휴대용 디바이스) */
+/* @media tv */
+/* @media horizontal(가로형인 기기) */
+
+@media screen and (max-width:480px) { 
+  #wrap { width:50%; height:100%; background-color:#fca; text-shadow:none;  }
+}
+@media screen and (min-width:481px) and (max-width:800px) {
+  #wrap {width:50%; height:100%; background-color:#2a7; text-shadow:none; }
+}

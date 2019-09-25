@@ -1,0 +1,41 @@
+@charset "utf-8";
+/* rwd_test_00.css============ */
+/* 
+  *pc:769px~960px
+  *tablet:481px~780px
+  *mobile:~480px
+*/
+
+#wrap { width:100%; max-width:60rem; height:auto; background-color:#df4; }
+
+#headBox { width:100%; height:9.375rem; background-color:#c3f;  }
+  h1 { width:6.25rem; height:9.375rem; background-color:#8f8; }
+
+#contentBox { width:100%; height:auto; background-color:#2fb; }
+  #viewBox { width:100%; height:28.125rem; background-color:#fdd; }
+  #listBox { width:100%; height:37.5rem; background-color:#765; }
+  #infoBox { display:none; width:100%; height:18.75rem; background-color:#351; }
+
+#footBox { width:100%; height:6.25rem; background-color:#af1; }
+  #footBox>h2 { width:6.25rem; height:100%; background-color:#03f; transition:all 200ms ease; }
+
+@media screen and (min-width:481px) and (max-width:768px) {
+  #contentBox { height:auto; }
+    #viewBox { width:100%; height:18.75rem; }
+    #listBox { width:100%; height:25rem; }
+    #infoBox { display:block; }
+}
+
+@media screen and (max-width:480px) {
+
+  #headBox { height:6.25rem;}
+    h1 { width:100%; height:100%; }
+
+  #contentBox { height:auto; }
+    #viewBox { width:100%; height:25rem; }
+    #listBox { width:100%; height:25rem; }
+    #infoBox { display:block; }
+
+    #footBox>h2 { margin:auto; min-width:9.375rem; width:50%; }
+
+}
