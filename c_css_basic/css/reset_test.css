@@ -34,7 +34,7 @@ button:focus { outline:2px solid #f06;}
 
 hr { margin:0; padding:0; border-bottom:1px solid #f06;}
 
-main, header, footer, aside, nav, section, article, figure, figcaption { display:block; }
+main, header, footer, aside, nav, section, article, figure, figcaption { display:block; margin:0; padding:0; }
 /* 원래 모두가 블럭 요소지만 IE에서 인식을 못하기 때문에 블럭값을 준다. */
 
 /* 추가 Reset-Form========================= */
