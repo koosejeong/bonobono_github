@@ -30,9 +30,9 @@
       .intro-box2 { float:left; margin-left:20px; margin-top:15px; margin-bottom:15px; width:250px; height:70px; background-color:#fff;  }
       .intro-box2 a { display:block; line-height:70px; text-align:center; font-size:20px; color:#000; }
       .input-box { float:right; margin-right:20px; margin-top:15px; margin-bottom:15px; width:470px; height:70px; background-color:#fff; }
-      .input-box>#searchBar { width:100%; height:100%; }
-        /*  이 부분 다시     
-        .iconBox { width:70px; height:70px; background-color:#ccc; } */
+      .input-box>#searchBar { float:left; width:400px; height:100%; }
+      .input-box>#search-btn { float:right; width:70px; height:100%; background-color:#333; }
+        
 
 /* ============================================================== */
   #ebook-list { position:relative; margin:auto; width:960px; height:720px; background-color:#ccc;}
