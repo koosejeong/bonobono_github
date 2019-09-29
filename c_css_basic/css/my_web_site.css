@@ -33,13 +33,13 @@
         .unb>ul { width:100%; height:100%;}
         .unb>ul>li { float:left; margin-right:2px; width:106px; height:100%; background-color:#bad;}
         .unb>ul>li:last-child { margin-right:0; }
-        .unb>ul>li>a { font-size:1.25rem; font-size:20px; font-weight:bold; text-align:center; line-height:58px; color:#000;}
+        .unb>ul>li>a { display:block; font-size:1.25rem; font-size:20px; font-weight:bold; text-align:center; line-height:58px; color:#000;}
 
       .login_area { float:left; width:360px; height:100%; background-color:#ccc; }
         .login_area>ul { width:100%; height:100%; }
         .login_area>ul>li { float:left; margin-right:2.6px; width:88px; height:100%; background-color:#333; }
         .login_area>ul>li:last-child { margin-right:0; }
-        .login_area>ul>li>a { font-size:1.5rem; font-size:16px; font-weight:bold; text-align:center; line-height:58px; color:#fff;}
+        .login_area>ul>li>a { display:block; font-size:1.5rem; font-size:16px; font-weight:bold; text-align:center; line-height:58px; color:#fff;}
 
 /* section-1 광고배너============================================ */
 
@@ -48,7 +48,7 @@
     .adver_btn { position:relative; margin:auto; width:960px; height:310px; background-color:#fff; }
     .adver_btn>ul { position:absolute; top:220px; left:106px; padding:1px; box-sizing:border-box; width:500px; height:50px;}
     .adver_btn>ul>li { float:left;  margin-left:1px; width:98px; height:48px; background-color:#ccc; }
-    .adver_btn>ul>li>a { font-size:1rem; font-size:16px; line-height:48px; text-align:center; font-weight:bold; color:#fff; }
+    .adver_btn>ul>li>a { display:block; font-size:1rem; font-size:16px; line-height:48px; text-align:center; font-weight:bold; color:#fff; }
     /* text-aling:center 안 먹는 이유??? */
 
 
@@ -61,7 +61,7 @@
     .newbook_list>h2>a { display:block; float:left; width:222px; height:70px; font-size:1.875rem; font-size:30px; text-align:center; line-height:70px; color:#000;  background-color:#a96;}
     .newbook_list>ul { float:left; padding:1px; box-sizing:border-box; width:402px; height:70px; }
     .newbook_list>ul>li { float:left; margin-left:1px; width:132px; height:100%; background-color:#a96;}
-    .newbook_list>ul>li>a { font-size:1.25rem; font-size:20px; text-align:center; line-height:70px; color:#000; }
+    .newbook_list>ul>li>a { display:block; font-size:1.25rem; font-size:20px; text-align:center; line-height:70px; color:#000; }
 
     /* 스왑 버튼 */
     .swarp_btn { z-index:300; position:absolute; top:404px; left:-70px; right:0; margin:auto; width:1100px; height:40px; }
@@ -94,7 +94,7 @@
     .best_keyword>ul>li:nth-child(3) { float:left; margin-right:20px; width:90px; height:100%; background-color:#a96; }
     .best_keyword>ul>li:nth-child(4) { float:left; width:90px; height:100%; background-color:#a96; }
     .best_keyword>ul>li:last-child { margin-right:0; }
-    .best_keyword>ul>li>a { font-size:1.25rem; font-size:16px; text-align:center; line-height:50px; color:#000;}
+    .best_keyword>ul>li>a { display:block; font-size:1.25rem; font-size:16px; text-align:center; line-height:50px; color:#000;}
 
     /* 베스트 키워드-2 영역 */
   .wrap_newbook>.best_keyword02 { position:absolute; top:760px; left:30px; width:548px; height:50px; }  
@@ -102,7 +102,7 @@
     .best_keyword02>li:nth-child(2) { float:left; margin-right:10px; width:136px; height:100%; background-color:#fff; }
     .best_keyword02>li:nth-child(3) { float:left; width:178px; height:100%; background-color:#fff; }
     .best_keyword02>li:last-child { margin-right:0; }
-    .best_keyword02>li>a { font-size:1.5625rem; font-size:25px; text-align:center; line-height:50px; color:#000;}
+    .best_keyword02>li>a { display:block; font-size:1.5625rem; font-size:25px; text-align:center; line-height:50px; color:#000;}
 
     
 
@@ -128,7 +128,7 @@
   .bestSaler_area>ul { float:left; margin-top:20px;  width:210px; height:50px; }
   .bestSaler_area>ul>li { float:left; margin-right:10px; width:100px; height:100%; background-color:#adf; }
   .bestSaler_area>ul>li:last-child { margin-right:0; }
-  .bestSaler_area>ul>li>a { font-size:1rem; font-size:16px; text-align:center; line-height:50px; color:#fff; }
+  .bestSaler_area>ul>li>a { display:block; font-size:1rem; font-size:16px; text-align:center; line-height:50px; color:#fff; }
 
   .bestSaler_book { position:absolute; top:99px; left:50%; margin-left:-340px; width:680px; height:310px; }
   .bestSaler_book>.book_1line>ul { width:100%; height:50%; }
@@ -164,7 +164,7 @@
 #story_K { width:100%; height:600px; background-color:#ccc; }
   .story_area { position:relative; margin:auto; width:960px; height: 600px; background-color:#fff; }
   .story_area>h3 { position:absolute; display:block; left:34px; top:30px; width:196px; height:66px; background-color:#4a7; }
-  .story_area>h3>a { font-size:1.25rem; font-size:16px; text-align:center; line-height:66px; color:#fff; }
+  .story_area>h3>a { display:block; font-size:1.25rem; font-size:16px; text-align:center; line-height:66px; color:#fff; }
   .story_area>ul { position:absolute; top:132px; left:0; right:0; margin:auto; width:780px; height:160px; background-color:#adf;}
     .story_area>ul>li { float:left; margin-right:46px; width:160px; height:160px; border-radius:100%; background-color:#fff; }
     .story_area>ul>li:last-child { margin-right:0; }
