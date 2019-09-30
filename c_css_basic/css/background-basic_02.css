@@ -1,0 +1,55 @@
+@charset "utf-8";
+
+#contentnBox { margin:auto; width:800px; height:auto; border:2px solid #333; box-sizing:border-box; }
+#contentBox> div { margin:auto; width:800px; height:500px; background-repeat:no-repeat; background-position:50% 50%; 
+background-size:cover;}
+  .box_01 { background-image:url("../img/ariplan.jpeg"); background-attachment:local; }
+  .box_02 { background-image:url("../img/santorini.jpeg"); background-attachment:fixed; }
+  .box_03 { background-image:url("../img/women.jpeg"); background-attachment:scroll; }
+
+#contentBox> div { overflow:hidden; overflow-y:auto; border-bottom:4px solid #fff;  }
+#contentBox> div> h3 { width:100%; height:70px; background-color:rgba(255,100,0,0.3); }
+#contentBox> div> ul { width:100%; padding-left:1rem; box-sizing:border-box; }
+#contentBox> div> ul>li { list-style:decimal; height:50px; margin-bottom:20px; background-color:rgba(255,255,255,0.3); }
+
+/* 
+  background-attachment: 배경 이미지를 고정할 것인지의 유무를 판단하는 기능으로.
+    그 값으로는, local(기본형), fixed(고정), scroll(요소 내부에 스크롤 시 고정)이 있다.
+    *주의 사항:fixed 처리 시 background-position의 위치값을 브라우저를 기준으로 삼는다. 
+*/
+
+#gradientBox { width:800px; height:auto; margin:auto; margin-top:2rem; border:3px solid #333; }
+#gradientBox >div { width:100%; height:500px; margin-bottom:1rem; }
+#gradientBox  >div:last-of-type { margin-bottom:0; border-bottom:1px solid #333; }
+  .gr_01 { background-color:#34f; background-image:linear-gradient(#fa0, #0af);}
+  .gr_02 { background-color:#f4f; background-image:linear-gradient(45deg, #f90, #faf);} /* deg:그라데이션 각도를 주는 단위*/
+  .gr_03 { background-color:#3af; background-image:linear-gradient(30deg, #0af 30%, #fac 40%);} /*색상 뒤에 수치%를 줘서 색상의 범위를 지정해 줄 수 있다. */
+  .gr_04 { background-color:#f14; background-image:linear-gradient(-45deg, #fac 30%, #86f 30%, #86f 80%, #171717 80%);}
+
+  .gr_04:hover { background-image:linear-gradient(-45deg, #f00 30%, #f6f 30%, #86f 80%, #fac 80%);}
+
+  /* 그라데이션에 애니메이션 주는 방법 */
+  .gr_05 { position:relative; background-image:linear-gradient(-45deg, #fac, #acf);  }
+  .gr_05:after { content:" "; display:block; position:absolute; top:0; left:0; width:100%; height:100%; opacity:0; z-index:-1; background-image:linear-gradient(-45deg, #0ac, #a0f); transition:all 300ms ease; }
+
+  .gr_05:hover:after { opacity:1;}
+
+  .gr_06 { background-image:radial-gradient(circle, #fa0 50%, #acf 70%); }
+  .gr_07 { background-image:radial-gradient(ellipse, #fa0 50%, #acf 70%); }
+  .gr_08 { background-image:radial-gradient(ellipse at 10% 10%, #fa0 10px, #acf 30%); } /* at:좌표를 뜻한다(기준점은 좌측 상단 0, 0부터이다)*/
+
+  /* 
+    backgorund-image:
+      url(), linear-gradient(), radial-gradient()
+      url() : 이미지 삽입
+      linear-gradient() : 직선형의 그라데이션 효과(각도(deg), 색1 위치값, 색2 위치값(%, px, rem단위 모두 사용 가능)의 값을 갖는다.
+      radial-gradient() : 원형의 그라데이션 효과(원형 모양(circle, ellipse) 위치값(at x좌료 y좌표, 색상 위치(%), 색상2 위치(%)...)의 값을 갖는다.
+
+    url을 제외한 gradient는 벤더 프리픽스를 사용해야 한다.
+    background-image:-webkit-radial-gradient(); 
+    background-image:-moz-radial-gradient(); 
+    background-image:-ms-radial-gradient(); 
+    background-image:-o-radial-gradient(); 
+    background-image:radial-gradient(); 
+    
+  */
