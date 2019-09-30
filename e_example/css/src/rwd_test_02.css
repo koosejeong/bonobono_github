@@ -1,0 +1,56 @@
+@charset "utf-8";
+
+#wrap { width:100%; min-width:20rem; height:auto;  }
+
+/* header */
+  #headBox { position:fixed; top:0; left:0; z-index:300; padding:0.625rem; box-sizing:border-box; width:100%; height:3.75rem; background-color:#333; }
+    h1 { float:left; top:0.3125rem; left:0.3125rem; width:7.875rem; height:1.875rem; background-color:#ccc; }
+    .full-box2 { float:right; top:0.3125rem; right:0.9375rem; width:6.875rem; height:2.375rem;  }
+      .right-box { float:left; width:2.25rem; height:100%; background-color:#3ee; }
+      .right-box2 { float:right; width:2.8125rem; height:100%; background-color:#95f; }
+      
+
+
+/* main */
+  #contentBox { width:100%; height:auto; }
+    .box1 { width:100%; height:45rem; background-color:#dae; }
+    .box2 { position:relative; width:100%; height:45rem; background-color:#ccc; }
+      .box2-1 { position:absolute; top:1.875rem; left:1.875rem; width:192px; height:156px; background-color:#398; }
+    .full-box3 { width:100%; height:auto; }
+      .box3 { width:100%; height:45rem; background-color:#979; }
+      .box4 { display:none; width:100%; height:45rem; background-color:#959;}
+      .box5 { display:none; width:100%; height:45rem; background-color:#adf; }
+
+/* footer*/
+  #footBox { width:100%; height:3.75rem; background-color:#333; }
+    h2 { display:none; }
+
+@media screen and (min-width:481px) and (max-width:768px) {
+  #contentBox { width:100%; height:auto; }
+    .box1 { height:28.125rem; }
+    .box2 { height:13.125rem; }
+    .box3 { float:left; width:50%; height:33.75rem; }
+    .box4 { display:block; float:left; width:50%; height:33.75rem; }
+
+  #footBox { height:7.5rem; }
+
+}
+
+@media screen and (min-width:769px) {
+
+  .full-box { position:absolute; left:3.125rem; right:3.125rem; }
+      h1 { width:15.625rem; height:2.8125rem; }
+      .full-box2 { width:31.25rem; }
+        .right-box { margin-right:1.25rem; width:3.125rem; height:1.875rem; }
+        .right-box2 { width:26.875rem; height:1.875rem; }
+  
+    .box1 { margin:auto; height:28.125rem; }
+    .box2 { margin:auto; max-width:60rem; height:13.125rem; }
+    .full-box3 { margin:auto; max-width:60rem; }
+      .box3 { float:left; margin:auto; width:33.333333%; }
+      .box4 { display:block; float:left; margin:auto; width:33.333333%; }
+      .box5 { display:block; float:left; margin:auto; width:33.333333%; }
+
+  #footBox { position:relative; width:100%; height:7.5rem; }
+    h2 { display:block; position:absolute; left:3.125rem; top:0.625rem; width:15.625rem; height:2.8125rem; background-color:#3d8;}
+}
