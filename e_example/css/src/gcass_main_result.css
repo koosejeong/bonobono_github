@@ -1,0 +1,96 @@
+@charset "utt-8";
+
+#wrap { width:980px; height:850px; }
+  .temp { position:relative; width:100%; height:auto; padding-top:30px; }
+    #headBox { float:left; padding:50px 50px 100px 20px; box-sizing:border-box; width:250px; height:710px; background-color:#777; }
+    h1 { width:100%; height:110px;}
+    h1>a { background-image:url("../../img/gcass/gcass_logo.png"); background-repeat:no-repeat; background-position:50% 50%; }
+
+  
+
+    #gnb { width:100%; height:auto; margin-top:35px; }
+    #gnb>ul { width:100%; height:auto; }
+    #gnb>ul>li { width:100%; height:40px; margin-bottom:24px; }
+    #gnb>ul>li:nth-last-child(2) { margin-bottom:10px; }
+    #gnb>ul>li:last-child { height:112px; margin-bottom:0; }
+    #gnb>ul>li>a { display:block; width:100%; height:100%; background-image:url("../../img/gcass/gnb.png"); background-repeat:no-repeat; background-position-x:10px; }
+
+    #gnb>ul>li>a:hover,
+    #gnb>ul>li>a:focus { background-image:url("../../img/gcass/gnb_on.png"); outline:none; }
+
+    #gnb>ul>li:nth-child(1)>a { background-position-y:2px; }
+    #gnb>ul>li:nth-child(2)>a { background-position-y:-60px; }
+    #gnb>ul>li:nth-child(3)>a { background-position-y:-122px; }
+    #gnb>ul>li:nth-child(4)>a { background-position-y:-184px; }
+    #gnb>ul>li:nth-child(5)>a { background-position-y:-246px; }
+    #gnb>ul>li:nth-child(6)>a { background-position-y:-294px; }
+    /* background-position의 x축이나 y축이 고정값일 시 부모가 가진 background-position의 가로, 세로축을 설정해주면(background-position-x or -y) 그 아래 자식 요소가 가진 background-position엔 상대편 축(-x or -y)만 입력하여 처리할 수 있다.*/
+
+    /* viewBox============================================ */
+    #viewBox { float:right; padding:50px; box-sizing:border-box; width:730px; height:710px; background-color:#adadad; background-image:url("../../img/gcass/pattern.png"); background-repeat:repeat-x; background-position:0 -10px; }
+  
+      .view_link { position:relative; width:610px; height:595px; }
+      .view_link>a { display:block; width:100%; height:100%; }
+        .com_img { position:absolute; bottom:0; left:0; width:330px; height:520px; background-image:url("../../img/gcass/com_img.png"); background-position:0 0; background-repeat:no-repeat; 
+        /* transition:all(property) 300ms(움직이는 시간) ease(움직임) 500ms(delay); */
+        transition-property:left; transition-duration:300ms; transition-timing-function:cubic-bezier(0, 0, 0.68, 0.09); transition-delay:500ms;
+        /* linear(동일한 속도), ease(자연스럽게), ease-in(점점 빠르게), ease-out(점점 느리게), ease-in-out(점점 느리게 갔다가 점점 빠르게)*/ }
+      .view_link>a:hover .com_img { left:100px; }
+
+        .text_img { float:right; width:354px; height:554px; background-image:url("../../img/gcass/text_img.png"); background-position:0 0; background-repeat:no-repeat;}
+
+    /*  sideBox============================================ */
+    #sideBox { position:absolute; z-index:0; top:0; left:0; width:100%; height:30px; background-color:#888; }
+    #sideBox:before { content:" "; display:block; position:absolute; top:0; left:50%; z-index:-100; margin-left:-50vw; width:100vw; height:100%; background-color:inherit; }
+    /* 가상 클래스로 반응형 웹 식의 가변값 주기 */
+
+    .lnb { float:right; width:435px; height:100%; }
+    .lnb>li { float:left; width:96px; height:100%; background-color:#acc; }
+    .lnb>li:last-child { width:243px; }
+    .lnb>li>a { display:block; width:100%; height:100%; background-image:url("../../img/gcass/subBox.png"); background-repeat:no-repeat; background-position:0 0;  }
+
+    .lnb>li:nth-child(2)>a { background-position-x:-96px; }
+    .lnb>li:nth-child(3)>a { background-position-x:100%; }
+
+  #footBox { position:relative; width:100%; height:110px; padding:15px 40px 25px; box-sizing:border-box; border-top:1px solid #999; font-family: 'Noto Sans KR', sans-serif; font-size:1rem; line-height:120%; font-weight:normal; }
+
+  /*  가상 클래스로 타 영역에 초월한 위치에 선 생성 */
+  #footBox:before { content:" "; display:block; position:absolute; top:0; left:0; z-index:100; width:100%; border-top:1px solid #999; }
+  #footBox>h2 { float:left; width:72px; height:50px; margin-right:46px; background-image:url("../../img/gcass/gcass_logo_copy.png"); background-position:50% 50%; background-repeat:no-repeat; }
+    .info { float:left; width:70px; height:50px; margin-right:26px; padding-top:15px; box-sizing:border-box; }
+    .info>li { float:left; width:45%; height:100%; }
+    .info>li:last-child { float:right; }
+    .info>li>a {display:block; width:100%; height:100%; background-image:url("../../img/gcass/location_and_sns.png"); background-position:5px 0; background-repeat:no-repeat; } 
+    .info>li:nth-child(2)>a { background-position-x:105%; }
+ 
+    .info_company { float:left; width:340px; height:50px; }
+    .info_company>p { font-style:normal; font-size:0.875rbem;}
+
+    .family_area { position:relative; float:right; width:300px; height:auto; margin-top:-66px; background-color: #fff; }
+    .family_area>dl { width:100%; height:65px; font-size:1rem; text-indent:1rem; }
+    .family_area>dl>dt { position:relative; float:left; width:96px; height:50px; letter-spacing:-0.1rem; background-color:#555; color: #fff; }
+    .family_area>dl>dd { position:relative; float:right; width:204px; height:50px; background-color:#fff30d; color:#555; }
+
+    .family_area>dl>dt:nth-of-type(1), 
+    .family_area>dl>dd:nth-of-type(1) { height:51px; }
+
+    .family_area>dl>dt:after { content:" "; display:block; position:absolute; top:0; bottom:0; margin:auto; right:5px; width:12px; height:12px; background-image:url("../../img/gcass/family_arrow.png"); background-repeat:no-repeat; background-position:50% 50%; }
+
+    /* Tip)
+    가상 클래스의 content를 이용하여 폰트 어썸 아이콘 style sheet에서 적용 시키기.
+    .family_area>dl>dt:after { content:"\f0da"; display:block; position:absolute; top:0; bottom:0; margin:auto; right:5px; width:12px; height:12px; font-family: 'Font Awesome 5'; font-weight:900; text-indent:0.5rem; font-size:1rem; color:#fff; }
+      ㄴ 필수 요소 : content, font-family, font-weight, text-indent
+      ㄴ text-indent, font-weight는 상황에 따라 생략이 가능하다.
+    */
+
+    .family_area >dl>dd>a { display:block; width:100%; height:100%; }
+    .family_area dl span { display:block; position:absolute; top:50%; left:0; transform:translateY(-50%); width:100%; height:auto;  }
+    /* 텍스트 중앙 배치시키는 방법 : position:absolute;, top:50%;, left:0;, transform:translateY(-50%);
+    
+      transform: 형태를 변형시키는 기능으로, X/Y/Z축으로 변형을 줄 수 있다.
+      translate좌표(?px, ?%), rotateZ(?deg):기본축이 Z, skew(?deg), scale(1 or 2 or 3)
+      transform-origin: 형태를 변형시키는 축을 설정하는 기능
+      perspective: transform을 사용한 부모 요소가 설정하는 것으로 원근법을 적용 시키는 기능.
+    */
+
+    .family_area>p{ width:100%; height:20px; margin-top:5px; text-align:left; word-break:break-all; font-size:0.5rem;}
