@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="웹 페이지 실습에 따른 목차 구성" >
+<meta name="keyword" content="html, css, js, web, design" >
+<meta name="author" content="구세정" >
+<meta name="generator" content="illustrator, photoshop, vscode" >
+<!--[if let IE]>
+  <script src="../IE/html5shiv/dist/html5shiv.min.js"></script>
+  <script src="../IE/PIE/PIE.js"></script>
+  <sctipy src="../IE/respond/Respond-1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+ <link rel="stylesheet" href="../../css/base/reset.css">
+ <link rel="stylesheet" href="../../css/base/common.css">
+ <link rel="stylesheet" href="../../css/src/basic-01.css">
+  <link rel="apple-touch-icon" href="../img/favicon.png">
+  <link rel="shortcut icon" href="../img/favicon.png"type="image/png">
+  <title>js 기초 이해하기</title>
+
+    <script type="text/javascript">
+      // 1. script 작성 위치 : haad 내부에  css 뒤에 작성하는 것을 권장.
+    </script>
+
+</head>
+
+<script type="text/javascript">
+  //1. script작성 위치2 : body 내부 어디든 작성 가능
+  //2. 어디든 작성 가능하지만, 해당 위치는 권장하는 위치는 아니다.
+</script>
+
+<body>
+<div id="wrap">
+  <header id="headBox">
+    <h1><a href="../content.html">js 기초 이해하기</a></h1>
+  </header>
+
+  <main id="contentBox">
+    <h2>javascript란?</h2>
+    <p>자바스크립트란, 객체 기반의 스크립트 프로그래밍 언어<br />
+       주로 웹에 특화 되어 있는 프로그래밍 언어다.
+       과거 자바의 아류이자 초급 언어라는 불명예 적인 말도 들었지만, <br />
+       현재(2019년)는 가장 인기 있는 언어 중 하나이다.<br />
+    </p>
+    <p>
+      객체 기반이며, 객체뿐 아니라 함수도 지향하는 일급 객체로 불리우는 언어이다. <br/>
+      과거 웹에서 html, css만 제어하던 때를 넘어 현재는 앱 개발도 가능하며, <br /> 
+      서버를 컨트롤 하기도 하는, 다양한 분야에서 사용 가능한 고급 언어이다. <br /> 
+    </p>
+    <p>
+      자바스크립트는 <abbr title="Europ Computer ">ECMAscript</abbr> 의 표준 언어 체계를 따르고 있으며, ECMA 표준은 매년 6월 17일에 새로운 표준을 선언하고 있다.  
+    </p>
+    <p>
+      유사 언어로는 Type script, Coffee script, Dart, Elm , Action script 등이 있다. <br />
+      Coffee script와 Action script는 요새 사용하지 않는다.
+    </p>
+    <p>
+      <strong>자바스크립트에서 인기 있는 라이브러리, 프레임 워크로는</strong><br />
+      <span>jQuery, Angularjs, Reactjs, VueJs, ember, polymer, handlerbarJs, d3Js....등이 있다. </span>
+    </p>
+  </main>
+
+  
+</div>
+<!-- script===================================== -->
+<script type="text/javascript">
+  //1. script 작성위치3 : body 내부 마지막 위치
+</script>
+  <!-- 
+    script 작성위치4 : 외부 문서로 불러오기 
+    단, 와부 문서를 불러오는 경우, script 태그 내부에는 내용이 작성 되어선 안 된다.
+  -->
+  <!-- 
+    javascript에서는 검증이라는 기능이 존재하는데, 여기서 말하는 검증이란
+    어떠한 과정을 중간에 확인하는 것을 뜻한다.
+
+    document.write() : 브라우저에 내용을 입력하여 출력한다.(html코드가 사라질 수도 있다. )
+    alert() : : 메시지창을 띄워서 확인(매번 확인을 눌러주어야 한다.)
+    console.log() : 개발자 모드의 console 메뉴에서 확인할 수 있다. 
+   -->
+   <!-- 검증 기능 테스트 -->
+   <script>
+     document.write("브라우저 내부, body에 내용이 작성 되는 것을 확인할 수 있다.");
+    //  alert("메시지 창으로 결과물을 확인할 수 있다.");
+
+     console.log("콘솔 창에서 결과를 확인할 수 있다.");
+   </script>
+</body>
+</html>
