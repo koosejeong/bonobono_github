@@ -1,6 +1,6 @@
 @charset "utt-8";
 
-#wrap { width:980px; height:850px; }
+#wrap { width:980px; height:auto; }
   .temp { position:relative; width:100%; height:auto; padding-top:30px; }
     #headBox { float:left; padding:50px 50px 100px 20px; box-sizing:border-box; width:250px; height:710px; background-color:#777; }
     h1 { width:100%; height:110px;}
