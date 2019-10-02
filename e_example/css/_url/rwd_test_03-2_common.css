@@ -1,0 +1,32 @@
+/* 공통 영역 */
+
+#wrap { width:100%; min-width:480px; height:auto; }
+
+/* header====================================================== */
+  #headBox { position:fixed; top:0; left:0; z-index:1000; width:100%; height:3.75rem; padding:10px 20px; box-sizing:border-box; background-color:#777; }
+    .area-wrap { margin:auto; width:100%; height:100%; background-color:#acc; }
+      h1 { float:left; width:7.875rem; height:100%; background-color:#fff;  }
+      #navBox { float:right; width:auto;  height:100%; }
+      /* float을 주고 width:auto를 줄 시 가로값은 가변성을 갖는다. */
+      #navBox ul { width:auto; height:100%; }
+      #navBox ul>li { float:left; margin-right:1.25rem; width:2.25rem; height:100%; background-color:#5ca; }
+      #navBox ul>li:last-child { float:right; margin-right:0; width:2.8125rem; }
+      /* li 사이에 간격을 margin으로 줄 때, 지금은 li가 2개 뿐이지만 추후에 li가 추가 될 것을 생각해 첫번째 li에 margin-left of right를 주고, 마지막 li에게 margin-left or right에 0을 주는 게 좋다. (수정의 최소화) */
+
+  
+   
+/* main====================================================== */
+  #contentBox { width:100%; height:auto; padding-top:3.75rem; }
+  /* header가 z-index로 튀어나갔기 때문에 그 뒤에 붕뜬 영역의 아래서부터 content 박스의 영역을 배치하기 위한 padding-top:60px 값  */
+    .view-area  { margin:auto; width:100%; height:45rem; background-color:#acf; }
+    .tip-area  { padding:1.625rem; box-sizing:border-box; margin:auto; width:100%; height:45rem; background-color:#a7f;}  
+    .tip-area >p { width:12rem; height:9.75rem; background-color:#faf; }
+    .info-area { margin:auto; width:100%; height:auto; background-color:#68d; }
+    .info-area>div { width:100%; height:45rem; }
+      .info-01 { background-color:#ff0; }
+      .info-02 { background-color:#fa0; }
+      .info-03 { background-color:#f50; }
+
+
+/* footer=======================================================*/
+#footBox { width:100%; height:3.75rem; box-sizing:border-box; background-color:#333;}

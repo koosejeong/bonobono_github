@@ -1,0 +1,21 @@
+@charset "utf-8";
+
+@media screen and (min-width:960px) {
+  /* desight기준 960px */
+
+  .area-wrap { width:80%; min-width:60rem; max-width:125rem; }
+    h1 { width:15.625rem; }
+    #navBox ul>li { width:3.125rem; }
+    #navBox ul>li:last-child { width:26.875rem; }
+
+    .view-area { height:28.125rem; height:46.875vw; max-height:50rem; }
+    .tip-area { width:80%; min-width:60rem; max-width:125rem;  height:210px; height:21.875vw; max-height:26.25rem; } 
+    .tip-area >p { width:20vw; max-width:28.125rem; height:15.625vw; max-height:21.875rem; }   
+    .info-area { width:80%; min-width:60rem; max-width:2000px;  height:33.75rem; } /*  height:56.25vw; */
+
+    .info-area>div { display:block; float:left; width:33.333333%; height:33.75rem; }
+  
+
+  #footBox { height:7.5rem; padding-top:1rem; padding-bottom:3.75rem; }
+
+}

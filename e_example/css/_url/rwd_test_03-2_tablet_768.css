@@ -1,0 +1,13 @@
+@charset "utf-8";
+
+@media screen and (min-width:768px) and (max-width:959px) {
+  /* desight기준 768px */
+    h1 { width:10.875rem; }
+
+    .view-area { height:28.125rem; }
+    .tip-area { height:13.125rem; }    
+    .info-area>div {float:left;  width:50%; height:33.75rem; }
+      .info-02 { display:block; }
+
+  #footBox { height:7.5rem; }
+}
