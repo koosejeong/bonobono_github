@@ -1,0 +1,29 @@
+// sample.scss
+/* sample.css*/
+
+@import "var";
+
+h1 { width:$full; height:$full; background-color: rgba($bg1, 0.5); color:lighten($bg1, 60%); border:2px solid nth($color, 4); }
+
+.ist_01 { background-position:0 0;}
+.ist_02 { background-position:0 10px;}
+.ist_03 { background-position:0 40px;}
+.ist_04 { background-position:0 100px;}
+
+$myp: ( 0, 10px, 40px, 100px); //scss의 배열 방식
+@for $i from 1 to length($myp)+1 { 
+  .list_0#{$i} { background-position:0 nth($myp, $i);}
+}
+$url : "../../img/myi/content/product/";
+$myp : ('img01.jpg', 'img02.jpg', 'img03.jpg','img04.jpg');
+
+@for $i from 1 to length($myp)+1 {
+  .myp-#{$i}{background-image:url($url +  nth($myp, $i));}
+}
+
+// $url : "../../폴더/폴더/폴더/폴더/";
+// $변수 : ('이미지01.jpg', '이미지02.jpg', '이미지03.jpg','이미지04.jpg');
+
+// @for $i from 1 to length($변수)+1 {
+//   .변수-#{$i}{background-image:url($url +  nth($변수, $i));}
+// } - 식의 문법을 갖는다. 

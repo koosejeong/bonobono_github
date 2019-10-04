@@ -34,6 +34,7 @@ console.log(arr[2]);
     1:"lg",
     2:"apple"
   ]
+  ㄴapple 출력
 */
 
 var obj = { 'samsung' : 'gallaxy',
@@ -42,3 +43,4 @@ var obj = { 'samsung' : 'gallaxy',
 var objT = typeof(obj);
 console.log(objT);
 console.log(obj['lg']);
+// v50s 출력
