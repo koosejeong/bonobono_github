@@ -1,0 +1,256 @@
+@charset "utf-8";
+
+
+#wrap {position:relative; margin:auto; width:100%; min-width:480px; height:auto; }
+
+/* header */
+  #headBox { position:absolute; top:0; left:0; z-index:100; width:100%;  height:10rem; }
+    .headNav { position:fixed; top:0; left:0; z-index:300; width:100%; height:5rem; background-color:#173D64; }
+      .searchArea { position:absolute; left:0.9375rem; top:20px; padding:0.3125rem; box-sizing:border-box; width:9.375rem; height:30px; height:1.875rem; background-color:#173D64; }
+      .searchArea>.search-bar{ display:none; float:left; width:6.875rem; height:30px; height:1.875rem; background-color:#fff;}
+      .searchArea>.search-btn{ float:right; width:30px; height:30px; width:1.875rem; height:1.875rem; background-color:#173D64; background-image:url("../../img/Desktop/search-icon.png"); background-repeat:no-repeat; background-position:50% 50%; background-size: cover; }
+      .menuBar { position:absolute; top:10px; top:0.625rem; right:15px; right:0.9375rem; width:290px; height:60px; width:18.125rem; height:3.75rem; }
+      .menuBar>ul{ width:100%; height:100%; }
+      .menuBar>ul>li:nth-child(1){ float:left; margin-right:10px; margin-right:0.625rem;  width:80px; width:5rem; height:100%;  background-color:#173D64;}
+      .menuBar>ul>li:nth-child(2){ float:left; width:120px; width:7.5rem; height:100%;  background-color:#173D64;}
+      .menuBar>ul>li:nth-child(3){ float:right; width:60px; width:3.75rem; height:100%;  background-color:#173D64; background-image:url("../../img/samseon-bar.png"); background-position:50% 50%; background-repeat:no-repeat;}
+      .menuBar>ul>li>a{ font-size:20px; font-size:1.25rem; line-height:60px; line-height:3.75rem; text-align:center; color:#fff; }
+        .logoArea{ position:absolute; top:50%; left:0; width:100%; height:80px; height:5rem; }
+        .logoArea>h1{ display:block; position:absolute; left:40px; left:2.5rem; bottom:20px; bottom:1.25rem; z-index:100; width:200px; width:12.5rem; height:35px; height:2.1875rem;  background-image:url("../../img/logo1.png"); background-position:100% 100%; background-repeat:no-repeat; }  
+
+#contentBox{ width:100%; height:4720px; height:295rem; }
+/* section(main 홍보 영역) */
+  #mainAdd { width:100%; height:40rem; }
+    .img-place{ position:relative; width:100%; height:100%; background-image:url("../../img/img5.png"); background-repeat:no-repeat; background-position:50% 50%; background-size:cover; }
+    .img-place>h2{ position:absolute; left:2.5rem; top:50%; color:#fff; font-size:2.25rem; line-height:4.625rem; }
+    .img-place> p>a{ display:block; position:absolute; left:2.5rem; top:60%; width:7.5rem; height:2.5rem; color:#fff; }
+      .arrow-btn{ position:absolute; left:2.5rem; top:68%; width:1.25rem; height:1.25rem; background-image:url("../../img/arrow-btn.png"); background-position:50% 50%; background-repeat:no-repeat; }
+      .place-indi{ position:absolute; left:0; right:0; margin:auto; bottom:10%; width:25rem; height:6.25rem; border-top:0.0625rem solid #fff;}
+      .place-indi>ul>li{ float:left; width:6.25rem; height:5rem; text-align:center; color:#fff; }
+      .place-indi>ul>li>a{display: block; width: 100%; height: 100%; color:#fff; font-size:1.5rem; font-family:"Zapfino"; }
+
+      /* border-bottom 적용 안 되는 부분, 질문할 것 */
+      .place-indi>ul>li>a:focus:before,
+      .place-indi>ul>li>a:hover:before { content:" "; display:block; border-top:10px;}
+
+      /* li:focus>.a:before{ border-top:5px; } 으로  F4AE50 */
+        
+  
+
+/* article-1(여행지 뉴스 영역) */
+  #todayNews{ padding:1.25rem; box-sizing:border-box; width:100%; height:15rem; background-color:#fff;}
+    .newsBoard{ padding:0.625rem; box-sizing:border-box; width:100%; height:60px; border-bottom:0.1875rem solid #173D64; }
+    .newsBoard>p{ float:left; width:60%; height:20%; color:#000; font-size:1.5rem; }
+    .newsBoard>.plust-btn{ float:right; width:1.875rem; height:1.875rem; background-image:url("../../img/plus-btn.png"); background-repeat:no-repeat; background-position:50% 50%; }
+  #todayNEws>.newsBoard02 { width:100%; height:180px; }  
+    .newsBoard02>dl{ margin-top:10px; width:100%; height:100%; background-color:#fff; }
+    .newsBoard02>dl:first-of-type>dt{ color:#87d7c4;}
+    .newsBoard02>dl>dt{ float:left; width:auto; height:20px; margin-left:0.625rem; margin-bottom:10px; color:#f35; }
+    .newsBoard02>dl:last-of-type>dt{ margin-bottom:0;}
+    .newsBoard02>dl>dd{ float:left; width:auto; height:1.25rem; margin-left:0.625rem; margin-bottom:0.625rem; }
+    .newsBoard02>dl>dd a{display: block; width: 100%; overflow: hidden;
+    text-overflow: ellipsis; white-space: nowrap;}
+    .newsBoard02>dl:last-of-type>dd{ margin-bottom:0;}
+
+    
+/* article-2(지역별 여행 정보 영역) */
+  #areaTreval{ width:100%; height:45rem; }
+    .localArea { width:100%; height:100%; }
+      /* 해당 영역의 제목과 부가 설명  */
+    .city-intro01{ margin:auto; width:26.875rem; height:72px; }
+      .city-intro01>h2{ float:left; margin-left:0.625rem; margin-top:1.25rem; font-size:1.5rem; color:#000; line-height:2.8125rem; }
+      .city-intro01>p{ float:left; margin-left:1.25rem; margin-top:1.5625rem; font-size:14px; color:#000; line-height:2.8125rem; }
+
+      /* 지역 리스트 */
+      .localArea>.local-list-area{ padding:1.25rem; box-sizing:border-box;  width:100%; height:72px; background-color:#fff; }
+      .local-list-area>ul { width:100%; height:100%; border-bottom:0.1875rem solid #173D64; }
+      .local-list-area>ul>li{ float:left; margin-right:0.625rem; width:60px; height:100%; }
+      .local-list-area>ul>li>a{ display:block; font-size:1rem; text-align:center; line-height:2rem; }
+
+      /* border-bottom 이상하게 적용 됨, 질문할 것 */
+      .local-list-area>ul>li>a:focus:before,
+      .local-list-area>ul>li>a:hover:before { content:" "; display:block; border-bottom:0.625rem solid #173D64; }
+
+      /* mobile 버전...  */
+      .local-list-area>ul>li:nth-child(7) { display:none; }
+      .local-list-area>ul>li:nth-child(8) { display:none; }
+      .local-list-area>ul>li:nth-child(9) { display:none; }
+      .local-list-area>ul>li:nth-child(10) { display:none; }
+      .local-list-area>ul>li:nth-child(11) { display:none; }
+      .local-list-area>ul>li:nth-child(12) { display:none; }
+      .local-list-area>ul>li:nth-child(13) { display:none; }
+      .local-list-area>ul>li:nth-child(14) { display:none; }
+      .local-list-area>ul>li:nth-child(15) { display:none; }
+
+    /* 선택한 지역의 여행지에 대한 소개 및 홍보 영역 */
+    .city-intro02{ width:100%; height:576px; } 
+      /* 선택한 도시의 심볼과 지역 검색을 위한 아이콘 영역*/
+      .symbol-icon{ margin:auto; width:26.875rem; height:116px; background-color:fff; }  
+         .city-symbol-area{ float:left; width:40%; height:100%; background-image:url("../../img/Desktop/seoul-si-01.png"); background-position:100% 100%; background-repeat:no-repeat; }
+         .local-icon-area{float:right; width:50%; height:100%; background-color:#fff; }
+            .myLocal{ width:100%; height:50%; background-image:url("../../img/Desktop/my-local.png"); background-position:30% 30%; background-repeat:no-repeat; }
+            .localAll{ width:100%; height:50%; background-image:url("../../img/Desktop/local-all.png"); background-position:30% 30%; background-repeat:no-repeat; }
+    /* 도심지 여행 소개 영역 */
+      .intro-1{margin:auto; padding:0.9375rem; box-sizing:border-box;  width:26.875rem; height:86px; }
+      .intro-1>p{ margin:auto; font-size:1.25rem; font-style:bold; }
+      .intro-1>p+p{ margin:auto; font-size:1rem; font-style:bold; }
+      .intro-1>a{ display:block; margin:auto; font-size:1rem; color:#5A4FA2;}
+
+      .intro-2{margin:auto; padding:0.9375rem; box-sizing:border-box; width:430px; height:86px; margin-bottom:0.3125rem;  }
+      .intro-2>p{ margin:auto; font-size:1rem; color:#5A4FA2; }
+      .intro-2>p>a{ font-size:1.25rem; color:#000; }
+
+      .intro-3{margin:auto; padding:0.9375rem; box-sizing:border-box;  width:26.875rem; height:86px; margin-bottom:0.3125rem; }
+      .intro-3>p{ margin:auto; font-size:1rem; color:#5A4FA2; }
+      .intro-3>p>a{ font-size:1.25rem; color:#000; }
+
+      .intro-4{margin:auto; padding:0.9375rem; box-sizing:border-box;  width:430px; height:86px; margin-bottom:0.3125rem;}
+      .intro-4>p{ margin:auto; font-size:1rem; color:#5A4FA2; }
+      .intro-4>p>a{ font-size:1.25rem; color:#000; }
+
+    /* 선택한 도시의 관할 구 목록 영역 */
+      .gu-info{ padding:1.25rem; box-sizing:border-box; margin-top:5%; width:100%; height:58px; background-color:#173D64; }
+      .gu-info>li{ float:left; width:15%; height:100%; color:#fff; }
+      .gu-info>li:last-child { float:left; width:10%; }
+     
+      /* mobile 버전... */
+      .gu-info>li:nth-child(7){ display:none; }
+      .gu-info>li:nth-child(8){ display:none; }
+      .gu-info>li:nth-child(9){ display:none; }
+      .gu-info>li:nth-child(10){ display:none; }
+      .gu-info>li:nth-child(11){ display:none; }
+      .gu-info>li:nth-child(12){ display:none; }
+      .gu-info>li:nth-child(13){ display:none; }
+      .gu-info>li:nth-child(14){ display:none; }
+      .gu-info>li:nth-child(15){ display:none; }
+      .gu-info>li:nth-child(16){ display:none; }
+      .gu-info>li:nth-child(17){ display:none; }
+      .gu-info>li:nth-child(18){ display:none; }
+      .gu-info>li:nth-child(19){ display:none; }
+      .gu-info>li:nth-child(20){ display:none; }
+      .gu-info>li:nth-child(21){ display:none; }
+      .gu-info>li:nth-child(22){ display:none; }
+      .gu-info>li:nth-child(23){ display:none; }
+      .gu-info>li:nth-child(24){ display:none; }
+      .gu-info>li:nth-child(25){ display:none; }
+
+
+/* article-3(지역별 축제 정보 영역) */
+  #festvalInfo{ position:relative; width:100%; height:40rem; background-image:url("../../img/img6.jpeg"); background-position:0 0; background-repeat:no-repeat; background-size:cover; }
+    .calendar-palce{ position:absolute; top:20%; left:0; right:0; margin:auto;  width:80%; height:70%; background-image:url("../../img/memo1-mobile-v-01.png"); background-position:50% 50%; background-repeat:no-repeat; background-size:cover; } 
+    /* 10월 축제 이벤트 타이틀 */
+    .calendar-palce>p{ margin:auto; margin-top:1.25rem; width:70%; height:10%; font-size:1.5625rem; text-align:center; line-height:2.75rem; }
+      /* 10월 축제 안내 */
+      .festival01{ padding:1.25rem; box-sizing:border-box; margin:auto; width:80%; height:20%;  }
+      .festival01>p:nth-child(1){ margin-bottom:10px; font-size:1.25rem; text-align:center; color:#f43; }
+      .festival01>p:nth-child(2){ font-size:1rem; text-align:center; color:#000; }
+      .festival01>p:nth-child(3){ margin:auto; font-size:1rem; text-align:center; color:#000; }
+
+      .festival02{ padding:1.25rem; box-sizing:border-box; margin:auto; width:80%; height:20%;  }
+      .festival02>p:nth-child(1){ margin-bottom:10px; font-size:1.25rem; text-align:center; color:#f43; }
+      .festival02>p:nth-child(2){ margin:auto; font-size:1rem; text-align:center; color:#000; }
+      .festival02>p:nth-child(3){ margin:auto; font-size:1rem; text-align:center; color:#000; }
+
+      .festival03{ padding:1.25rem; box-sizing:border-box; margin:auto; width:80%; height:20%; }
+      .festival03>p:nth-child(1){ margin-bottom:10px; font-size:1.25rem; text-align:center; color:#f43; }
+      .festival03>p:nth-child(2){ margin:auto; font-size:1rem; text-align:center; color:#000; }
+      .festival03>p:nth-child(3){ margin:auto; font-size:1rem; text-align:center; color:#000; }
+    
+      .calendar-palce>p>a{ display:block; position:absolute; right:10%; text-align:center; font-size:1rem; color:#000; }
+
+
+
+/* article-4(이색 테마 여행) */
+  #themaTreval{ width:100%; height:100rem; }
+    .thema-treval01{ position:relative; padding:1.25rem; box-sizing:border-box;  width:100%; height:25%; background-image:url("../../img/img4.png"); background-position:100% 100%; background-repeat:no-repeat; background-size:cover; }
+    .thema-treval01>p{ font-size:24px; color:#fff; border-bottom:0.0625rem solid #fff;}
+    .thema-treval01>h3{ position:absolute; top:60%; font-size:1.875rem; color:#fff; }
+    .thema-treval01>p>a{ position:absolute; top:70%; font-size:1.5rem; color:#fff;}
+
+    .thema-treval02{ position:relative; padding:1.25rem; box-sizing:border-box;  width:100%; height:25%; background-image:url("../../img/img1.png"); background-position:100% 100%; background-repeat:no-repeat; background-size:cover; }
+    .thema-treval02>p{ font-size:1.5rem; color:#fff; border-bottom:0.0625rem solid #fff;}
+    .thema-treval02>h3{ position:absolute; top:60%; font-size:30px; color:#fff; }
+    .thema-treval02>p>a{ position:absolute; top:70%; font-size:1.5rem; color:#fff;}
+
+    .thema-treval03{ position:relative; padding:1.25rem; box-sizing:border-box;  width:100%; height:25%; background-image:url("../../img/img3.png"); background-position:100% 100%; background-repeat:no-repeat; background-size:cover; }
+    .thema-treval03>p{ font-size:24px; color:#fff; border-bottom:1px solid #fff;}
+    .thema-treval03>h3{ position:absolute; top:60%; font-size:1.875rem; color:#fff; }
+    .thema-treval03>p>a{ position:absolute; top:70%; font-size:1.5rem; color:#fff;}
+
+    .thema-treval04{ position:relative; padding:1.25rem; box-sizing:border-box;  width:100%; height:25%;background-image:url("../../img/img2.png"); background-position:100% 100%; background-repeat:no-repeat; background-size:cover; }
+    .thema-treval04>p{ font-size:24px; color:#333; border-bottom:1px solid #333;} 
+    .thema-treval04>h3{ position:absolute; top:60%; font-size:30px; color:#fff; }
+    .thema-treval04>p>a{ position:absolute; top:70%; font-size:24px; color:#fff;}
+
+  /* article-5(유관 기관 및 관련 회사 정보) */
+  #relationCorp{ width:100%; height:37.5rem; }
+    .relation-corp-area{ padding:5px; box-sizing:border-box; width:100%; height:80%; }
+    .relation-corp-area>.corp-1-line{padding:5px; box-sizing:border-box; width:100%; height:20%; }
+    /* 이미지 수정 */
+      .corp-1-line>li:nth-child(1){ float:left; padding:5px; box-sizing:border-box; width:33%; height:100%; background-image:url("../../img/Desktop/01.png"); background-position:100% 100%; margin-right:2px; background-repeat:no-repeat; }
+      .corp-1-line>li:nth-child(2){ float:left; padding:5px; box-sizing:border-box; width:33%; height:100%; background-image:url("../../img/Desktop/02.png"); background-position:100% 100%; margin-right:2px; background-repeat:no-repeat; }
+      .corp-1-line>li:nth-child(3){ float:left; padding:5px; box-sizing:border-box; width:33%; height:100%; background-image:url("../../img/Desktop/03.png"); background-position:100% 100%; background-repeat:no-repeat; }
+    /* 이미지 수정 */
+    .relation-corp-area>.corp-2-line{ padding:5px; box-sizing:border-box; width:100%; height:20%;}
+      .corp-2-line>li:nth-child(1){ float:left; padding:5px; box-sizing:border-box; width:33%; height:100%; background-image:url("../../img/Desktop/04.png"); background-position:100% 100%; margin-right:2px; background-repeat:no-repeat; }
+      .corp-2-line>li:nth-child(2){ float:left; padding:5px; box-sizing:border-box; width:33%; height:100%; background-image:url("../../img/Desktop/05.png"); background-position:100% 100%; margin-right:2px; background-repeat:no-repeat; }
+      .corp-2-line>li:nth-child(3){ float:left; padding:5px; box-sizing:border-box; width:33%; height:100%; background-image:url("../../img/Desktop/06.png"); background-position:100% 100%; background-repeat:no-repeat; }
+    /* 이미지 수정 */
+    .relation-corp-area>.corp-3-line{ padding:5px; box-sizing:border-box; width:100%; height:20%; }
+      .corp-3-line>li:nth-child(1){ float:left; padding:5px; box-sizing:border-box; width:33%; height:100%; background-image:url("../../img/Desktop/07.png"); background-position:100% 100%; margin-right:2px; background-repeat:no-repeat; }
+      .corp-3-line>li:nth-child(2){ float:left; padding:5px; box-sizing:border-box; width:33%; height:100%; background-image:url("../../img/Desktop/08.png"); background-position:100% 100%; margin-right:2px; background-repeat:no-repeat; }
+      .corp-3-line>li:nth-child(3){ float:left; padding:5px; box-sizing:border-box; width:33%; height:100%; background-image:url("../../img/Desktop/09.png"); background-position:100% 100%; background-repeat:no-repeat; }
+    /* 이미지 수정 */
+    .relation-corp-area>.corp-4-line{ padding:5px; box-sizing:border-box; width:100%; height:20%; }
+      .corp-4-line>li:nth-child(1){ float:left; padding:5px; box-sizing:border-box; width:33%; height:100%; background-image:url("../../img/Desktop/10.png"); background-position:100% 100%; margin-right:2px; background-repeat:no-repeat; }
+      .corp-4-line>li:nth-child(2){ float:left; padding:5px; box-sizing:border-box; width:33%; height:100%; background-image:url("../../img/Desktop/11.png"); background-position:100% 100%; margin-right:2px; background-repeat:no-repeat; }
+      .corp-4-line>li:nth-child(3){ float:left; padding:5px; box-sizing:border-box; width:33%; height:100%; background-image:url("../../img/Desktop/12.png"); background-position:100% 100%; background-repeat:no-repeat; }
+    /* 이미지 수정 */
+    .relation-corp-area>.corp-5-line{ padding:5px; box-sizing:border-box; width:100%; height:20%; }
+      .corp-5-line>li:nth-child(1){ float:left; padding:5px; box-sizing:border-box; width:33%; height:100%; background-image:url("../../img/Desktop/13.png"); background-position:100% 100%; margin-right:2px; background-repeat:no-repeat; }
+
+    /* 검색창 */
+    .relation-search-area{ width:100%; height:20%; }
+      .search-01{ padding:5px; box-sizing:border-box; margin:auto; width:80%; height:50%; }
+      .search-01>.inputBox{ float:left; width:80%; height:100%; background-color:#eee; }
+      .search-01>.searchBtn { float:left; width:20%; height:100%; background-color:#173D64; background-image:url("../../img/search-icon.png"); background-position:60% 80%; background-repeat:no-repeat; }
+
+      .search-02{ padding:5px; box-sizing:border-box; margin:auto; width:80%; height:50%; }
+      .search-02>.inputBox{ float:left; width:80%; height:100%; background-color:#eee; }
+      .search-02>.searchBtn { float:left; width:20%; height:100%; background-color:#173D64; background-image:url("../../img/search-icon.png"); background-position:60% 80%; background-repeat:no-repeat; }
+      
+
+/* aside(SNS) */
+  #snsArea{ position:relative; width:100%; height:6.25rem; background-color:#1C3B59; }
+    .SNS-area{ position:absolute; top:0; bottom:0; margin:auto; left:50%; transform:translateX(-50%); width:60%; height:50%; }
+    .SNS-area>ul{ width:100%; height:100%; }
+    .SNS-area>ul>li:nth-child(1){ float:left; width:18%; height:100%; margin-right:2.5%; background-image:url("../../img/Desktop/faceBook-01.png"); background-position:100% 100%; background-repeat:no-repeat; }
+    .SNS-area>ul>li:nth-child(2){ float:left; width:18%; height:100%; margin-right:2.5%; background-image:url("../../img/Desktop/instar-01.png"); background-position:100% 100%; background-repeat:no-repeat; }
+    .SNS-area>ul>li:nth-child(3){ float:left; width:18%; height:100%; margin-right:2.5%; background-image:url("../../img/Desktop/blog-01.png"); background-position:100% 100%; background-repeat:no-repeat; }
+    .SNS-area>ul>li:nth-child(4){ float:left; width:18%; height:100%; margin-right:2.5%; background-image:url("../../img/Desktop/cacao-01.png"); background-position:100% 100%; background-repeat:no-repeat; }
+    .SNS-area>ul>li:last-child{  float:left; width:18%; height:100%;  margin-right:0; background-image:url("../../img/Desktop/tweeter-01.png"); background-position:100% 510%; background-repeat:no-repeat; }
+
+
+/* article-6(민원 및 고객 센터) */
+  #complaintsCenter{ width:100%; height:12.5rem;}
+    .complain-01{ padding:10px; box-sizing:border-box; width:100%; height:50%; background-color:#fff}
+      .KTO-1330{ float:left; margin-right:2%; width:220px; width:13.75rem; height:80px; height:5rem; background-image:url("../../img/KTO-1330-01.png"); background-position:100% 100%; background-repeat:no-repeat; background-size:cover; }
+      .partners{ float:right; margin-left:2%; width:220px; width:13.75rem; height:80px; height:5rem; background-image:url("../../img/Partners-01.png"); background-position:100% 100%; background-repeat:no-repeat; background-size:cover; }
+
+    .complain-02{ width:100%; height:50%; background-image:url("../../img/complaints.png"); background-position:30% 30%; background-repeat:no-repeat; background-size:cover; }
+
+/*footer */
+  #footBox{ padding:10px; box-sizing:border-box; width:100%; height:200px; border-top:1px solid #ddd; }
+    .policy-intro01{ width:100%; height:50px; }
+    .policy-intro01>ul{ width:100%; height:100%; }
+    .policy-intro01>ul>li{ float:left; margin-right:5px; width:auto; height:100%; }
+    .policy-intro01>ul>li:last-child{ margin-right:0; }
+    .policy-intro01>ul>li>a{ display:block; font-size:14px; text-align:center;}
+
+    .policy-intro02{ width:100%; height:50px; }
+    .policy-intro02>ul{ width:100%; height:100%; }
+    .policy-intro02>ul>li{ float:left; margin-right:10px; width:auto; height:100%; }
+    .policy-intro02>ul>li:last-child{ margin-right:0; }
+    .policy-intro02>ul>li>a{ display:block; font-size:14px; text-align:center; }
+    .company-info{ padding:5px; box-sizing:border-box; width:100%; height:100px; background-color:#eee; }
+    .company-info>address{ font-size:12px; font-style:normal; }
