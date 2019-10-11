@@ -16,7 +16,7 @@ a { color:#777; text-decoration:none; }
 a:hover { color:#f07; }
 a:focus { outline:2px solid #f06;}
 abbr { text-decoration:none; text-transform:uppercase;}
-button { cursor:pointer; background-color:transparent;  }
+button { cursor:pointer; background-color:transparent;  border:0; }
 button:hover { background-color:#fa0;}
 button:focus { outline:2px solid #f06;}
 
@@ -30,7 +30,7 @@ main, header, footer, aside, nav, section, article, figure, figcaption { display
 form, fieldset, legend { margin:0; padding:0; border:0;}
 
 legend{ position:absolute; width:0; height:0; overflow:hidden;}
-input { box-sizing:border-box; text-indent:0.5rem; cursor:pointer;}
+input { text-indent:0.5rem; cursor:pointer;}
 input[type="text"]:hover, input[type="password"]:hover,
 input[type="search"]:hover, input[type="url"]:hover,
 input[type="email"]:hover, input[type="tel"]:hover,
