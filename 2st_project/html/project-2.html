@@ -38,14 +38,19 @@
           </div>
       </div>
       <div class="headNav clearfix">
-          <div class="searchArea">
-            <input type="text" class="search-bar">
-            <input type="button" class="search-btn">
-          </div>
+
+            <form class="searchArea" action="" method="get">
+              <fieldset>
+                <legend class="hidden">검색영역</legend>
+                <label for="searchName" class="hidden">검색할 내용을 입력하세요.</label>
+                <input type="text" id="searchName" value="" name="" class="search-bar">
+                <input type="button" class="search-btn">
+              </fieldset>
+            </form>
           <nav class="menuBar clearfix">
             <ul>
-              <li><a href="#">⎮ 내 주변</a></li>
-              <li><a href="#">⎮ 마이페이지</a></li>
+              <li>⎮<a href="#">내 주변</a></li>
+              <li>⎮<a href="#">마이페이지</a></li>
               <li><a href="#" class="hidden">확장 메뉴</a></li>
             </ul>
           </nav> 
@@ -279,14 +284,21 @@
           </ul>
         </div>
         <div class="relation-search-area">
-          <div class="search-01 clearfix">
-            <input type="text"  class="inputBox" placeholder="관광 정보">
-            <input type="button" class="searchBtn" >
-          </div>
-          <div class="search-02 clearfix">
-            <input type="text" class="inputBox" placeholder="유관 기관">
-            <input type="button"class="searchBtn" >
-          </div>
+          
+            <form class="search-01" action="" method="get">
+              <fieldset>
+                <legend class="hidden clearfix">검색 영역</legend>
+                <input type="text"  class="inputBox" placeholder="관광 정보">
+                <input type="button" class="searchBtn" >
+              </fieldset>
+            </form>
+          <form class="search-02 clearfix" action="">
+            <fieldset>
+              <legend class="hidden">검색 영역</legend>
+              <input type="text" class="inputBox" placeholder="유관 기관">
+              <input type="button" class="searchBtn" >
+            </fieldset>
+        </form>
         </div>
       </article>
 

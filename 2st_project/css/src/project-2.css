@@ -1,14 +1,15 @@
 @charset "utf-8";
 
-
+/* 480px~768px */
 #wrap {position:relative; margin:auto; width:100%; min-width:480px; height:auto; }
 
 /* header */
   #headBox { position:absolute; top:0; left:0; z-index:100; width:100%;  height:10rem; }
     .headNav { position:fixed; top:0; left:0; z-index:300; width:100%; height:5rem; background-color:#173D64; }
-      .searchArea { position:absolute; left:0.9375rem; top:20px; padding:0.3125rem; box-sizing:border-box; width:9.375rem; height:30px; height:1.875rem; background-color:#173D64; }
-      .searchArea>.search-bar{ display:none; float:left; width:6.875rem; height:30px; height:1.875rem; background-color:#fff;}
-      .searchArea>.search-btn{ float:right; width:30px; height:30px; width:1.875rem; height:1.875rem; background-color:#173D64; background-image:url("../../img/Desktop/search-icon.png"); background-repeat:no-repeat; background-position:50% 50%; background-size: cover; }
+      .searchArea { position:absolute; left:0.9375rem; top:20px; padding:0.3125rem; box-sizing:border-box; width:9.375rem; width:150px; height:1.875rem; height:30px; background-color:#173D64; }
+      .searchArea>fieldset{ width:100%; height:100%; }
+      .searchArea .search-bar{ float:left; width:100px; height:30px; background-color:#173D64; }
+      .searchArea .search-btn{ float:right; width:30px; height:30px; background-color:#173D64; background-image:url("../../img/Desktop/search-icon.png"); background-repeat:no-repeat; background-position:50% 50%; background-size: cover; }
       .menuBar { position:absolute; top:10px; top:0.625rem; right:15px; right:0.9375rem; width:290px; height:60px; width:18.125rem; height:3.75rem; }
       .menuBar>ul{ width:100%; height:100%; }
       .menuBar>ul>li:nth-child(1){ float:left; margin-right:10px; margin-right:0.625rem;  width:80px; width:5rem; height:100%;  background-color:#173D64;}
@@ -212,14 +213,14 @@
       .corp-5-line>li:nth-child(1){ float:left; padding:5px; box-sizing:border-box; width:33%; height:100%; background-image:url("../../img/Desktop/13.png"); background-position:100% 100%; margin-right:2px; background-repeat:no-repeat; }
 
     /* 검색창 */
-    .relation-search-area{ width:100%; height:20%; }
-      .search-01{ padding:5px; box-sizing:border-box; margin:auto; width:80%; height:50%; }
-      .search-01>.inputBox{ float:left; width:80%; height:100%; background-color:#eee; }
-      .search-01>.searchBtn { float:left; width:20%; height:100%; background-color:#173D64; background-image:url("../../img/search-icon.png"); background-position:60% 80%; background-repeat:no-repeat; }
+    .relation-search-area{ width:100%; height:120px; }
+      .search-01{ padding:5px; box-sizing:border-box; margin:auto; width:100%; height:50%; }
+      .search-01 .inputBox{ float:left; margin-left:15px; width:400px; height:60px; background-color:#fff; }
+      .search-01 .searchBtn { float:left; width:50px; height:60px; background-color:#173D64; background-image:url("../../img/search-icon.png"); background-position:60% 80%; background-repeat:no-repeat; }
 
-      .search-02{ padding:5px; box-sizing:border-box; margin:auto; width:80%; height:50%; }
-      .search-02>.inputBox{ float:left; width:80%; height:100%; background-color:#eee; }
-      .search-02>.searchBtn { float:left; width:20%; height:100%; background-color:#173D64; background-image:url("../../img/search-icon.png"); background-position:60% 80%; background-repeat:no-repeat; }
+      .search-02{ padding:5px; box-sizing:border-box; margin:auto; width:100%; height:50%; }
+      .search-02 .inputBox{ float:left; margin-left:15px; width:400px; height:60px; background-color:#fff; }
+      .search-02 .searchBtn { float:left; width:50px; height:60px; background-color:#173D64; background-image:url("../../img/search-icon.png"); background-position:60% 80%; background-repeat:no-repeat; }
       
 
 /* aside(SNS) */
@@ -260,10 +261,11 @@
     
    
 
-    @media screen and (min-width:769px) and (max-width:1280px) {
+   
+
+    @media screen and (min-width:1280px) and (max-width:1920px) {
 
     }
-
-    @media screen and (min-width:1920px) {
+    @media screen and (min-width:1921px) {
 
     }

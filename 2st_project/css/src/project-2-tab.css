@@ -1,0 +1,29 @@
+@charset "utf-8";
+/* tablet version */
+
+@media screen and (min-width:769px) and (max-width:1279px) {
+
+  /* header============== */
+  #headBox { position:absolute; top:0; left:0; z-index:100; width:100%;  height:220px; }
+  .headNav { position:fixed; top:0; left:0; z-index:300; width:100%; height:120px; background-color:#173D64; }
+    .searchArea { position:absolute; left:34px; top:35px; width:350px; height:50px; background-color:#173D64; }
+    .searchArea>.search-bar{ display:none; float:left; padding:0; margin:0; width:300px; height:80px; }
+    .searchArea>.search-btn{ float:right; padding:0; margin:0; width:50px; height:50px; background-color:#173D64; background-image:url("../../img/Desktop/search-icon.png"); background-repeat:no-repeat; background-position:100% 100%; background-size: cover; }
+    .menuBar { position:absolute; top:20px; right:34px; width:290px; height:80px; }
+    .menuBar>ul{ width:100%; height:100%; }
+    .menuBar>ul>li:nth-child(1){ float:left; margin-right:30px; width:100px; height:100%; background-color:#173D64;}
+    .menuBar>ul>li:nth-child(2){ float:left; width:140px; height:100%;  background-color:#173D64;}
+    .menuBar>ul>li:nth-child(3){ display:none; }
+    .menuBar>ul>li>a{ font-size:20px; line-height:80px; text-align:center; color:#fff; }
+    
+  .logoArea{ position:absolute; top:50%; left:0; width:100%; height:100px; }
+  .logoArea>h1{ display:block; position:absolute; left:34px; z-index:100; width:350px; height:100px; background-image:url("../../img/logo1-01.png"); background-position:0 95%; background-repeat:no-repeat; } 
+  .logoArea>.tabView-menu{ display:block; position:absolute; right:34px; width:350px; height:100%; }
+    .tabView-menu>ul{ padding:20px; box-sizing:border-box; width:100%; height:100%; }
+    .tabView-menu>ul>li{ float:left; width:54px; height:100%; margin-right:10px; }
+    .tabView-menu>ul>li>a{ display:block; font-size:20px; line-height:60px; color:#173D64; }
+    .tabView-menu>ul>li:nth-child(5){ margin-right:0; }
+
+  /* section============== */
+
+}
