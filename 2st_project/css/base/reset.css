@@ -30,7 +30,7 @@ main, header, footer, aside, nav, section, article, figure, figcaption { display
 form, fieldset, legend { margin:0; padding:0; border:0;}
 
 legend{ position:absolute; width:0; height:0; overflow:hidden;}
-input { text-indent:0.5rem; cursor:pointer;}
+input { text-indent:0.5rem; cursor:pointer; border:0;}
 input[type="text"]:hover, input[type="password"]:hover,
 input[type="search"]:hover, input[type="url"]:hover,
 input[type="email"]:hover, input[type="tel"]:hover,
