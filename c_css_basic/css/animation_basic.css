@@ -1,0 +1,56 @@
+@charset "utf-8";
+
+.ani_one{width:100%; min-width:1200px; height:200px; padding:0.5rem; background-color: #fdc; border:2px solid #333; }
+
+.ani_one>.test{ width:200px; height:200px; border-radius:100%; background-color: #5cf; text-align:center; line-height:200px; 
+transform:translate(-250px);
+
+/* -webkit-animation-name:rotateBall;
+-moz-animation-name:rotateBall;
+-ms-animation-name:rotateBall;
+-o-animation-name:rotateBall; 
+
+-webkit-animation-duration:3000ms;
+-moz-animation-duration:3000ms;
+-ms-animation-duration:3000ms;
+-o-animation-duration:3000ms;
+
+-webkit-animation-timing-function:ease;
+-moz-animation-timing-function:ease;
+-ms-animation-timing-function:ease;
+-o-animation-timing-function:ease;
+
+animation-iteration-count:infinite;
+animation-direction:alternate; */
+
+animation:rotateBall 3000ms infinite alternate ;
+
+}
+
+@keyframes rotateBall {
+  0% { background-color: #f05;} /* 0%: 시작-0초 */
+  50% { transform:translate(20vw -100px) rotate(360deg); color:#fff; } /* 50%: 중간-1.5초 */
+  100% { transform:translate(100vw) rotate(720deg); } /* 100%: 끝-3초 */
+}
+
+.test:hover{ animation-play-state:paused; }
+
+
+/* @-webkit-keyframes rotateBall {}
+@-moz-keyframes rotateBall {}
+@-ms-keyframes rotateBall {}
+@-o-keyframes rotateBall {} */
+
+/*
+*animation-name: 애니메이션 기능을 수행해 줄 이름을 짓는다.
+*animation-duration: 한번의 흐름에 대한 수행 시간.
+*animation-timing-function: 한 번 수행 시 느껴지는 움직임의 형질
+*animation-iteration-count: 반복 수행 횟수(1번일 경우에 1, 10번일 경우엔 10, 무한 반복 시 infinite
+*animation-direction: 애니메이션 1차 수행 전/후 방향을 정하는 기능.narmal, reverse, alternate, alternate-reverse
+*animation-delay: 애니메이션 지연 시간
+*animation-play-state: 움직임과 일시 정지 처리 (paused, running)
+*animation-fill-mode: 애니메이션의 전/후에 처리할 내용
+*animation:이름 지속시간 지속횟수 direction
+*/
+
+.myani{ width:20px; height:20px; border-radius:100%; background-color: #333; animation:rotateBall 500ms infinite alternate-revers;}
