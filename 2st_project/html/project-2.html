@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
 <meta name="description" content="웹 페이지 실습에 따른 목차 구성" >
 <meta name="keyword" content="html, css, js, web, design" >
 <meta name="author" content="구세정" >
@@ -74,6 +74,15 @@
                     <li><a href="#">03</a></li>
                     <li><a href="#">04</a></li>
                   </ul>
+                  <!-- pc 전용 영역 -->
+                  <div class="text-indi clearfix">
+                    <ul>
+                      <li><a href="#">가을 갈대축제</a></li>
+                      <li><a href="#">경주 핑크뮬리축제</a></li>
+                      <li><a href="#">가을 야경 즐기기</a></li>
+                      <li><a href="#">노을빛 가을 순천</a></li>
+                    </ul>
+                  </div>
             </div>
         </div>
         
@@ -111,7 +120,7 @@
       <!-- 지역별 여행 정보 영역-->
       <article id="areaTreval">
         <h2 class="hidden">원하는 지역을 선택하여 정보를 얻을 수 있습니다.</h2>
-          <div class="localArea">
+          <div class="localArea clearfix">
             
             <div class="city-intro01 clearfix">
               <h2>지역별 여행지</h2>
@@ -139,8 +148,9 @@
                 <div class="select-line"></div>
             </div>
 
-            <div class="city-intro02">
+            <div class="city-intro02 clearfix">
 
+              <!-- 선택한 지역의 심볼 및 주변 정보를 알 수 있는 영역 -->
               <div class="symbol-icon clearfix">
                 <div class="city-symbol-area"></div>
                 <div class="local-icon-area">
@@ -148,56 +158,60 @@
                   <div class="localAll"></div>
                 </div>
               </div>
-
-              <div class="intro-1">
-                <p>6가지 매력</p>
-                <p>서초구 문화 여행 명소</p>
-                <a href="#">자세히 보기〉</a>
+              <!-- 선택한 지역의 관광지 소개 -->
+              <div class="introBox clearfix">
+                <div class="intro-1">
+                  <p>6가지 매력</p>
+                  <p>서초구 문화 여행 명소</p>
+                  <a href="#">자세히 보기〉</a>
+                </div>
+                <div class="intro-2">
+                  <p>예술 작품 감상과 석파정의 아름다움까지</p>
+                  <p><a href="#">일석이조 석파정 서울 미술관 관람</a></p>
+                </div>
+                <div class="intro-3">
+                  <p>한강이 한눈에, 불꽃놀이가 한눈에</p>
+                  <p><a href="#">동작구 숨은 명당자리</a></p>
+                </div>
+                <div class="intro-4">
+                  <p>어린이 대공원</p>
+                  <p><a href="#">야간 산책도 굿!</a></p>
+                </div>
               </div>
-              <div class="intro-2">
-                <p>예술 작품 감상과 석파정의 아름다움까지</p>
-                <p><a href="#">일석이조 석파정 서울 미술관 관람</a></p>
-              </div>
-                
-              <div class="intro-3">
-                <p>한강이 한눈에, 불꽃놀이가 한눈에</p>
-                <p><a href="#">동작구 숨은 명당자리</a></p>
-              </div>
-              <div class="intro-4">
-                <p>어린이 대공원</p>
-                <p><a href="">야간 산책도 굿!</a></p>
-              </div>
+            </div> 
+                <div class="guArea">
+                  <ul class="gu-info clearfix">
+                    <li><a href="#">강남구</a></li>
+                    <li><a href="#">강동구</a></li>
+                    <li><a href="#">강북구</a></li>
+                    <li><a href="#">강서구</a></li>
+                    <li><a href="#">관악구</a></li>
+                    <li><a href="#">광진구</a></li>
+                    <!--mobile -->
+                    <li><a href="#">구로구</a></li>
+                    <li><a href="#">금천구</a></li>
+                    <li><a href="#">노원구</a></li>
+                    <!-- tablet -->
+                    <li><a href="#">도봉구</a></li>
+                    <li><a href="#">동대문구</a></li>
+                    <li><a href="#">마포구</a></li>
+                    <li><a href="#">서대문구</a></li>
+                    <li><a href="#">서초구</a></li>
+                    <li><a href="#">성동구</a></li>
+                    <li><a href="#">성북구</a></li>
+                    <li><a href="#">서초구</a></li>
+                    <li><a href="#">송파구</a></li>
+                    <li><a href="#">양천구</a></li>
+                    <li><a href="#">영등포구</a></li>
+                    <li><a href="#">용산구</a></li>
+                    <li><a href="#">은평구</a></li>
+                    <li><a href="#">종로구</a></li>
+                    <li><a href="#">중구</a></li>
+                    <li><a href="#">중랑구</a></li>
+                    <li><a href="#">더보기</a></li>
+                  </ul>
+                </div>
               
-              <ul class="gu-info clearfix">
-                <li><a href="#">강남구</a></li>
-                <li><a href="#">강동구</a></li>
-                <li><a href="#">강북구</a></li>
-                <li><a href="#">강서구</a></li>
-                <li><a href="#">관악구</a></li>
-                <li><a href="#">광진구</a></li>
-                <!--mobile -->
-                <li><a href="#">구로구</a></li>
-                <li><a href="#">금천구</a></li>
-                <li><a href="#">노원구</a></li>
-                <li><a href="#">도봉구</a></li>
-                <li><a href="#">동대문구</a></li>
-                <li><a href="#">마포구</a></li>
-                <li><a href="#">서대문구</a></li>
-                <li><a href="#">서초구</a></li>
-                <li><a href="#">성동구</a></li>
-                <li><a href="#">성북구</a></li>
-                <li><a href="#">서초구</a></li>
-                <li><a href="#">송파구</a></li>
-                <li><a href="#">양천구</a></li>
-                <li><a href="#">영등포구</a></li>
-                <li><a href="#">용산구</a></li>
-                <li><a href="#">은평구</a></li>
-                <li><a href="#">종로구</a></li>
-                <li><a href="#">중구</a></li>
-                <li><a href="#">중랑구</a></li>
-                <li><a href="#">더보기</a></li>
-              </ul>
-            </div>
           </div>
           
 
@@ -205,25 +219,75 @@
 
       <!--  지역별 축제 정보 영역-->
       <article id="festvalInfo">
-        <h2 class="hidden">10월의 축제 정보를 확인하실 수 있습니다.</h2>
+        <h2 class="hidden">10월의 축제 정보를 확인하실 수 있습니다.</h2> 
         <div class="calendar-palce">
-          <p>~10월의 축제 즐기기~</p>
-          <div class="festival01">
-            <p>2019.10.07~2019.10.07</p>
-            <p>글로벌 SW 교육 컨퍼런스 2019</p>
-            <p>서울 중구</p>
+          <p id="festivalTitle">~10월의 축제 즐기기~</p>
+          <!-- tablet, desk-top용 캘린더  -->
+          <div class="tab-deTop-calenda clearfix">
+            <ul> <!-- 첫째주-->
+              <li><a href="#"><span class="hidden">0</span></a></li>
+              <li><a href="#"><span class="hidden">0</span></a></li>
+              <li><a href="#">1</a></li>
+              <li><a href="#">2</a></li>
+              <li><a href="#">3</a></li>
+              <li><a href="#">4</a></li>
+              <li><a href="#">5</a></li>
+            </ul>
+            <ul> <!-- 둘째주-->
+              <li><a href="#">6</a></li>
+              <li><a href="#">7</a></li>
+              <li><a href="#">8</a></li>
+              <li><a href="#">9</a></li>
+              <li><a href="#">10</a></li>
+              <li><a href="#">11</a></li>
+              <li><a href="#">12</a></li>
+            </ul>
+            <ul> <!-- 셋째주-->
+              <li><a href="#">13</a></li>
+              <li><a href="#">14</a></li>
+              <li><a href="#">15</a></li>
+              <li><a href="#">16</a></li>
+              <li><a href="#">17</a></li>
+              <li><a href="#">18</a></li>
+              <li><a href="#">19</a></li>
+            </ul>
+            <ul> <!-- 넷째주-->
+              <li><a href="#">20</a></li>
+              <li><a href="#">21</a></li>
+              <li><a href="#">22</a></li>
+              <li><a href="#">23</a></li>
+              <li><a href="#">24</a></li>
+              <li><a href="#">25</a></li>
+              <li><a href="#">26</a></li>
+            </ul>
+            <ul> <!-- 다섯째주-->
+              <li><a href="#">27</a></li>
+              <li><a href="#">28</a></li>
+              <li><a href="#">29</a></li>
+              <li><a href="#">30</a></li>
+              <li><a href="#">31</a></li>
+              <li><a href="#"><span class="hidden">0</span></a></li>
+              <li><a href="#"><span class="hidden">0</span></a></li>
+            </ul>
           </div>
-          <div class="festival02">
-            <p>2019.10.07~2019.10.08</p>
-            <p>평창 노산 문화제 2019</p>
-            <p>강원 평창군</p>
+          <div class="festivalBox cleaefix">
+            <div class="festival01">
+              <p>2019.10.07~2019.10.07</p>
+              <p>글로벌 SW 교육 컨퍼런스 2019</p>
+              <p>서울 중구</p>
+            </div>
+            <div class="festival02">
+              <p>2019.10.07~2019.10.08</p>
+              <p>평창 노산 문화제 2019</p>
+              <p>강원 평창군</p>
+            </div>
+            <div class="festival03">
+              <p>2019.10.07~2019.10.13</p>
+              <p>SW교육 체험 주간 2019</p>
+              <p>전남 여수시</p>
+            </div>
           </div>
-          <div class="festival03">
-            <p>2019.10.07~2019.10.13</p>
-            <p>SW교육 체험 주간 2019</p>
-            <p>전남 여수시</p>
-          </div>
-          <p><a href="#">축제 더보기→</a></p>
+          <p class="moreBtn"><a href="#">축제 더보기→</a></p>
         </div>
 
       </article>
@@ -232,25 +296,29 @@
       <!-- 이색 테마 여형 영역 -->
       <article id="themaTreval">
         <h2 class="hidden">대한민국 구석구석이 소개하는 이색 테마 여행지 정보입니다.</h2>
-        <div class="thema-treval01">
-          <p>워킹 테라피</p>
-          <h3>지리산 둘레길에서 가을맞이</h3>
-          <p><a href="#">전북 남원</a></p>
-        </div>
-        <div class="thema-treval02">
-          <p>이색 여행</p>
-          <h3>시골에서 즐기는 달콤한 와인</h3>
-          <p><a href="#">충북 영동</a></p>
-        </div>
-        <div class="thema-treval03">
-          <p>체험 여행</p>
-          <h3>진짜 제주를 만나봐!</h3>
-          <p><a href="#">제주 애월읍</a></p>
-        </div>
-        <div class="thema-treval04">
-          <p>시월의 한끼</p>
-          <h3>가을철 식탐 도토리로 잡는다!</h3>
-          <p><a href="#">대전</a></p>
+        <div class="themaBox clearfix">
+          <div class="thema-treval01">
+            <p>워킹 테라피</p>
+            <h3>지리산 둘레길에서 가을맞이</h3>
+            <p><a href="#">전북 남원</a></p>
+          </div>
+          <div class="thema-treval02">
+            <p>이색 여행</p>
+            <h3>시골에서 즐기는 달콤한 와인</h3>
+            <p><a href="#">충북 영동</a></p>
+          </div>
+          <div class="thema-treval03">
+            <p>체험 여행</p>
+            <h3>진짜 제주를 만나봐!</h3>
+            <p><a href="#">제주 애월읍</a></p>
+          </div>
+          <div class="thema-treval04">
+            <p>시월의 한끼</p>
+            <h3>가을철 식탐 도토리로 잡는다!</h3>
+            <p><a href="#">대전</a></p>
+          </div>
+          <!-- tab/pc version -->
+          <div class="tabViewThema"></div>
         </div>
       </article>
 
@@ -283,22 +351,31 @@
             <li><a href="#"><span class="hidden">살아 숨쉬는 전통</span></a></li>
           </ul>
         </div>
-        <div class="relation-search-area">
-          
-            <form class="search-01" action="" method="get">
+        
+        <div class="tab-pc-View clearfix">
+          <div class="tab-pc-Area clearfix">
+            <!--  tab, pc용  -->
+            <div class="trevalGuide"></div>
+            <div class="templeStay"></div>
+
+          </div>
+          <div class="relation-search-area clearfix">
+            
+              <form class="search-01" action="" method="get">
+                <fieldset>
+                  <legend class="hidden clearfix">검색 영역</legend>
+                  <input type="text"  class="inputBox" placeholder="관광 정보">
+                  <input type="button" class="searchBtn" >
+                </fieldset>
+              </form>
+            <form class="search-02 clearfix" action="">
               <fieldset>
-                <legend class="hidden clearfix">검색 영역</legend>
-                <input type="text"  class="inputBox" placeholder="관광 정보">
+                <legend class="hidden">검색 영역</legend>
+                <input type="text" class="inputBox" placeholder="유관 기관">
                 <input type="button" class="searchBtn" >
               </fieldset>
-            </form>
-          <form class="search-02 clearfix" action="">
-            <fieldset>
-              <legend class="hidden">검색 영역</legend>
-              <input type="text" class="inputBox" placeholder="유관 기관">
-              <input type="button" class="searchBtn" >
-            </fieldset>
-        </form>
+          </form>
+          </div>
         </div>
       </article>
 
@@ -309,11 +386,11 @@
         <h2 class="hidden">대한민국 구석구석의 각종 SNS 정보를 확인할 수 있습니다.</h2>
         <div class="SNS-area clearfix">
           <ul>
-            <li><a href="#"><span class="hidden">페이스북</span></a></li>
-            <li><a href="#"><span class="hidden">인스타그램</span></a></li>
-            <li><a href="#"><span class="hidden">블로그</span></a></li>
-            <li><a href="#"><span class="hidden">카카오스토리</span></a></li>
-            <li><a href="#"><span class="hidden">트위터</span></a></li>
+            <li><a href="#"><span>페이스북</span></a></li>
+            <li><a href="#"><span>인스타그램</span></a></li>
+            <li><a href="#"><span>블로그</span></a></li>
+            <li><a href="#"><span>카카오스토리</span></a></li>
+            <li><a href="#"><span>트위터</span></a></li>
           </ul>
         </div>
       </aside>
@@ -326,7 +403,7 @@
           <div class="KTO-1330"></div>
           <div class="partners"></div>
         </div>
-        <div class="complain-02"></div>
+        <div class="complain-02 clearfix"></div>
         
       </article>
     </main>
@@ -334,7 +411,7 @@
     <!-- footer -->
     <footer id="footBox">
       <h2><span class="hidden">대한민국 구석구석을 운영하고 있는 회사의 정보입니다.</span></h2>
-      <div class="policy-intro01">
+      <div class="policy-intro01 clearfix">
         <ul class="clearfix">
           <li><a href="#">⎮ 개인정보 처리방침</a></li>
           <li><a href="#">⎮ 이용약관</a></li>
@@ -342,7 +419,7 @@
           <li><a href="#">⎮ 저작권 정책</a></li>
         </ul>
       </div>
-      <div class="policy-intro02">
+      <div class="policy-intro02 clearfix">
         <ul class="clearfix">
           <li><a href="#">⎮ 고객 서비스 현장</a></li>
           <li><a href="#">⎮ 전자우편 무단 수집거부</a></li>
@@ -350,12 +427,14 @@
           <li><a href="#">⎮ 찾아오시는 길</a></li>
         </ul>
       </div>
-      <address class="company-info">
-        <br />
-        ⎮ 사업자 등록번호:202-81-50707 <br />
-        ⎮ 통신판매업신고: 제 2009-서울중구-1234호 <br />
-        ⎮ 우편번호:26464 ⎮ 강원도 원주시 세계로 10 ⎮ TEL:033-738-3000
-      </address>
+      <div class="companyArea">
+        <address class="company-info">
+          <br />
+          ⎮ 사업자 등록번호:202-81-50707 <br />
+          ⎮ 통신판매업신고: 제 2009-서울중구-1234호 <br />
+          ⎮ 우편번호:26464 ⎮ 강원도 원주시 세계로 10 ⎮ TEL:033-738-3000
+        </address>
+      </div>
     </footer>
   </div>
  
