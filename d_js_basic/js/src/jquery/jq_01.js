@@ -10,4 +10,4 @@
     $('#wrap').animate({'height':'1000px','backgroundColor':'#0af'});
   });
 
-})(jQuery);
+})
