@@ -1,0 +1,51 @@
+@charset "UTF-8";
+/* 변수 */
+html, body { color: #555; }
+
+h1 { color: #555; }
+
+a { color: #555; }
+
+a:hover { color: #a2a2a2; }
+
+a:active { color: daken(#555, 30%); }
+
+#headBox h1 a { color: #555; }
+
+#headBox h1 a { color: #555; }
+
+#headBox h1 a:hover { color: #a2a2a2; }
+
+#headBox h1 a:active { color: daken(#555, 30%); }
+
+#headBox h1 a:focus { color: #555; }
+
+.product_list { width: 100%; }
+
+.product_list > ul { width: 90%; }
+
+.product_list > ul > li { width: 100%; }
+
+.product_list > ul > li > a { display: block; width: 100%; }
+
+.product_list > ul > li > a > span { display: block; width: 0; }
+
+.product_list { width: 100%; }
+
+.product_list > ul { width: 90%; }
+
+.product_list > ul > li { width: 100%; }
+
+.product_list > ul > li:nth-child(1) { background-color: #fff; }
+
+.product_list > ul > li:nth-child(1)::after, .product_list > ul > li:nth-child(1):after { content: "1234"; }
+
+.product_list > ul > li > a { display: block; width: 100%; }
+
+.product_list > ul > li > a:hover { color: rgba(85, 85, 85, 0.5); }
+
+.product_list > ul > li > a:active { color: #555; }
+
+.product_list > ul > li > a:focus { color: #555; }
+
+.product_list > ul > li > a > span { display: block; width: 0; }

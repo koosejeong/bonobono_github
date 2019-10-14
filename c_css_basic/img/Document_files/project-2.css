@@ -1,0 +1,41 @@
+@charset "utf-8";
+
+
+#wrap { margin:auto; width:480px; height:auto; }
+
+/* header */
+  #headBox { position:fixed; top:0; left:0; z-index:300; width:100%; height:160px; background-color:#333;}
+    .headNav { width:100%; height:80px; background-color:#173D64; }
+      .searchArea { position:absolute; left:15px; top:10px; padding:5px; box-sizing:border-box; width:150px; height:60px; background-color:#fff; }
+      .searchArea>.search-bar{ float:left; width:110px; height:50px; background-color:#fff;}
+      .searchArea>.search-btn{ float:right; width:30px; height:50px; background-color:#173D64;}
+      .menuBar { position:absolute; top:10px; right:15px; width:300px; height:60px; background-color:#fff; }
+      .menuBar>ul{ width:290px; height:100%; }
+
+
+/* section(main 홍보 영역) */
+  #mainAdd { width:100%; height:650px; background-color:#F2DFC6; }
+
+/* article-1(여행지 뉴스 영역) */
+  #todayNews{ width:100%; height:240px; background-color:#F4AE50;}
+
+/* article-2(지역별 여행 정보 영역) */
+  #areaTreval{ width:100%; height:720px; background-color:#EAD1AF; }
+
+/* article-3(지역별 축제 정보 영역) */
+  #festvalInfo{ width:100%; height:640px; background-color:#E3BA83; }
+
+/* article-4(이색 테마 여행) */
+  #themaTreval{ width:100%; height:1600px; background-color:#F2ECEC; }
+
+/* article-5(유관 기관 및 관련 회사 정보) */
+  #relationCorp{ width:100%; height:600px; background-color:#EEEBE2; }
+
+/* aside(SNS) */
+  #snsArea{ width:100%; height:100px; background-color:#1C3B59; }
+
+/* article-6(민원 및 고객 센터) */
+  #complaintsCenter{ width:100%; height:200px; background-color:#E3DDDD; }
+
+/*footer */
+  #footBox{ width:100%; height:200px; background-color:#CAB7B7; }

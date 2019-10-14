@@ -1,0 +1,14 @@
+/* basic_02.css */
+.icon_01 { background-image: url("../../img/main-project/project01/main/model/login1.jpg"); }
+
+.icon_02 { background-image: url("../../img/main-project/project02/main/product/login2.jpg"); }
+
+.icon_03 { background-image: url("../../img/main-project/nature1login3.jpg"); }
+
+.my_01 { float: left; display: block; width: 100%; height: 100%; background-image: url("../../img/main-project//i.jpg"); background-repeat: no-repeat; background-position: 50% 50%; background-size: contain; background-attachment: fixed; }
+
+#wrap { display: block; width: 100%; height: 100%; background-image: url("../../img/main-project/j.jpg"); background-repeat: no-repeat; background-position: 50% 50%; background-size: contain; background-attachment: fixed; }
+
+#headBox { display: block; width: 100%; height: 100%; background-image: url("project01/main/model/p.jpg"); background-repeat: no-repeat; background-position: 50% 50%; background-size: contain; background-attachment: fixed; }
+
+.testUnit { width: 960px; width: 60rem; }
