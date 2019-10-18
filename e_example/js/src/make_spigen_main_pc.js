@@ -17,9 +17,16 @@
 
   //----------------------------
   //버튼 클릭 시 side_gnb 나타나게 만들기
+
   const openGnbBtn = $('.gnb_btn>button');
   const closeGnbBtn = $('.close_gnb_btn>button');
   const sideGnb = $('.side_gnb');
+  const gnbDl = gnb.find('dl');
+  const gnbDd = gnb.find('dd');
+  const gnbDt = gnb.find('dt');
+  const gnbTitleLink = gnbDt.children('a');
+  const gnbListLink = gnbDd.children('a');
+
   let timed = 500;
 
   openGnbBtn.on('click', function(e){
@@ -38,22 +45,24 @@
 
   //------------------------------
   //gnb에 마우스 올리면 dd 나오게 만들기.
+  //객체화 만드는 코드
 
-  const gnbDd = gnb.find('dd');
+ const addAction = function(){
+  $(this).find(gnbTitleLink).addClass('action');
+  gnbDd.stop().slideDown();
+};
 
-  gnb.on('mouseenter', function(){
-    gnbDd.stop().slideDown();
-  });
-  gnb.on('mouseleave', function(){
-    gnbDd.stop().slideUp();
-  });
+const removeAction = function(){
+  $(this).find(gnbTitleLink).removeClass('action');
+  gnbDd.stop().slideUp();
+};
+
+  gnbDl.on('mouseenter', addAction);
+  gnbDl.on('mouseleave', removeAction);
+
 
   //------------------------------
   //gnb>dt에 focus 시 dd가 나타나게 만들기.
-
-  const gnbDt = gnb.find('dt');
-  const gnbTitleLink = gnbDt.children('a');
-  const gnbListLink = gnbDd.children('a');
 
   gnbTitleLink.on('focus', function(){
     gnbDd.stop().slideDown();
