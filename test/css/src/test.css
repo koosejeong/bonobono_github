@@ -1,0 +1,25 @@
+@charset "utf-8";
+
+#wrap{ width:100%; min-width:865px; height:auto;}
+  #headBox{ position:relative; width:100%; min-width:865px; height:auto; }
+  #headBox>.fixedBox{ position:fixed; top:0; left:0; z-index:500;width:100%; min-width:865px; height:auto; }
+  .fixedBox>h1{  width:100%; min-width:865px; height:80px; border-bottom:1px solid #eee; background-color: #fff; background-image: url("../../img/woori-logo.png"); background-size: contain; background-position: 0 0; background-repeat:no-repeat; }
+  .fixedBox>#gnb{ width:100%; min-width:865px; height:65px; background-color: #ddd;}
+    #gnb>ul{ width:100%; height:auto; }
+    #gnb>ul>li{ float:left; width:20%; height:auto; background-color: #fff; }
+
+    #gnb dl{ width:100%; height:auto; }
+    #gnb dl>dt{ width:auto; height:auto; }
+    #gnb dl>dt>a{ display:block; width:auto; height:65px; font-size:24px; text-align:center; line-height:65px; color:#333; }
+
+    /* jQuery 처리 */
+    #gnb dl>dd{ display:none; padding:20px; box-sizing:border-box; width:auto; height:260px;background-color: #fff; }
+    #gnb dl>dd>a{ display:block; width:100%; height:auto; margin-top:20px; margin-bottom:10px; font-size:18px; text-align:center; color:#333; }
+
+    /* section */
+    #mainAddv{ width:100%; min-width:865px; height:1000px; background-color: #0af;}
+
+    /* fixed Test article area */
+    #article01{ width:100%; min-width:865px; height:900px; background-color: #eee;}
+    #article02{ width:100%; min-width:865px; height:1000px; background-color: #ddd;}
+    #article03{ width:100%; min-width:865px; height:700px; background-color: #333;}
