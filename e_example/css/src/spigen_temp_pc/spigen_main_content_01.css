@@ -1,0 +1,34 @@
+@charset "utf-8";
+/* main content 영역 */
+
+
+#conBox{ padding-top:100px; box-sizing:border-box; width:100%; height:100%; background-color: #ddd;}
+
+.media_blog{ width:100%; height:50%; background-color: inherit;}
+  .title_area{ float:left; padding:90px 55px 0 160px; box-sizing:border-box; width:550px; height:100%; background-color: #fff; }
+  .title_area>h3{ font-size:2.5rem; text-transform:capitalize; font-weight:bold; color:#171717; margin-bottom:4rem; }
+  .title_area>p{ font-size:1.125rem; color:#777; word-break:keep-all; }
+
+  .content_area{ float:left; padding:40px; padding-bottom:7px; padding-right:10px;  box-sizing:border-box; width:calc(100% - 550px); height:100%; background-color: #acf; }
+
+  .content_area>dl{ position:relative; width:100%; height:100%; background-color: #fff;}
+  .content_area>dl>dt{ float:left;  width:100px; height:40px; }
+  .content_area>dl>dt:first-child{ margin-right:5px; }
+
+  .content_area>dl>dt>button{ width:100%; height:100%; box-sizing:border-box; border:2px solid #454545; color:#454545; background-color: transparent; transition:all 300ms ease; }
+  /* action 클래스를 가지고 있는 button 태그의 스타일(jQuery에서 addClass로 action 클래스 부여 시 클래스 부여 된 버튼에 해당 스타일을 주기 위한 css) */
+  .content_area>dl>dt>button.action{ border-color:#f70; background-color:#f70; color:#fff; }
+  
+
+  /* jQuery에서 addClass로 .action 부여 시 나타나게 만들기. */
+  .content_area>dl>dd{ display:none; position:absolute; left:0; bottom:0; width:100%; height:calc(100% - 50px); min-height:200px; background-color: #f8a; }
+  .content_area>dl>dd:nth-of-type(2){background-color: #8a5;}
+  /* .content_area>dl>dd.action{ display:block; } */
+  .content_area>dl>dd:first-of-type{ display:block; } 
+
+  .album{ float:left; padding:0.5rem; box-sizing:border-box; width:32%; height:100%; margin-right:1%; background-color: #afa; }
+  .album:last-child{ margin-right:0; }
+  .album>a{ display:block; width:100%; height:100%; }
+  .album h4{ font-size:1.5rem; font-weight:bold; margin-bottom:7rem; text-transform:uppercase; }
+
+.about_company{ width:100%; height:50%; background-color: #aff;}
