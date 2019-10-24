@@ -4,6 +4,7 @@
 
   const conArea = $('.content_area');
   const conDt = conArea.find('dt');
+  const conDtBtn = conDt.children('button');
   const conDd = conArea.find('dd');
 
   conDt.children('button').on('click focus', function(e){
@@ -38,32 +39,109 @@
   });
 
   // =============================================================
-    const bmText = '\
-    <div class="album">\
-      <a href="#">\
-        <h4></h4>\
-        <p class="con"></p>\
-        <p class="date"></p>\
-      </a>\
-    </div>';
-
-
-    const mediaList = [ { text:'[youtube] 아마존으로 2600억 매출', date:'2019.10.22'}, { text:'슈피겐코리아 미국 아마존 독점 유통', date:'2019.10.22'}, { text:'[youtube] \'취업비자\' 기업탐방', date:'2019.10.22'} ]; //배열 안에 객체 담기.
     
-    //const blogList = [ 1, 2, 3 ]; 
 
-    const media = conArea.find('.media');
-    for(let i = 0 ; i < mediaList.length ; i++ ){
-      media.append(bmText);
-      let myNth = media.children('.album').eq(i);
-      myNth.find('h4').text('media');
-      myNth.find('.con').text( mediaList[i].text );
-      myNth.find('.date').text( mediaList[i].date );
-      //media에 append(bmText)로 각각의 클래스가 생성 되므로, 생성된 클래스의 i번째의 h4, .con, .date 클래스를 찾아 배열에 담아둔 객체형 텍스트 삽입. 
-    }
+    let imgUrl = '../../img/spigen/';
 
+    const mediaList = [ { text:'[youtube] 아마존으로 2600억 매출', date:'2019.10.22', img: 'img01.jpg' }, { text:'슈피겐코리아 미국 아마존 독점 유통', date:'2019.10.22', img: 'img02.jpg' }, { text:'[youtube] \'취업비자\' 기업탐방', date:'2019.10.22', img: 'img03.jpg' } ]; //배열 안에 객체 담기.
 
-  // =============================================================
-  
+    const blogList = [ { text:'아무리 급해도 놓칠 수 없는 한 가지', date:'2019.10.22', img: 'img04.jpg'}, { text:'업무 중 즐기는 문화 예술 공연', date:'2019.10.22', img: 'img06.jpg'}, { text:'지속적인 성장 가치 추구.', date:'2019.10.22', img: 'img05.jpg'} ]; 
+
+    // ForList([selectior], [array]);
+    const ForList = function(mySel, myList, myText){
+      let tabBox = conArea.find( mySel );
+      const bmText = '\
+        <div class="album">\
+          <a href="#">\
+            <h4></h4>\
+            <p class="con"></p>\
+            <p class="date"></p>\
+          </a>\
+        </div>';
+
+      for(let i = 0 ; i < myList.length ; i++ ){
+        tabBox.append(bmText);
+        let myNth = tabBox.children('.album').eq(i);
+        myNth.find('h4').text(myText);
+        myNth.find('.con').text( myList[i].text );
+        myNth.find('.date').text( myList[i].date );
+
+        let myImg = imgUrl + myList[i].img;
+        myNth.css({ 'backgroundImage':`url(${myImg})`, 'backgroundRepeat':'noRepeat', 'backgroundPosition':'0 0', 'backgroundSize':'cover'})
+        //media에 append(bmText)로 각각의 클래스가 생성 되므로, 생성된 클래스의 i번째의 h4, .con, .date 클래스를 찾아 배열에 담아둔 객체형 텍스트 삽입. 
+      }
+
+    }; //ForList
+   
+    ForList('.media', mediaList, 'media');
+    ForList('.blog', blogList, 'blog');
+
+      conDtBtn.on( 'keyup', function(e){
+        //R - 39, L - 37 위 - 38, 아래 - 40
+        let num = e.keyCode; //전달 받은 키보드 신호 num에 대입
+        let beforeKey = num === 37 || num === 38;
+        let afterKey = num === 39 || num === 40;
+        let pdt = $(this).parent(conDt);
+
+        /*
+        if( beforeKey ){
+          pdt.prevAll('dt').find('button').focus();
+        }else if( afterKey ){
+          pdt.nextAll('dt').find('button').focus();
+        }
+        */
+        switch( num ){
+          case 37:
+          case 38:
+            pdt.prevAll('dt').find('button').focus();
+          break;  
+          case 39:
+          case 40:
+            pdt.nextAll('dt').find('button').focus();
+          break;  
+        }
+        
+      });
+
 
 })(jQuery);
+
+
+// ||(or) : 둘 중 하나라도 참일 시 바로 참 도출,(뒤에 조건 비교 안 함)
+
+
+    /*
+      conDt.children('button').on('keyup', function(e){
+      //console.log(e.keyCode);
+      //R - 39, L - 37
+      //const mBtn = conDt.children('button');
+      //const bBtn = conDd.children('button');
+      
+      //39 === .blog, 37 === .media
+      
+      if( e.keyCode === 39 ){
+        $(this).siblings(mBtn).addClass('action');
+        $(this).removeClass('action');
+        blog.show();
+        media.hide();
+
+      } else if( e.keyCode === 37 ) {
+        $(this).siblings(mBtn).removeClass('action');
+        $(this).addClass('action');
+        media.show();
+        blog.hide();
+      }
+      */
+
+    // const blog = conArea.find('.blog');
+    // for(let i = 0; i < blogList.length ; i++ ){
+    //   blog.append(bmText);
+    //   let myNth = blog.children('.album').eq(i);
+    //   myNth.find('h4').text('blog');
+    //   myNth.find('.con').text( blogList[i].text );
+    //   myNth.find('.date').text( blogList[i].date );
+
+    //   let myImg = imgUrl + blogList[i].img
+    //   myNth.css({ 'backgroundImage':`url(${myImg})`, 'backgroundRepeat':'noRepeat', 'backgroundPosition':'0 0', 'backgroundSize':'cover'});
+
+    // }

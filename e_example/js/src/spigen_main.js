@@ -6,6 +6,7 @@
   const header = $('#headBox');
   const adver = $('#viewBox');
   const content = $('#conBox');
+  const conArea = $('#conArea');
   const footer = $('footBox');
   // ================================
 
@@ -25,6 +26,12 @@
   content.load(tempUrl+'spigen_main_content_01.html', function(){
 
     let conJS = jsUrl+'make_spigen_content_01.js';
+    body.append(`<script src="${conJS}"><script>`);
+
+  });
+  // content02 =================================================
+  conArea.load(tempUrl+'spigen_main_content_02.html', function(){
+    let conJS = jsUrl+'make_spigen_content_02.js';
     body.append(`<script src="${conJS}"><script>`);
 
   });
