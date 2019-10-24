@@ -1,0 +1,42 @@
+@charset "utf-8";
+/* spigen_main_content_02.css */
+
+#conArea{ position:relative; z-index:100; width:100%; height:100%; padding-top:100px; box-sizing:border-box; background-image: url("../../../img/spigen/img05.jpg"); background-position:50% 50%; background-repeat: no-repeat; background-size: cover;}
+#conArea:before{ content:" "; display:block; position:absolute; z-index:-1; top:0; left:0; width:100%; height:100%; background-color: rgba(255, 119, 0, 0.5); filter:brightness(60%); }
+
+
+#conArea>h2{ padding:20px 0; width:100%; height:40px; font-size:2.5rem;  font-weight:900; text-align:center; color:#fff; }
+#conArea>p{ width:100%; height:auto; font-size:1rem; color:#fff; text-align:center; }
+
+#conArea>.fullBox{ padding:30px; box-sizing:border-box; width:100%; min-width:1300px;  height:450px; height:23.4375vw; /* 450px/1920*100 */ min-height:350px; }
+  .fullBox>.box{ overflow:hidden; float:left; margin-right:5%; margin-top:50px; width:30%; height:350px;  background-color: #fff; }
+  .fullBox>.box:nth-child(1){ background-image: url(../../../img/spigen/img02.jpg);}
+  .fullBox>.box:nth-child(2){ background-image: url(../../../img/spigen/img03.jpg);}
+  .fullBox>.box:nth-child(3){ background-image: url(../../../img/spigen/img07.jpg);}
+  .fullBox>.box:last-child{ margin-right:0;}
+  .fullBox>.box>a{ display:block; width:100%; height:100%; background-repeat: no-repeat; background-position:50% 50%; background-size: cover; }
+  .fullBox>.box>a>dl{ padding:0 10%; box-sizing:border-box; width:100%; height:100%; background-color: rgba(100,100,100,0.5); transform:translateY(75%); transition:all 300ms ease; }
+  .fullBox>.box>a>dl>dt{ padding-top:2vh;width:100%; height:50px; text-align:center; font-size:1.4rem; color:#fff; text-transform:uppercase; font-weight:900; transition:all 300ms ease; }
+  .fullBox>.box>a>dl>dd{ width:100%; height: auto; text-align:center; font-size:1.2rem; color:#fff; word-break:keep-all; opacity:0; transition:all 300ms ease; }
+
+  /* jQuery addClass action */ 
+  .fullBox>.box>a.action dl{ transform:translateY(0); }
+  .fullBox>.box>a.action dt{ padding-top:15vh; color:#f50; }
+  .fullBox>.box>a.action dd{ opacity:1; } 
+  
+
+  /* .fullBox>.box>a:hover dl,
+  .fullBox>.box>a:focus dl{ transform:translateY(0); }
+  .fullBox>.box>a:hover dt,
+  .fullBox>.box>a:focus dt{ padding-top:15vh; color:#f50; }
+  .fullBox>.box>a:hover dd,
+  .fullBox>.box>a:focus dd{ opacity:1; } */
+
+ /* top_move_btn */
+
+ .top_move_btn{ display:none; position: fixed; right:50%; bottom:30px; z-index: 1000; margin-right:-50vw;  width:70px; height:70px; }
+ .top_move_btn>button{ width:100%; height:100%; font-size:4rem; color:#fff; background-color:transparent; }
+ .top_move_btn>button:focus,
+ .top_move_btn>button:hover{ background-color: transparent; color:#f30; }
+  
+  
