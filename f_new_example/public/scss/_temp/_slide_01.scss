@@ -1,0 +1,15 @@
+// slide_01.scss
+@import url("../_basic/var");
+@import url("../_basic/mixin");
+@import url("../_basic/etc");
+//url()을 입력하면 해당 파일을 별도의 파일로 첨부(link)하는 의미
+//url() 없이 ""로 입력 시 해당 파일을 하나의 파일로 합친다
+
+// --------------------------
+
+.slide_temp{ width:90%; height:700px; min-width:1200px; margin:auto;border:$border1; background-color:$sample; }
+
+.view_btn{ position:absolute; top:50%; width:100%; height:0;
+  >button{ width:100px; height:100px; background-color: #ccc; float:left;&.next{ float:right; } }
+}
+
