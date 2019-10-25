@@ -3,6 +3,7 @@
   const body = $('body');
   const wrap = $('#wrap');
 
+  //광고 영역 생성=======================================
   wrap.append('<section id="viewBox"></section>');
 
   const viewBox = $('#viewBox');
