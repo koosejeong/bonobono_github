@@ -21,8 +21,8 @@
   {subName:'IR Archive',subLink:'sub_link_09' },
   {subName:'IR Meeting',subLink:'sub_link_10' }]} ];
 
-  //navList[0].title
-  //navList[0].sub[0]
+  //navList[0].title || navList[0].titleLink
+  //navList[0].sub[0].subName || navList[0].sub[0].subLink
 
   const forList = (myList ) => {
   let menuLayOut ='<li>\
