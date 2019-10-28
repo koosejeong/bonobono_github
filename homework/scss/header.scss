@@ -1,0 +1,47 @@
+// header.scss
+
+body, html { margin:0; padding:0; width:100%; height:100%; color:#333; font-family:"Noto Sans KR", "myriad pro", arial, "돋움", dotum, sans-serif, "Nanum Gothic"; }
+
+h1,h2,h3,h4,h5,h6,
+ul,li,ol,dl,dt,dd,
+p, pre, img { margin:0; padding:0; border:0;}
+
+a { color:#777; text-decoration:none; }
+a:hover { color:#f07; }
+a:focus { outline:2px solid #f06;}
+
+.hidden{ display:block; width:0; height:0; overflow:hidden; }
+
+// ===============================================
+
+#headBox{ position:fixed; top:0; left:0; z-index:500; width:100%; height:auto; 
+  &>h1{ position:absolute; top:0; left:0; width:20%; height: 100px; background-color: #ddd; font-size:36px; }
+  #gnb{ position:absolute; top:0; left:20%; margin:auto; width:60%; height:100px; background-color: #333;
+    &>ul{ padding:20px; box-sizing:border-box; width:100%; height:auto; list-style:none; 
+      &>li{ float:left; width:20%; height:auto; 
+        &>dl{ width:100%; height:100%; 
+          &>dt{ float:left; width:100%; height:100%; 
+            &>a{ display:block; width:100%; height:auto; text-align:center; font-size:24px;  }
+          } //dt 
+          &>dd{ display:none; padding:20px; box-sizing:border-box; width:100%; height:auto; 
+            &>a{ display:block; width:auto; height:50px; background-color: #fff; text-align:center; font-size:1rem;}  
+          } //dd 
+        } //dl
+      } //li
+    } //ul
+  } //gnb
+
+  .samseon-bar{ position:absolute; right:0; width:20%; height:100px; background-color: #ddd; 
+    &>.side_gnb{ position:absolute; padding:20px; box-sizing:border-box; right:0; width:100%; height:100%; background-color: #eee;
+      &>button{ position:absolute; right:20px; width:50px; height:50px; font-size:30px; }
+      } //side_gnb
+    } //samseon-bar
+
+  .sub_menu_area{ display:none; position:fixed; top:0; left:0; right:0; width:100%; height:100%; 
+    &>.btn_area{ position:relative; width:100%; height:40%; background-color: #f56; 
+      &>button{ position:absolute; top:50%; left:0; right:0; margin:auto; transform:translateY(-50%); width:60px; height:60px; background-color:#fff; color:#333; font-size:50px; text-align:center; }
+      } //btn_area
+    &>.menu_area{ position:absolute; top:40%; left:0; height:0; right:0; width:100%; height:60%; background-color: #f79; }
+    } //sub_menu_area
+
+} //headBox

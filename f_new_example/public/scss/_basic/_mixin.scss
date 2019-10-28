@@ -1,6 +1,11 @@
 // mixin.scss
 
 //요소 내부에 있는 텍스트 숨기는 기능
+
+//숨기는 영역 처리하기
+@mixin hidden() {
+  display:block; position:absolute; z-index:-10; width:0; height:0; overflow:hidden;
+}
 @mixin hiddenText() {
   display:block; position:absolute; z-index:-1; width:0; height:0; overflow:hidden;
 } 
@@ -15,7 +20,7 @@
  
 
 
-@mixin indicator_type_01 ( $select, $myw ){
+@mixin indicator_type_01 ( $select, $myw, $zIn:500 ){
   //하단에 위치한 인디케이터. focus 시 해당 버튼이 가로로 길게 늘어나는 형태
   //option-1: 인디케이터 내 버튼당 크기는 $w로 설정함.
   //option-2: class 선택자 이름 $select => 선택자 지칭
@@ -26,7 +31,7 @@
 
 
   #{$select} { $w:$myw; $f:100%; 
-    position:absolute; left:50%; bottom:$w; z-index:500; transform:translateX(-50%); width:auto; min-width:135px; height:$w; background-color:$white; padding:5px; border-radius:$w; 
+    position:absolute; z-index:$zIn; left:50%; bottom:$w; transform:translateX(-50%); width:auto; min-width:135px; height:$w; background-color:$white; padding:5px; border-radius:$w; 
     &>ul{ width:$f; height:$f; 
       &>li{ float:left; width:auto; height:$w; margin-left:5px;  
         &:first-child{ margin-left:0; }

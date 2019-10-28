@@ -1,0 +1,24 @@
+@import "mixin";
+// section.scss
+
+#viewBox{ position:relative; top:0; left:0; width:100%; height:auto; 
+    .view_indicator{ position:absolute; left:0; right:0; margin:auto; bottom:30px; width:120px; height:30px; z-index:500; background-color: #fff;
+      &>ul{ width:100%; height:100%; list-style:none;
+        &>li{ float:left; width:30px; height:30px; margin-left:5px; margin-right:5px; 
+          &>a{ display:block; width:30px; height:30px; border-radius:30px; background-color: #333; }
+        } //li
+      } //ul
+    } //view_indicator
+
+  .slide_form{ width:100%; height:auto; 
+    &>.guide{ width:300%; height:1200px; overflow:hidden;
+      &>div{ float:left; width:(100% / 3); height:100%; }
+        div:nth-child(1){ background-color: #fff;}
+        div:nth-child(2){ background-color: #eee;}
+        div:nth-child(3){ background-color: #ddd;}
+    }
+  }
+} //viewBox
+
+
+

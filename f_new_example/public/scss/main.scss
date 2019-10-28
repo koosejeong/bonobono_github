@@ -5,6 +5,7 @@
 @import "_basic/mixin";
 @import "_basic/etc";
 
-#wrap{ width:100%; height:100%; background-color: #cca;}
+#wrap{ width:100%; height:auto; background-color: #cca;}
 
 @import "./_temp/slide_01";
+@import "./_temp/slide_02"; 

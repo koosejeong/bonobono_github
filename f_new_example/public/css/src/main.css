@@ -1,7 +1,7 @@
 /* main.css*/
 #wrap {
   width: 100%;
-  height: 100%;
+  height: auto;
   background-color: #cca; }
 
 .slide_temp {
@@ -15,6 +15,7 @@
 
 .view_btn {
   position: absolute;
+  z-index: 500;
   top: 50%;
   width: 100%;
   height: 0; }
@@ -31,6 +32,7 @@
 
 .view_indicator {
   position: absolute;
+  z-index: 500;
   left: 50%;
   bottom: 30px;
   transform: translateX(-50%);
@@ -82,6 +84,9 @@
   height: 100%;
   overflow: hidden; }
   .slide_form .guide {
+    position: relative;
+    top: 0;
+    left: 0;
     width: 400%;
     height: 100%;
     background-color: #fa0; }
@@ -138,3 +143,99 @@
         .slide_form .guide > div > .link_btn > a:hover,
         .slide_form .guide > div > .link_btn > a:focus {
           background-color: #333; }
+
+#viewBox_02 {
+  position: relative;
+  width: 90%;
+  min-width: 1200px;
+  height: 100%;
+  max-height: 800px;
+  min-height: 600px;
+  margin: auto;
+  margin-top: 5rem;
+  margin-bottom: 10rem; }
+  #viewBox_02 > .slide_temp {
+    width: 100%;
+    min-width: 1200px;
+    height: 600px;
+    background-color: #ffa; }
+  #viewBox_02 .btn_area {
+    position: absolute;
+    z-index: 500;
+    bottom: 2rem;
+    left: 50%;
+    margin-left: 2rem;
+    width: 300px;
+    height: 20px;
+    background-color: #fff; }
+  #viewBox_02 .slide_02_form {
+    width: 100%;
+    height: 100%;
+    overflow: hidden; }
+    #viewBox_02 .slide_02_form > .guide {
+      width: 300%;
+      height: 100%;
+      background-image: linear-gradient(45deg, #fa0, #333); }
+
+.banner_area {
+  float: left;
+  position: relative;
+  z-index: 0;
+  width: 33.33333%;
+  height: 100%;
+  overflow: hidden; }
+  .banner_area:before, .banner_area::before {
+    content: " ";
+    display: block;
+    position: absolute;
+    z-index: -10;
+    width: 70%;
+    height: 150%;
+    top: 0;
+    left: 50%;
+    background-image: linear-gradient(90deg, #00cc99, rgba(0, 204, 153, 0) 60%);
+    transition: all 300ms linear; }
+  .banner_area.action:before, .banner_area.action::before {
+    transform: rotate(-10deg); }
+
+.slide2_01 {
+  background-color: #ddf; }
+
+.slide2_02 {
+  background-color: #ffd; }
+
+.slide2_03 {
+  background-color: #dfd; }
+
+.btn_area .indicator {
+  float: left;
+  width: auto;
+  height: 100%;
+  margin-right: 2rem; }
+  .btn_area .indicator > li {
+    float: left;
+    width: auto;
+    height: 20px;
+    margin-right: 1rem; }
+    .btn_area .indicator > li > a {
+      display: block;
+      width: 20px;
+      height: 20px;
+      border-radius: 20px;
+      background-color: #ccc; }
+      .btn_area .indicator > li > a.action {
+        width: 60px;
+        background-color: #f06; }
+      .btn_area .indicator > li > a > span {
+        display: block;
+        position: absolute;
+        z-index: -10;
+        width: 0;
+        height: 0;
+        overflow: hidden; }
+
+.btn_area .view_btn {
+  display: none;
+  float: right;
+  width: auto;
+  height: 100%; }

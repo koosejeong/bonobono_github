@@ -9,7 +9,7 @@
 
 
 //좌우버튼
-.view_btn{ position:absolute; top:50%; width:100%; height:0; 
+.view_btn{ position:absolute; z-index:500; top:50%; width:100%; height:0; 
   // 배너 영역 전체가 링크 기능을 할 것을 염두하여, 어느 영역을 클릭하더라도 링크를 탈 //수 있도록 높이값을 0으로 준다. (정확한 수치값을 줄 시 그 수치를 가진 영역 부분은 //링크 기능을 못 하게 되므로) 
   &>button{ width:100px; height:100px; background-color: $black; float:left; transform:translateY(-50%);
     &.next{ float:right; } 

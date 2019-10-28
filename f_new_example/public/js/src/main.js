@@ -6,13 +6,20 @@
   //광고 영역 생성=======================================
   wrap.append('<section id="viewBox"></section>');
 
-  const viewBox = $('#viewBox');
-  //경로 함수화하여 변수에 담기.
+  const viewBox = $('#viewBox'); //경로 함수화하여 변수에 담기.
   const JsLink = (temp) =>{
     return body.append(`<script src="../js/src/temp/${temp}.js"></script>`);
   };
   viewBox.load('./temp/slide_01.html', () =>{
     return JsLink('slide_01');
+  });
+
+  // 광고 영역2 추가 생성=================================
+  wrap.append('<section id="viewBox_02"></section>');
+
+  const vB2 = $('#viewBox_02');
+  vB2.load('./temp/slide_02.html', function(){
+    return JsLink('slide_02')
   });
 
 })(jQuery);

@@ -1,0 +1,70 @@
+html, body {
+  margin: 0;
+  padding: 0; }
+
+h1, h2, h3, h4, h5, h6,
+ul, li, ol, dl, dt, dd,
+p, pre, img {
+  margin: 0;
+  padding: 0;
+  border: 0; }
+
+#slide_temp {
+  position: relative;
+  width: 100%;
+  height: auto; }
+  #slide_temp > .view_indicator {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    bottom: 30px;
+    z-index: 200;
+    width: 120px;
+    height: 30px; }
+    #slide_temp > .view_indicator > ul {
+      width: 100%;
+      height: 100%;
+      list-style: none; }
+      #slide_temp > .view_indicator > ul > li {
+        float: left;
+        width: 30px;
+        height: 30px;
+        margin-right: 5px;
+        margin-left: 5px; }
+        #slide_temp > .view_indicator > ul > li > a {
+          display: block;
+          width: 100%;
+          height: 100%;
+          background-color: #333;
+          border-radius: 30px; }
+  #slide_temp > .slide_form {
+    position: relative;
+    width: 100%;
+    height: 800px;
+    overflow: hidden; }
+    #slide_temp > .slide_form > .half_box {
+      position: absolute;
+      right: -50%;
+      z-index: 100;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(209, 149, 109, 0.5); }
+    #slide_temp > .slide_form > .half_box.action {
+      transform: rotate(30deg); }
+    #slide_temp > .slide_form > .guide {
+      position: absolute;
+      left: 0;
+      right: 0;
+      width: 300%;
+      height: 100%; }
+      #slide_temp > .slide_form > .guide > div {
+        float: left;
+        width: 33.33333%;
+        height: 100%; }
+      #slide_temp > .slide_form > .guide > div:nth-child(1) {
+        background-color: #65d; }
+      #slide_temp > .slide_form > .guide > div:nth-child(2) {
+        background-color: #adf; }
+      #slide_temp > .slide_form > .guide > div:nth-child(3) {
+        background-color: #ddd; }
