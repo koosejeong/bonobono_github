@@ -22,4 +22,12 @@
     return JsLink('slide_02')
   });
 
+  // 광고 영역3 추가 생성=================================
+  wrap.append('<section id="viewBox_03"></section>');
+
+  const vB3 = $('#viewBox_03');
+  vB3.load('./temp/slide_03.html', function(){
+    return JsLink('slide_03')
+  });
+
 })(jQuery);
