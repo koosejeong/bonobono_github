@@ -1,0 +1,20 @@
+// slide_03.scss
+
+#viewBox_03{ position:relative; width:100%; height:700px; margin-top:15rem; }
+
+.slide_03_btn{ position:absolute; top:50%; left:0; z-index:500; width:100%; height:0; 
+  &>button{ float:left; width:100px; height:100px; transform:translateY(-50%); background-color: $black; 
+    &.next{ float:right; }
+  } 
+} //slide_03_btn
+
+.slide_03_form{ $count:6; //광고수 5개 + 복제 될 광고 1개
+  width:100%; height:100%;
+    &>ul{ position:relative; width:100% * $count; height:100%; 
+      margin-left:-100%; /*제일 처음 보여야 할 이미지가 맨 왼쪽의 복제된 이미지가 아니기 때문에 밀어줘야 한다. */
+      &>li{ float:left; width:100% / $count; height:100%; background-repeat: no-repeat; background-position:0 0; background-size: cover; }
+      @for $i from 1 to $count { //to는 미만을 의미하고, trought는 이하를 의미한다.
+        &>li.slide_03_con_#{$i}{ background-image:url('../../img/img0#{$i}.jpg');}
+      }
+    } //ul
+}
