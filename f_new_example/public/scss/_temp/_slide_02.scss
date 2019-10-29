@@ -22,7 +22,7 @@ $indiH:20px;
   &02{background-color: #ffd;} 
   &03{background-color: #dfd;} 
 }
-.btn_area{
+.btn_area{ padding:2px; border-radius:30px;
   .indicator{ float:left; width:auto; height:100%; margin-right:2rem; 
     &>li{ float:left; width:auto; height:$indiH; margin-right:1rem;
       &>a{ display:block; width:$indiH; height:$indiH; border-radius:$indiH; background-color: $gray;
@@ -31,5 +31,11 @@ $indiH:20px;
       } //a
     } //li
    } //indicator
-  .view_btn{ display:none;  float:right; width:auto; height:100%; }
+  .view_btn{ float:right; position:static; width:auto; height:100%; 
+    &>button{ display:none; }
+    &>.play_btn{ width:auto; height:$indiH; }
+    .play_btn>button{ float:left; width:$indiH; height:$indiH; background-color: $blueGreen; 
+      &>span{ @include hidden; }
+    }
+  }
 }

@@ -38,7 +38,7 @@
       } //li
       & a{ @include myLink($w:$w, $h:$f); border-radius:$w; background-color: $gray; transition:all 300ms ease;
         &:hover{ background-color: lighten($primary, 30%);}
-        &.action, &:focus{ background-color: $primary; width:($w*3);}
+        &.action{ background-color: $primary; width:($w*3);}
       &>span{ @include hiddenText; }
       } //a
     } // ul

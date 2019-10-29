@@ -68,7 +68,7 @@
         overflow: hidden; }
       .view_indicator > ul a:hover {
         background-color: #ff99c2; }
-      .view_indicator > ul a.action, .view_indicator > ul a:focus {
+      .view_indicator > ul a.action {
         background-color: #f06;
         width: 90px; }
       .view_indicator > ul a > span {
@@ -207,35 +207,54 @@
 .slide2_03 {
   background-color: #dfd; }
 
-.btn_area .indicator {
-  float: left;
-  width: auto;
-  height: 100%;
-  margin-right: 2rem; }
-  .btn_area .indicator > li {
+.btn_area {
+  padding: 2px;
+  border-radius: 30px; }
+  .btn_area .indicator {
     float: left;
     width: auto;
-    height: 20px;
-    margin-right: 1rem; }
-    .btn_area .indicator > li > a {
-      display: block;
+    height: 100%;
+    margin-right: 2rem; }
+    .btn_area .indicator > li {
+      float: left;
+      width: auto;
+      height: 20px;
+      margin-right: 1rem; }
+      .btn_area .indicator > li > a {
+        display: block;
+        width: 20px;
+        height: 20px;
+        border-radius: 20px;
+        background-color: #ccc; }
+        .btn_area .indicator > li > a.action {
+          width: 60px;
+          background-color: #f06; }
+        .btn_area .indicator > li > a > span {
+          display: block;
+          position: absolute;
+          z-index: -10;
+          width: 0;
+          height: 0;
+          overflow: hidden; }
+  .btn_area .view_btn {
+    float: right;
+    position: static;
+    width: auto;
+    height: 100%; }
+    .btn_area .view_btn > button {
+      display: none; }
+    .btn_area .view_btn > .play_btn {
+      width: auto;
+      height: 20px; }
+    .btn_area .view_btn .play_btn > button {
+      float: left;
       width: 20px;
       height: 20px;
-      border-radius: 20px;
-      background-color: #ccc; }
-      .btn_area .indicator > li > a.action {
-        width: 60px;
-        background-color: #f06; }
-      .btn_area .indicator > li > a > span {
+      background-color: #0c9; }
+      .btn_area .view_btn .play_btn > button > span {
         display: block;
         position: absolute;
         z-index: -10;
         width: 0;
         height: 0;
         overflow: hidden; }
-
-.btn_area .view_btn {
-  display: none;
-  float: right;
-  width: auto;
-  height: 100%; }
