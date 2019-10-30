@@ -9,7 +9,7 @@
 } //slide_03_btn
 
 .slide_03_form{ $count:6; //광고수 5개 + 복제 될 광고 1개
-  width:100%; height:100%;
+  width:100%; height:100%; overflow:hidden;
     &>ul{ position:relative; width:100% * $count; height:100%; 
       margin-left:-100%; /*제일 처음 보여야 할 이미지가 맨 왼쪽의 복제된 이미지가 아니기 때문에 밀어줘야 한다. */
       &>li{ float:left; width:100% / $count; height:100%; background-repeat: no-repeat; background-position:0 0; background-size: cover; }
