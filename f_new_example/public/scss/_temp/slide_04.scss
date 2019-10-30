@@ -1,0 +1,21 @@
+// slide_04.scss
+/* slide_04.css*/
+
+
+
+#viewBox_04{ position:relative; width:500px; height:250px; margin:10rem auto; background-color: $sample; 
+  &>.slide_form{ width:100%; height:100%; position:relative; z-index:0; overflow:hidden;
+    &>ul{ height:100%; margin-left:-100%; position:relative; z-index:0; 
+      &>li{ float:left; height:100%; background-repeat:no-repeat; background-size: cover;
+        @import './slide_04_insert_01'; }
+    } //ul
+  } //slide_form
+  &>#slide_btn_area{ position:absolute; left:0; top:50%; z-index:500; width:100%; height:0; background-color:$black;
+    &>button{ float:left; transform:translateY(-50%); width:30px; height:30px; background-color: transparent; font-size:20px; color:$white; }
+    &>.next{ float:right; }
+  }
+} //viewBox_04
+
+
+
+
