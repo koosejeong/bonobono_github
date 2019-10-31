@@ -1,5 +1,9 @@
 // mixin.scss
 
+@mixin fullbox() {
+  width:100%; height:100%;
+}
+
 //요소 내부에 있는 텍스트 숨기는 기능
 
 //숨기는 영역 처리하기

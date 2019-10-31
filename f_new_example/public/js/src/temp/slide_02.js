@@ -15,7 +15,7 @@
   let timed = 500;
   let myn = 0; //시작점이 될 임의의 변수 선언(on click과 setInterval에서 동시에 사용할 카운트값)
   let maxn = slideEach.length;
-  let myBool = true;
+  let mybool = true;
   let linkFocus = true;
   let go;
 

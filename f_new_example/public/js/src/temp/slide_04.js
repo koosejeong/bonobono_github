@@ -3,7 +3,17 @@
 ( function(){
 
   const url = "../img/";
-  const imgList = [ {title:'addver_01', bgimg:'img01.jpg', content:'addver marketting', linkText:'첫번째 바로가기', link:'http://www.naver.com'} , { title:'addver_02', bgimg:'img02.jpg' , content:'addver marketting', linkText:'두 번째 바로가기', link:'http://www.daum.net'}, { title:'addver_03', bgimg:'img03.jpg' , content:'addver marketting', linkText:'세 번째 바로가기', link:'http://www.google.com'}, { title:'addver_04', bgimg:'img04.jpg', content:'addver marketting', linkText:'네 번째 바로가기', link:'http://www.github.com'}, { title:'addver_05', bgimg:'img05.jpg', content:'addver marketting', linkText:'다섯 번째 바로가기', link:'http://www.tistory.com'} ];
+  let imgList;
+
+  $.ajax({
+    async:false,
+    type:'GET',
+    url: '../data/slide_04.json',
+    dataType:'json',
+    error:function(){ console.log('data error');},
+    success:function(data){ imgList = data; return imgList; }
+  });
+  console.log(imgList);
 
 // ==========================================
 //기본 선택자 및 내용 생성 
@@ -54,16 +64,18 @@ slide_04.prepend('<div id="slide_btn_area">\
 const btn =slide_04.find('button');
 let btnN = 0;
 
+//slideForm.css({ 'overflow':'visible'});
+
 btn.on('click', function(e){ //button을 하나로 묶어서 처리하게 만드는 로직 
   e.preventDefault();
-  if( $(this).index() === 0){
+  if( $(this).index() === 0){ //nextBtn
     btnN++;
       // ----------------------
     if( btnN>=count-1 ){
           btnN = 0;
-          slideGuide.css({ 'left':'100%'});
+          slideGuide.css({ 'left':0});
       }
-    } else {
+    } else { //prevBtn
         btnN--;   
     }
      // ----------------------

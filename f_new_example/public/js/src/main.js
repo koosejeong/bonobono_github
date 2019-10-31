@@ -38,4 +38,12 @@
     return JsLink('slide_04')
   });
 
+  // 풀바셋 배너 만들기 예제================================
+  wrap.append('<section id="exam_pull"></section>');
+
+  const exPull = $('#exam_pull');
+  exPull.load('./ex/ex_pull.html', function(){
+    return body.append(`<script src="../js/src/ex/ex_pull.js"></script>`);
+  });
+
 })(jQuery);

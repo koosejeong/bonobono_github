@@ -1,0 +1,39 @@
+#exam_pull {
+  position: relative;
+  width: 100%;
+  height: auto;
+  background-color: #ccc; }
+  #exam_pull > .btn_area {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    z-index: 500;
+    width: 100%;
+    height: 0; }
+    #exam_pull > .btn_area > button {
+      float: right;
+      transform: translateY(-50%);
+      width: 100px;
+      height: 100px;
+      background-color: transparent; }
+      #exam_pull > .btn_area > button > i {
+        color: #fff;
+        font-size: 30px;
+        font-weight: bold; }
+  #exam_pull > .slide_form_pull {
+    position: relative;
+    width: 100%;
+    height: 900px;
+    overflow: hidden; }
+    #exam_pull > .slide_form_pull > ul {
+      position: absolute;
+      width: 400%;
+      height: 100%;
+      margin-left: -100%; }
+      #exam_pull > .slide_form_pull > ul > li {
+        float: left;
+        width: 25%;
+        height: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 50% 50%; }
