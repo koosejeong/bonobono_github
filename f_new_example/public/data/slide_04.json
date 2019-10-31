@@ -1,0 +1,3 @@
+
+[ {"title":"addver_01", "bgimg":"img01.jpg", "content":"addver marketting", "linkText":"첫번째 바로가기", "link":"http://www.naver.com"} , { "title":"addver_02", "bgimg":"img02.jpg" , "content":"addver marketting", "linkText":"두 번째 바로가기", "link":"http://www.daum.net"}, { "title":"addver_03", "bgimg":"img03.jpg" , "content":"addver marketting", "linkText":"세 번째 바로가기", "link":"http://www.google.com"}, { "title":"addver_04", "bgimg":"img04.jpg", "content":"addver marketting", "linkText":"네 번째 바로가기", "link":"http://www.github.com"}, { "title":"addver_05", "bgimg":"img05.jpg", "content":"addver marketting", "linkText":"다섯 번째 바로가기", "link":"http://www.tistory.com"} ]
+
