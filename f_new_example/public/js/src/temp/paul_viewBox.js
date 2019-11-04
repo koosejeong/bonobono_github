@@ -14,7 +14,9 @@
 
   // ----------------------------------------
   // 1. slide 영역 순서에 맞게 li 배치
-    let liLen = slideLi.length;
+    let imgList = [ 'img08.jpg', 'img09.jpg', 'img10.jpg' ]
+    let liLen = imgList.length;
+    let url = '../img/';
 
     const slideZindexSet = function(){
      for( let i=liLen; i >=0 ; i-- ){ // let i=0; i <=liLen ; i++
@@ -22,6 +24,8 @@
       // slideLi.eq(0).css({ zIndex:3});
       // slideLi.eq(1).css({ zIndex:2});
       // slideLi.eq(2).css({ zIndex:1});
+      //slideLi.eq(i).css({ 'backgroundImage':`url(${url +imgList[i] })`});
+      
      }
     } //z-index값 조정하는 for문 함수화 
 
@@ -33,10 +37,21 @@
      };
      textEm(textN); //텍스트 삽입
 
+    //  ------------------------------------------
+    // 첫번째 li만 보이고 나머지는 사라지게 만들기 
+
+    slideLi.eq(0).siblings().hide();
+    slideLi.eq(0).find('dl').addClass('action'); 
+
     //버튼 클릭 시 숫자 증가----------------------------
+    //버블링 현상을 막기 위한 버튼 숨기기 
+
+    const fakeBtn = $('.fake_btn'); //버블링 현상을 막기 위한 가짜 버튼 생성
+    fakeBtn.hide(); //클릭 전까지 가짜 버튼 숨겨 놓기
     indiBtn.on('click', function(e){
       e.preventDefault();
-      indiBtn.hide(); //버블링 현상을 막기 위한 버튼 숨기기 
+      //indiBtn.hide(); 
+      fakeBtn.show(); //클릭 시 가짜 버튼 나타내기
       if ($(this).index() === 0 ){ //nextBtn
         textN++;
         if( textN >= liLen ){
@@ -50,23 +65,20 @@
         }
         textEm(textN);
       }
-
+      //가로로 늘어나는 현상 
       let slideThis = slideLi.eq(textN); //slideThis에 textN번째가 가지고 있는 수번째의 li를 대입
-        slideThis.css({zIndex: liLen+2, width:0, overflow:'hodden' }); 
-      //slideThis의 z-index값을 liLen+2로 만들고, 너비값을 0으로 준 뒤 overflow:'hodden'
-        slideThis.stop().show(function(){ //slideThis의를 slideDown 시키고, 다음의 기능을 발동
-          slideThis.animate({ width:100 + '%'}, 1000, 'easeOutCubic', function(){ //너비에 100% 값 주고, 다음 기능을 발동
+        slideThis.css({zIndex: liLen+2, width:0, padding:0 }); 
+        slideThis.css({ 'display':'block'});
+        slideThis.stop().animate({ width:100 + '%', paddingLeft:'5vw'}, 1000, 'easeOutCubic', function(){ 
           slideThis.siblings().hide(); //slideThis에 외 나머지 li를 숨기고, 
           slideZindexSet(); //for문 호출하여 z-index값 조정
-          indiBtn.show(); //사라졌던 버튼 다시 나타내기
-        }) //slideThis.animate
-      }); //slideThis.show
-        
+          fakeBtn.hide(); // 광고 슬라이드 기능 끝나면 가짜 버튼 숨기기 
+          //indiBtn.show(); //사라졌던 버튼 다시 나타내기 
+          slideThis.siblings().find('dl').removeClass('action'); //가로로 늘어난 후 실행
+          slideThis.find('dl').addClass('action'); 
+      }); //slideThis.animate function
 
-    }); //indiBtn.on
-
-
-
+    }); //indiBtn.on('click')
 
 })(jQuery);
 

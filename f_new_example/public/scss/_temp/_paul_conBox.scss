@@ -1,0 +1,6 @@
+
+#conBox{ @include fullbox; background-color: $gray;
+  &>button{ width:100px; height:40px; background-color: $blueGreen;}
+  &>.bar{ width:100%; height:100px; background-color: $yellow; background-image:linear-gradient(90deg, $yellow, $blueGreen); 
+  }
+}

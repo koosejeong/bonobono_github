@@ -7,6 +7,10 @@
 // ----------------------------------------------
 
 #wrap{ @include fullbox; background-color: $sample; }
+#conBox2{ @include fullbox; background-color: darken($yellow, 20%);}
+#conBox3{ @include fullbox; background-color: darken($yellow, 40%);}
+#footBox{ @include fullbox; background-color:$yellow;}
+
 
  @import "./_temp/paul_headBox";
  @import "./_temp/paul_vieWBox";
