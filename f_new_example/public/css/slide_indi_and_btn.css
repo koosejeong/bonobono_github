@@ -1,0 +1,10 @@
+#slide_01 {
+  width: 400px;
+  height: 350px;
+  margin: 4rem auto;
+  background-color: transparent;
+  overflow: hidden; }
+
+#slide_02 {
+  width: 100%;
+  height: 100%; }

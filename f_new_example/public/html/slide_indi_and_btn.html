@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="웹 페이지 실습에 따른 목차 구성" >
+<meta name="keyword" content="html, css, js, web, design" >
+<meta name="author" content="구세정" >
+<meta name="generator" content="illustrator, photoshop, vscode" >
+<!--[if let IE]>
+  <script src="../IE/html5shiv/dist/html5shiv.min.js"></script>
+  <script src="../IE/PIE/PIE.js"></script>
+  <sctipy src="../IE/respond/Respond-1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+<link rel="stylesheet" href="../fonts/fontawesome/css/all.css">
+ <link rel="stylesheet" href="../css/base/reset.css">
+ <link rel="stylesheet" href="../css/base/common.css">
+ <link rel="stylesheet" href="../css/slide_indi_and_btn.css">
+  <link rel="apple-touch-icon" href="../img/favicon.png">
+  <link rel="shortcut icon" href="../img/favicon.png" type="image/png">
+<title>Document</title>
+</head>
+<body>
+<noscript>
+<p>현재 접속하고 있는 사이트 기능의 일부가 원활하게 실행 되고 있지 않습니다.<br /> 자바스크립트의 기능을 활성화 하세요.</p>
+<p><a target="_baknk" href="http://enable-javascript.com/ko">자바스크립트 활성화하기</a></p>
+</noscript>
+<div id="wrap">
+  <h1>slide_indi_and_btn</h1>
+  <div id="slide_01"></div>
+  <div id="slide_02"></div>
+</div>
+<script src="../js/base/jquery-3.4.1.min.js"></script>
+<script src="../js/base/jquery-ui.min.js"></script>
+<script src="../js/src/slide_indi_and_btn.js"></script>
+<script>
+  (function($){
+    let data = '../data/slide_indi_btn.json';
+    let img = '../img/coffee/';
+    $('#slide_01').myIndiSlide(data, img);
+    $('#slide_02').myIndiSlide(data, img);
+    
+  })(jQuery);
+</script>
+<script>  
+// javascript 반응형 웹(사이즈 변경 시 새로고침)
+
+  let ww = $(window).outerWidth();
+  //ㄴ브라우저 크기에 따른 개별 기능(반응형 웹)
+  const viewBrowser = function(ww) {
+    if( ww <= 480 ){
+
+    }else if( ww > 480 && ww <= 768 ) {
+
+    }else if( ww > 768 && ww <= 1280 ){
+
+    }else if( ww > 1280 && ww <= 1290 ){
+
+    }
+  };
+  viewBrowser(ww);
+
+  $(window).on('resize', function(){
+    let nw = $(window).outerWidth();
+    if( ww !== nw){
+      location.reload();
+      viewBrowser(ww);
+    }
+  });
+
+</script> 
+</body>
+</html>
