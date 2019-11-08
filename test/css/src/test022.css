@@ -1,13 +1,49 @@
 /* test022.css */
 
-#wrap{ position:relative; width:100%; height:100%; }
-  .miniProduct{ position:absolute; width:100%; height:100%; background-image: url("../../img/wood.jpg"); background-position: 100% 100%; background-size: contain; overflow:hidden; }
-  .miniProduct>.indicator{ position:absolute; z-index:500; left:0; right:0; bottom:100px; margin:auto; width:150px; height:30px; }
-  .indicator>li>button{ float:left; width:30px; height:30px; margin-right:15px; background-color: #ccc; border-radius:30px; }
-    li:last-child{ margin-right:0; }
-  .indicator button.action{ background-color: #333;}
+#wrap{ width:100%; height:100%; }
+  #slide_01{ position:relative; width:70%; height:400px; margin:auto;}
+  .miniProduct{ position:absolute; top:50px; width:100%; height:100%; background-image: url("../../img/wood.jpg"); background-position: 100% 100%; background-size: contain; overflow:hidden; }
+  .miniProduct>.btn{ position:absolute; z-index:500; right:100px; bottom:150px; width:auto; height:0; }
+  .btn>button{ float:right; width:100px; height:100px; background-color:transparent; }
+  .btn>button:nth-child(2){ float:left; }
+  .btn>button.action>i{ color: #56f;}
+  .btn>button>i{ font-size:70px; color: #fff;} 
 
   /* product 영역 */
-  .miniProduct>.product{ position:absolute; left:0; padding:100px; box-sizing:border-box; width:300%; height:100%; }
-  .product>li{ float:left; width:33.333333%; height:100%; background-size: contain; background-position: 50% 50%; background-repeat: no-repeat; }
+  .miniProduct>.product{ position:relative; padding:100px; box-sizing:border-box; width:100%; height:100%; }
+  .miniProduct>.product>ul{ position:absolute; left: 0; top: 0; margin-left:-100%; width:400%; height:100%; }
+  .product>ul>li{ float:left; width:25%; height:100%; background-size: contain; background-position:50% 50%; background-repeat: no-repeat; }
+
+
+
+  /* #slide_02 --------------------------- */
+  #slide_02{ position:relative; width:70%; height:400px; margin:auto; margin-top: 100px;}
+  .miniProduct02{ position:absolute; top:50px; width:100%; height:100%; background-image: url("../../img/wood.jpg"); background-position: 100% 100%; background-size: contain; overflow:hidden; }
+  .miniProduct02>.btn{ position:absolute; z-index:500; right:100px; bottom:150px; width:auto; height:0; }
+  .btn>button{ float:right; width:100px; height:100px; background-color:transparent; }
+  .btn>button:nth-child(2){ float:left; }
+  .btn>button.action>i{ color: #56f;}
+  .btn>button>i{ font-size:70px; color: #fff;} 
+
+  /* product 영역 */
+  
+  .miniProduct02>.product{ position:relative; padding:20px; box-sizing:border-box; width:100%; height:100%; }
+  .miniProduct02>.product>ul{ position:relative; width:100%; height:100%; }
+  .miniProduct02 .product>ul>li{position:absolute; top: 0;left: 0; width:100%; height:100%; background-size: contain; background-position:50% 50%; background-repeat: no-repeat; }
+
+  /* #slide_03 --------------------------- */
+  #slide_03{ position:relative; width:70%; height:400px; margin:auto; margin-top: 100px; margin-bottom:300px; }
+  .miniProduct03{ position:absolute; top:50px; width:100%; height:100%; background-image: url("../../img/wood.jpg"); background-position: 100% 100%; background-size: contain; overflow:hidden; }
+  .miniProduct03>.btn{ position:absolute; z-index:500; right:100px; bottom:150px; width:auto; height:0; }
+  .btn>button{ float:right; width:100px; height:100px; background-color:transparent; }
+  .btn>button:nth-child(2){ float:left; }
+  .btn>button.action>i{ color: #56f;}
+  .btn>button>i{ font-size:70px; color: #fff;} 
+
+  /* product 영역 */
+  
+  .miniProduct03>.product{ position:relative; padding:20px; box-sizing:border-box; width:100%; height:100%; }
+  .miniProduct03>.product>ul{ position:absolute; top:-100%; bottom:0; left: 0; width:100%; height:400%;  }
+  .miniProduct03 .product>ul>li{  width:100%; height:25%; background-size: contain; background-position:50% 50%; background-repeat: no-repeat; }
+  
     
