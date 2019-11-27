@@ -1,0 +1,16 @@
+@charset "utf-8";
+
+#wrap{ background-color: #dfdfdf; }
+.tumnail{ float:left; padding:2rem;  width:50%; min-width:500px; height:800px; box-sizing:border-box; }
+  .big{ position:relative; width:100%; height:400px; margin:auto; margin-bottom:1rem; background-color: #faa; }
+  .mouse_location{ position:absolute; width:120px; height:120px; border:5px solid #333; border-radius:10px; background-color: #fff; background-repeat: no-repeat; background-size: 1000%; }
+  .small{ width:100%; height:100px; margin:auto; }
+  .small>li{float:left; width:120px; height:120px; margin-left:1rem; background-repeat: no-repeat; background-position:50% 50%; background-size:cover; border-radius:3px; } 
+  .small>li:nth-child(1){ margin-left:0; background-color: #1fa; background-image: url('../../img/money/money01.jpg'); }
+  .small>li:nth-child(2){background-color: #2af; background-image: url('../../img/money/money03.jpeg'); }
+  .small>li:nth-child(3){background-color: #a3f; background-image: url('../../img/money/money05.jpg'); }
+  .small>li:nth-child(4){background-color: #4af; background-image: url('../../img/money/money07.jpg'); }
+  .small>li:focus,
+  .small>li:hover{transform:scale(1.2); }
+
+.view{ float:right; width:50%; min-width:500px; height:800px; background-color:#acf; }

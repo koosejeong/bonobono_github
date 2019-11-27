@@ -4,7 +4,7 @@
 
   const htmlEl = $('html, body');
   const wrap = $('#wrap');
-  const scrollEl = wrap.find('.scroll');
+  const scrollEl = wrap.find('.scroll'); //.scroll이 몇개인지 찾아오기 위한 변수
   htmlEl.animate({scrollTop:0}); //(html, body)에 scrollTop으로 수치를 줌으로서 브라우저가 뜨자마자 가는 위치를 최상단(0)으로 지정함.
   let myScrollElTop = [];
   let scrollLen = scrollEl.length;
@@ -30,8 +30,12 @@
   // ---------------------------------------------------
 
   $(window).on('mousewheel DOMMouseScroll', function(e){
-
-    if(e.originalEvent.wheelDelta){
+   if(myStatus){ //myStatus = true이므로 무조건 if문 수행
+      myStatus = false; //myStatus값 조정 
+    
+    
+    
+      if(e.originalEvent.wheelDelta){
       n = e.originalEvent.wheelDelta * -1; //양수로 만들기 위한 -1 곱셈(양수값: 아래로 내려가게 설정)
     } else {
       n = e.originalEvent.detail * 40; //음수값: 위로 올라가게 설정
@@ -40,8 +44,7 @@
     // ---------------------------------------------------
     // 최초의 스크롤 위치값 설정
    
-    if(myStatus){ //myStatus = true이므로 무조건 if문 수행
-      myStatus = false; //myStatus값 조정 
+ 
       if( n > 0 ){ //n:임의의 값, 0:스크롤 고정 위치 
         useN++; //스크롤 위치가 0보다 크면 +1
         if( useN >= scrollLen ) {
