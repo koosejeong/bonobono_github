@@ -1,0 +1,8 @@
+/* sticky.css */
+
+#wrap{ width:100%; height:auto; background-color: #ccc; }
+#headBox{ width:100%; height:100px; background-color: #fa0; }
+#viewBox{ padding-top:100px; width:70%; height:1500px; margin:auto; background-color: #cca; margin-bottom:100rem; }
+#viewBox>h2{ width:80%; height:100px; margin:auto; background-color: #fff; text-align:center; font-size:3rem; margin-bottom:30rem; position:sticky; top:10px; }
+#viewBox>p{ width:100%; height:250px; border-top:5px solid #fff; font-size:3rem; color:#f00;  position:sticky; top:0; }
+#conBox{ width:90%; height:200px; margin:auto; background-color: #acf; }

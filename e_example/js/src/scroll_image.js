@@ -3,9 +3,13 @@
   const win = $(window);
   const wrap = $('#wrap');
   const viewBox = $('#viewBox');
-  viewBox.css({position:'fixed', top:0, backgroundColor:'#fff'}); //viewBox 영역 고정
-  viewBox.find('.title').css({position:'relative', top:0}); 
-  //viewBox의 자손 요소인 class title의 포지션으로 relative를 주어 움직일 수 있게 제반 작업
+
+  viewBox.find('.fix_img').wrap('<div class="outer_wrap"></div');
+  $('.outer_wrap').css({height:'2000px'});
+  viewBox.find('.fix_img').css({position:'sticky', top:'50px'});
+
+  let fixImgOffset = viewBox.find('.fix_img').offset().top;
+  console.log(fixImgOffset);
  
   // 이미지 담기
   const viewFix = viewBox.find('.fix_img');
@@ -38,20 +42,28 @@
     }
     viewBox.find('.title').css({top:(-thisS / 3) + 'px', opacity:op}); 
     //스크롤을 움직일 시 title이 위로 올라가는 효과를 주기 위한 음수값
-
+    // ------------------------------------
+    //  .fix_img 위치 고정인 것처럼 효과주기
+    if(thisS >= fixImgOffset){
+      let i = thisS - fixImgOffset;
+      if( i > 400 ){
+        i = 400;
+      } else if( i < 0 ){
+        i = 0;
+      }
+      viewBox.find('.fix_img').css({transform:`translateY(${-400 + i}px)`}); 
+    // ------------------------------------
     //이미지 교체하기
-    let imgI = parseInt(thisS / 2000 * 121); 
-    //스크롤탑 수치 / 느리게 효과를 주기 위한 임의의 수 * 총이미지 갯수 121개
-
-    if(imgI >= 121) { //총 이미지 갯수를 넘기지 않기 위한 조건문
-      imgI = 121;
+      let imgI = parseInt((i) / 4); 
+      //스크롤탑 수치 - position:sticky를 가지고 있는 스크롤 위치 / 스크롤 이동 수치(크롬:4, 파이어폭스:3)
+      if(imgI >= 121) { //총 이미지 갯수를 넘기지 않기 위한 조건문
+        imgI = 121;
+      } else if(imgI < 0 ) {
+        imgI = 0; //첫번째 이미지로 되돌리기
+      }
+      viewFix.children('img').eq(imgI).siblings().hide(); //imgI번째 외 나머지 img 가리기
+      viewFix.children('img').eq(imgI).show(); //imgI번째의 img만 나타내기
     }
-    //console.log(imgI);
-    viewFix.children('img').eq(imgI).siblings().hide(); //imgI번째 외 나머지 img 가리기
-    viewFix.children('img').eq(imgI).show(); //imgI번째의 img만 나타내기
-
-    // --------------------------------------
-  
   });
 
 

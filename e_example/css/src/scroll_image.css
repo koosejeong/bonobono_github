@@ -1,29 +1,28 @@
 
 #wrap{ width:100%; height:100%; }
-#wrap>*{ min-width:1400px; padding-bottom:20rem; }
   h1{ padding:2rem; font-size:4rem; text-align:center; }
   h2{ width:80%; height:auto; margin:auto; padding:2rem; font-size:2.5rem; border-top:1px solid #777; text-align:center; }
 
-#viewBox{ width:100%; height:auto; min-height:150%; margin:auto; margin-bottom:3rem;  }
+#viewBox{ width:100%; height:auto; min-height:150%; margin:auto; padding-top:15rem;  }
 
 .title{ width:100%; height:auto; margin-bottom:2rem; text-align:center; line-height:0.9; letter-spacing:-0.125rem; }
 .title>h3{ font-size:2rem; padding-top:1rem; }
 .title>p{ font-size:6.5rem; font-weight:bold; }
 .fix_img{ width:70%; height:auto; min-height:350px; margin:auto; margin-top:5rem; margin-bottom:5rem; }
-.fix_img ~ p{ width:66%; height:auto; margin:auto; font-size:2.2rem; font-weight:bold; letter-spacing:-0.1rem; color:#777; line-height:1.1; }
+.fix_img ~ p, .outer_wrap ~ p{ width:66%; height:auto; margin:auto; font-size:2.2rem; font-weight:bold; letter-spacing:-0.1rem; padding-bottom:10rem; color:#777; line-height:1.2; }
 
-#viewBox .title{ position:relative; z-index:100; }
-#viewBox .fix_img{ position:relative; }
-#viewBox .fix_img>img{ display:none; position: absolute; left:0; bottom:0; width:100%; height:auto; }
+#viewBox .title{ position:sticky; z-index:100; }
+#viewBox .fix_img{ height:800px; position:sticky; top:50px; transform:translateY(-400px); }
+#viewBox .fix_img>img{ display:none; margin:auto; width:auto; height:100%; margin-left:50%; transform:translateX(-50%); }
 
-#sub_conBox{ width:100%; height:auto; min-height:150%; margin:auto; margin-bottom:3rem;  }
+#sub_conBox{ width:100%; height:auto; min-height:150%; margin:auto; padding-bottom:30rem; }
 .sub_title .title{ width:70%; margin:auto; line-height:1.1; }
 .sub_title .title>h3{ font-size:4.5rem; font-weight:bold; text-align: left; color:#777; }
 .sub_title .title>p{ font-size:4.5rem; font-weight:bold; text-align: left;}
 
 .sub_title .fix_img{ height:auto; min-height:800px; }
 
-#video_conBox{ width:100%; height:auto; min-height:150%; margin:auto; margin-bottom:3rem; }
+#video_conBox{ width:100%; height:auto; min-height:150%; margin:auto; padding-bottom:30rem; }
 
 #graph_conBox{ padding:3rem 2rem; box-sizing:border-box; width:60%; height:auto; min-height:150%; margin:auto; margin-bottom:3rem; background-color: #eee; }
 #graph_conBox .title{ width:100%; margin-bottom:8rem; font-size:2.3rem; }
